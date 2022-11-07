@@ -21,10 +21,14 @@ class User:
     self.rankedCount = rankedCount
 
 class Song:
-  def __init__(self, score, accuracy, pp, fullCombo, maxCombo, badCuts, misses):
+  def __init__(self, name, artist, mapper, score, accuracy, pp, img, fullCombo, maxCombo, badCuts, misses):
+    self.name = name
+    self.artist = artist
+    self.mapper = mapper
     self.score = score
     self.accuracy = accuracy
     self.pp = pp
+    self.image = img
     self.fullCombo = fullCombo
     self.maxCombo = maxCombo
     self.badCuts = badCuts
@@ -43,6 +47,21 @@ def loadUser(userID):
 
     return newUser
 
+
+
+def LoadUserSongs(userID, len):
+    # play_response = requests.get('https://scoresaber.com/api/player/' + str(userID) + '/scores?limit=' + str(99) + 'sort=top&withMetadata=true')
+    play_response = requests.get(
+        'https://scoresaber.com/api/player/' + str(userID) + '/scores?limit=100&sort=top&withMetadata=true')
+    songList = []
+
+    for x in range(len):
+        print(play_response.json()['playerScores'][x]['leaderboard']['songName'])
+        print(play_response.json()['playerScores'][x]['leaderboard']['songAuthorName'])
+        print(play_response.json()['playerScores'][x]['leaderboard']['levelAuthorName'])
+
+    return songList
+
 def getImage(img_url):
     jpg_data = (
         cloudscraper.create_scraper(
@@ -57,13 +76,8 @@ def getImage(img_url):
     pil_image.save(png_bio, format="PNG")
     return png_bio.getvalue()
 
-def LoadUserSongs(userID):
-
-
-
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     User1 = loadUser(76561198002500746)
-    User1 = loadUser(76561198002500746)
-
+    SongList = LoadUserSongs(76561198002500746, 100)
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
