@@ -7,6 +7,7 @@ from PIL import Image, ImageTk
 import PySimpleGUI as sg
 import cloudscraper
 import urllib
+import datetime
 
 sg.theme('DarkAmber')
 
@@ -23,11 +24,12 @@ class User:
 
 
 class Song:
-    def __init__(self, name, artist, mapper, timeSet, stars, score, accuracy, pp, img, fullCombo, maxCombo, badCuts, misses):
+    def __init__(self, id, name, artist, mapper, timeSet, stars, score, accuracy, pp, img, fullCombo, maxCombo, badCuts, misses):
+        self.id = id
         self.name = name
         self.artist = artist
         self.mapper = mapper
-        self.mapper = timeSet
+        self.timeSet = timeSet
         self.stars = stars
         self.score = score
         self.accuracy = accuracy
@@ -60,7 +62,8 @@ def LoadUserSongs(userID, len):
     songList = []
 
     for x in range(len):
-        songList.append(Song(play_response.json()['playerScores'][x]['leaderboard']['songName'],
+        songList.append(Song(play_response.json()['playerScores'][x]['leaderboard']['id'],
+                             play_response.json()['playerScores'][x]['leaderboard']['songName'],
                              play_response.json()['playerScores'][x]['leaderboard']['songAuthorName'],
                              play_response.json()['playerScores'][x]['leaderboard']['levelAuthorName'],
                              play_response.json()['playerScores'][x]['score']['timeSet'],
@@ -93,9 +96,33 @@ def getImage(img_url):
     pil_image.save(png_bio, format="PNG")
     return png_bio.getvalue()
 
+def sortByPP(songs):
+    return sorted(songs, key=lambda x: x.pp, reverse=True) 
+
+def sortByRecent(songs):
+    return sorted(songs, key=lambda x: datetime.datetime.strptime(x.timeSet, "%Y-%m-%dT%H:%M:%S.000Z")) 
+
+def sortByUnplayed(songs1, songs2):
+    def check(x1, songs):
+        for x2 in songs:
+            if x1.id == x2.id:
+                return True
+        return False
+    return [x for x in songs1 if not check(x, songs2)]
+
+def SortTest(SongList):
+    import random
+    random.shuffle(SongList)
+    SongList = sortByPP(SongList)
+    SongList = sortByRecent(SongList)
+    SongList2 = SongList.copy()
+    print(SongList[10])
+    del SongList2[10]
+    print(sortByUnplayed(SongList, SongList2))
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     User1 = loadUser(76561198002500746)
     SongList = LoadUserSongs(76561198002500746, 100)
+    SortTest(SongList.copy())
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
