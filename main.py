@@ -23,10 +23,11 @@ class User:
 
 
 class Song:
-    def __init__(self, name, artist, mapper, stars, score, accuracy, pp, img, fullCombo, maxCombo, badCuts, misses):
+    def __init__(self, name, artist, mapper, timeSet, stars, score, accuracy, pp, img, fullCombo, maxCombo, badCuts, misses):
         self.name = name
         self.artist = artist
         self.mapper = mapper
+        self.mapper = timeSet
         self.stars = stars
         self.score = score
         self.accuracy = accuracy
@@ -62,6 +63,7 @@ def LoadUserSongs(userID, len):
         songList.append(Song(play_response.json()['playerScores'][x]['leaderboard']['songName'],
                              play_response.json()['playerScores'][x]['leaderboard']['songAuthorName'],
                              play_response.json()['playerScores'][x]['leaderboard']['levelAuthorName'],
+                             play_response.json()['playerScores'][x]['score']['timeSet'],
                              play_response.json()['playerScores'][x]['leaderboard']['stars'],
                              play_response.json()['playerScores'][x]['score']['baseScore'],
                              100 * (play_response.json()['playerScores'][x]['score']['baseScore'] / play_response.json()['playerScores'][x]['leaderboard']['maxScore']),
