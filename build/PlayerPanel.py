@@ -19,10 +19,13 @@ import PySimpleGUI as sg
 import cloudscraper
 import urllib
 import datetime
+from svglib.svglib import svg2rlg
+from reportlab.graphics import renderPDF, renderPM
+
+# https://stackoverflow.com/questions/55943631/putting-svg-images-into-tkinter-frame
 
 OUTPUT_PATH = Path(__file__).parent
 ASSETS_PATH = OUTPUT_PATH / Path("C:/Documents/GitHub/BSScoreComparator/build/assets/frame0")
-
 
 class User:
     def __init__(self, name, country, pp, globalRank, localRank, rankedAcc, rankedCount, icon):
