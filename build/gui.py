@@ -99,14 +99,15 @@ canvas.create_text(
     font=("Inter", 24 * -1)
 )
 
+image_globe = PhotoImage(
+    file=relative_to_assets("globe.png"))
 canvas.create_rectangle(
     151.0,
     59.0,
-    189.0,
-    97.0,
-    fill="#FFFFFF",
-    outline="")
+    image=image_globe
+)
 
+#svg icon stuff
 canvas.create_rectangle(
     150.0,
     99.0,
