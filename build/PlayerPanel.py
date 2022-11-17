@@ -154,21 +154,17 @@ canvas.create_text(
     font=("Inter", 24 * -1)
 )
 
-canvas.create_rectangle(
-    151.0,
-    59.0,
-    189.0,
-    97.0,
-    fill="#FFFFFF",
-    outline="")
+image_globe = PhotoImage(
+    file=relative_to_assets("globe.png"))
+canvas.create_image(
+    172.0,
+    76.0,
+    image=image_globe)
 
-canvas.create_rectangle(
-    150.0,
-    99.0,
-    189.0,
-    128.0,
-    fill="#000000",
-    outline="")
+canvas.create_image(
+    172.0,
+    114.0,
+    image=image_globe)
 
 # image_image_1 = PhotoImage(
 #     file=relative_to_assets("image_1.png"))
