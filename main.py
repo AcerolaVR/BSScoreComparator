@@ -1,4 +1,6 @@
 import tkinter
+from urllib.request import urlopen
+
 import requests
 import json
 import io
@@ -13,7 +15,7 @@ sg.theme('DarkAmber')
 
 
 class User:
-    def __init__(self, name, country, pp, globalRank, localRank, rankedAcc, rankedCount):
+    def __init__(self, name, country, pp, globalRank, localRank, rankedAcc, rankedCount, icon):
         self.name = name
         self.country = country
         self.pp = pp
@@ -21,6 +23,7 @@ class User:
         self.localRank = localRank
         self.rankedAcc = rankedAcc
         self.rankedCount = rankedCount
+        self.icon = icon
 
 
 class Song:
@@ -50,7 +53,8 @@ def loadUser(userID):
                    user_response.json()["rank"],
                    user_response.json()["countryRank"],
                    user_response.json()['scoreStats']["averageRankedAccuracy"],
-                   user_response.json()['scoreStats']["rankedPlayCount"])
+                   user_response.json()['scoreStats']["rankedPlayCount"],
+                   user_response.json()['profilePicture'])
 
     return newUser
 
@@ -83,18 +87,12 @@ def LoadUserSongs(userID, len):
 
 
 def getImage(img_url):
-    jpg_data = (
-        cloudscraper.create_scraper(
-            browser={"browser": "firefox", "platform": "windows", "mobile": False}
-        )
-            .get(img_url)
-            .content
-    )
+    u = urlopen(img_url)
+    raw_data = u.read()
+    u.close()
 
-    pil_image = Image.open(io.BytesIO(jpg_data))
-    png_bio = io.BytesIO()
-    pil_image.save(png_bio, format="PNG")
-    return png_bio.getvalue()
+    im = Image.open(io.BytesIO(raw_data))
+    return ImageTk.PhotoImage(im)
 
 def sortByPP(songs):
     return sorted(songs, key=lambda x: x.pp, reverse=True) 
@@ -124,5 +122,6 @@ def SortTest(SongList):
 if __name__ == '__main__':
     User1 = loadUser(76561198002500746)
     SongList = LoadUserSongs(76561198002500746, 100)
+    print(SongList)
     SortTest(SongList.copy())
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
