@@ -27,6 +27,7 @@ from reportlab.graphics import renderPDF, renderPM
 OUTPUT_PATH = Path(__file__).parent
 ASSETS_PATH = OUTPUT_PATH / Path("C:/Documents/GitHub/BSScoreComparator/build/assets/frame0")
 
+
 class User:
     def __init__(self, name, country, pp, globalRank, localRank, rankedAcc, rankedCount, icon):
         self.name = name
@@ -68,11 +69,23 @@ def getIcon(img_url):
     return ImageTk.PhotoImage(pil_image)
 
 
-User1 = loadUser(76561198002500746)
+def getFlag(countryCode):
+    pil_image = open('C:/Documents/GitHub/BSScoreComparator/build/assets/frame0/flags/' + countryCode + '.png')
+    return ImageTk.PhotoImage(pil_image)
+
+
+User1 = loadUser(76561198002500746) #Acerola
+# User1 = loadUser(76561198404774259) #SilentBang
+# User1 = loadUser(76561198333869741) #Cerret
+
 
 
 def relative_to_assets(path: str) -> Path:
     return ASSETS_PATH / Path(path)
+
+
+def relative_to_flag(path: str) -> Path:
+    return ASSETS_PATH / Path(path) / "flags"
 
 
 window = Tk()
@@ -95,7 +108,7 @@ canvas.create_text(
     201.0,
     64.0,
     anchor="nw",
-    text="#1,218",
+    text= "#" + str(User1.globalRank),
     fill="#FFFFFF",
     font=("Inter", 24 * -1)
 )
@@ -104,7 +117,7 @@ canvas.create_text(
     199.0,
     100.0,
     anchor="nw",
-    text="#525",
+    text="#" + str(User1.localRank),
     fill="#FFFFFF",
     font=("Inter", 24 * -1)
 )
@@ -161,10 +174,12 @@ canvas.create_image(
     76.0,
     image=image_globe)
 
+image_flag = PhotoImage(
+    file=relative_to_assets("flags/" + User1.country +".png"))
 canvas.create_image(
-    172.0,
-    114.0,
-    image=image_globe)
+    170.0,
+    112.0,
+    image=image_flag)
 
 # image_image_1 = PhotoImage(
 #     file=relative_to_assets("image_1.png"))
