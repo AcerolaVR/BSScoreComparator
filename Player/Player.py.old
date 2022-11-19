@@ -1,0 +1,204 @@
+from pathlib import Path
+
+# from tkinter import *
+# Explicit imports to satisfy Flake8
+from tkinter import *
+
+import requests
+import io
+import os
+from PIL import Image, ImageTk
+import cloudscraper
+
+from PlayerPanel.PlayerPanel import ViewPlayer
+# from EditPanel.EditPanel import EditPlayer
+
+ASSETS_PATH = os.path.dirname(__file__)
+ASSETS_PATH = os.path.join(ASSETS_PATH, 'assets/frame0')
+
+def relative_to_assets(path: str) -> Path:
+    return ASSETS_PATH / Path(path)
+
+
+# def rooms():
+#     Player()
+
+
+# class Player(Frame):
+#     def __init__(self, parent, controller=None, *args, **kwargs):
+#         Frame.__init__(self, parent, *args, **kwargs)
+#         self.parent = parent
+#
+#         self.configure(bg="#343638")
+#
+#         # Loop through windows and place them
+#         self.windows = {
+#             "player": ViewPlayer(self),
+#             # "edit": EditPanel(self),
+#             # "recent": RecentPanel(self),
+#         }
+#
+#         self.current_window = self.windows["player"]
+#         self.current_window.place(x=0, y=0, width=540.0, height=240.0)
+#
+#         self.current_window.tkraise()
+#
+#     def navigate(self, name):
+#         # Hide all screens
+#         for window in self.windows.values():
+#             window.place_forget()
+#
+#         # Show the screen of the button pressed
+#         self.windows[name].place(x=0, y=0, width=540.0, height=240.0)
+
+# window = Tk()
+# window.title("Tkinter Designer")
+#
+# window.geometry("862x519")
+# window.configure(bg="#3A7FF6")
+#
+# current_window = Frame
+# current_window_label = StringVar()
+#
+# canvas = Canvas(
+#     window, bg="#3A7FF6", height=280, width=580,
+#     bd=0, highlightthickness=0, relief="ridge")
+#
+# canvas.place(x=0, y=0)
+#
+# current_window.place(x=20, y=20, width=540.0, height=240.0)
+#
+# current_window.tkraise(window)
+# window.resizable(False, False)
+# window.mainloop()
+#
+# # Loop through windows and place them
+# windows = {
+#     # "player": Player(),
+#     # "edit": EditPanel(),
+#     # "recent": RecentPanel(),
+# }
+#
+# window.resizable(False, False)
+# window.mainloop()
+
+class MainWindow(Toplevel):
+    global user
+
+    def __init__(self, *args, **kwargs):
+        Toplevel.__init__(self, *args, **kwargs)
+
+        self.title("BSSC User")
+
+        self.geometry("1012x360")
+        self.configure(bg="#5E95FF")
+
+        # self.current_window = None
+        self.current_window = None
+
+        self.canvas = Canvas(
+            self,
+            bg="#5E95FF",
+            height=360,
+            width=1012,
+            bd=0,
+            highlightthickness=0,
+            relief="ridge",
+        )
+
+        self.canvas.place(x=0, y=0)
+
+        self.canvas.create_rectangle(
+            215, 0.0, 1012.0, 240.0, fill="#FFFFFF", outline=""
+        )
+
+        # Add a frame rectangle
+        self.sidebar_indicator = Frame(self, background="#FFFFFF")
+
+        self.sidebar_indicator.place(x=0, y=133, height=47, width=7)
+
+        self.heading = self.canvas.create_text(
+            255.0,
+            33.0,
+            anchor="nw",
+            text="Hello",
+            fill="#5E95FF",
+            font=("Montserrat Bold", 26 * -1),
+        )
+
+        self.canvas.create_text(
+            28.0,
+            21.0,
+            anchor="nw",
+            text="HotinGo",
+            fill="#FFFFFF",
+            font=("Montserrat Bold", 36 * -1),
+        )
+
+        self.canvas.create_text(
+            844.0,
+            43.0,
+            anchor="nw",
+            text="Administrator",
+            fill="#808080",
+            font=("Montserrat Bold", 16 * -1),
+        )
+
+        self.canvas.create_text(
+            341.0,
+            213.0,
+            anchor="nw",
+            text="(The screens below",
+            fill="#5E95FF",
+            font=("Montserrat Bold", 48 * -1),
+        )
+
+        self.canvas.create_text(
+            420.0,
+            272.0,
+            anchor="nw",
+            text="will come here)",
+            fill="#5E95FF",
+            font=("Montserrat Bold", 48 * -1),
+        )
+
+        # Loop through windows and place them
+        self.windows = {
+            "player": ViewPlayer(self),
+            # "edit": EditPanel(self),
+            # "recent": RecentPanel(self),
+        }
+
+        self.handle_btn_press(self.dashboard_btn, "player")
+        self.sidebar_indicator.place(x=0, y=0)
+
+        self.current_window.place(x=0, y=0, width=540.0, height=240.0)
+
+        self.current_window.tkraise()
+        self.resizable(False, False)
+        self.mainloop()
+
+        def place_sidebar_indicator(self):
+            pass
+
+        def handle_btn_press(self, caller, name):
+            # Place the sidebar on respective button
+            self.sidebar_indicator.place(x=0, y=caller.winfo_y())
+
+            # Hide all screens
+            for window in self.windows.values():
+                window.place_forget()
+
+            # Set ucrrent Window
+            self.current_window = self.windows.get(name)
+
+            # Show the screen of the button pressed
+            self.windows[name].place(x=215, y=72, width=1013.0, height=506.0)
+
+            # Handle label change
+            current_name = self.windows.get(name)._name.split("!")[-1].capitalize()
+            self.canvas.itemconfigure(self.heading, text=current_name)
+
+        def handle_dashboard_refresh(self):
+            # Recreate the dash window
+            self.windows["player"] = ViewPlayer(self)
