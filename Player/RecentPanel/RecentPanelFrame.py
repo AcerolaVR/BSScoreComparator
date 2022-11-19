@@ -58,10 +58,10 @@ class RecentPlayer(Frame):
             width=500,
         )
 
-        button_image_1 = PhotoImage(file=relative_to_assets("button_1.png"))
+        self.button_image_1 = PhotoImage(file=relative_to_assets("button_1.png"))
         self.button_1 = Button(
             self.canvas,
-            image=button_image_1,
+            image=self.button_image_1,
             borderwidth=0,
             highlightthickness=0,
             command=lambda: print("button_1 clicked"),
@@ -75,10 +75,10 @@ class RecentPlayer(Frame):
             height=30.0
         )
 
-        button_image_2 = PhotoImage(file=relative_to_assets("button_2.png"))
+        self.button_image_2 = PhotoImage(file=relative_to_assets("button_2.png"))
         self.button_2 = Button(
             self.canvas,
-            image=button_image_2,
+            image=self.button_image_2,
             borderwidth=0,
             highlightthickness=0,
             command=lambda: print("button_2 clicked"),
