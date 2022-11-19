@@ -40,20 +40,20 @@ canvas.place(x=0, y=0)
 
 canvas.create_text(
     10.0,
-    80.0,
-    anchor="nw",
-    text="Accepts Usernames, Scoresaber URLs, and Scoresaber IDs",
-    fill="#A2A4A6",
-    font=("Inter", 16 * -1)
-)
-
-canvas.create_text(
-    10.0,
     0.0,
     anchor="nw",
     text="Enter Player Here",
     fill="#FFFFFF",
     font=("Inter", 36 * -1)
+)
+
+canvas.create_text(
+    10.0,
+    80.0,
+    anchor="nw",
+    text="Accepts Usernames, Scoresaber URLs, and Scoresaber IDs",
+    fill="#A2A4A6",
+    font=("Inter", 16 * -1)
 )
 
 button_image_1 = PhotoImage(

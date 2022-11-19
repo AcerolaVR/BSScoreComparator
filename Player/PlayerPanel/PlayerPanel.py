@@ -69,9 +69,9 @@ def getFlag(countryCode):
     return ImageTk.PhotoImage(pil_image)
 
 
-User1 = loadUser(76561198002500746) #Acerola
+# User1 = loadUser(76561198002500746) #Acerola
 # User1 = loadUser(76561198404774259) #SilentBang
-# User1 = loadUser(76561198333869741) #Cerret
+User1 = loadUser(76561198333869741) #Cerret
 
 
 
