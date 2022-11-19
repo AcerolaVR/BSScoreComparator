@@ -56,7 +56,7 @@ canvas.create_text(
     font=("Inter", 16 * -1)
 )
 
-button_image_1 = PhotoImage(self
+button_image_1 = PhotoImage(
     file=relative_to_assets("button_1.png"))
 button_1 = Button(
     image=button_image_1,
@@ -72,7 +72,7 @@ button_1.place(
     height=25.0
 )
 
-button_image_2 = PhotoImage(self
+button_image_2 = PhotoImage(
     file=relative_to_assets("button_2.png"))
 button_2 = Button(
     image=button_image_2,
@@ -88,7 +88,7 @@ button_2.place(
     height=29.0
 )
 
-button_image_3 = PhotoImage(self
+button_image_3 = PhotoImage(
     file=relative_to_assets("button_3.png"))
 button_3 = Button(
     image=button_image_3,
@@ -104,7 +104,7 @@ button_3.place(
     height=30.0
 )
 
-entry_image_1 = PhotoImage(self
+entry_image_1 = PhotoImage(
     file=relative_to_assets("entry_1.png"))
 entry_bg_1 = canvas.create_image(
     270.0,

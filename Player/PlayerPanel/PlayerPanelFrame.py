@@ -162,26 +162,22 @@ class ViewPlayer(Frame):
             font=("Inter", 24 * -1)
         )
 
-        image_globe = PhotoImage(
+        self.image_globe = PhotoImage(
             file=relative_to_assets("globe.png"))
         self.canvas.create_image(
             172.0,
             76.0,
-            image=image_globe)
+            image=self.image_globe)
 
-        image_flag = PhotoImage(
+        self.image_flag = PhotoImage(
             file=relative_to_assets("flags/" + User1.country +".png"))
         self.canvas.create_image(
             170.0,
             112.0,
-            image=image_flag)
+            image=self.image_flag)
 
-        image_icon = getIcon(User1.icon)
-        image_PlayerIcon = self.canvas.create_image(
-            74.0,
-            74.0,
-            image=image_icon
-        )
+        self.image_icon = getIcon(User1.icon)
+        image_PlayerIcon = self.canvas.create_image( 74.0, 74.0, image=self.image_icon )
 
         self.canvas.create_rectangle(
             10.0,
@@ -191,16 +187,17 @@ class ViewPlayer(Frame):
             fill="#B71C1C",
             outline="")
 
-        button_playerEditImg = PhotoImage(
-            file=relative_to_assets("button_1.png"))
-        button_playerEdit = Button(
-            image=button_playerEditImg,
+        self.button_playerEditImg = PhotoImage(file=relative_to_assets("button_1.png"))
+        self.button_playerEdit = Button(
+            self.canvas,
+            image=self.button_playerEditImg,
             borderwidth=0,
             highlightthickness=0,
             command=lambda: print("button_1 clicked"),
             relief="flat"
         )
-        button_playerEdit.place(
+
+        self.button_playerEdit.place(
             x=426.0,
             y=177.0,
             width=110.0,
