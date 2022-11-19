@@ -18,7 +18,6 @@ import cloudscraper
 ASSETS_PATH = os.path.dirname(__file__)
 ASSETS_PATH = os.path.join(ASSETS_PATH, 'assets/frame0')
 
-
 def relative_to_assets(path: str) -> Path:
     return ASSETS_PATH / Path(path)
 
