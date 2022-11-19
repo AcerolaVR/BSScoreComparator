@@ -7,6 +7,7 @@ except ImportError:
     import Tkinter as tk     # python 2
     import tkFont as tkfont  # python 2
 
+from EditPanel.EditPanelFrame import EditPlayer
 from PlayerPanel.PlayerPanelFrame import ViewPlayer
 from RecentPanel.RecentPanelFrame import RecentPlayer
 
@@ -35,7 +36,7 @@ class PlayerWidget(tk.Tk):
         container.grid_columnconfigure(0, weight=1)
 
         self.frames = {}
-        for F in (StartPage, ViewPlayer, RecentPlayer):
+        for F in (EditPlayer, ViewPlayer, RecentPlayer):
         # for F in (StartPage, RecentPlayer):
             page_name = F.__name__
             frame = F(parent=container, controller=self)
@@ -46,41 +47,15 @@ class PlayerWidget(tk.Tk):
             # will be the one that is visible.
             frame.grid(row=0, column=0, sticky="nsew")
 
-        self.show_frame("StartPage")
+        self.show_frame("EditPlayer")
 
     def show_frame(self, page_name):
         '''Show a frame for the given page name'''
         frame = self.frames[page_name]
         frame.tkraise()
 
-
-class StartPage(tk.Frame):
-
-    def __init__(self, parent, controller):
-        tk.Frame.__init__(self, parent)
-        self.controller = controller
-        label = tk.Label(self, text="This is the start page", font=controller.title_font)
-        label.pack(side="top", fill="x", pady=10)
-
-        button1 = tk.Button(self, text="Go to Page One",
-                            command=lambda: controller.show_frame("ViewPlayer"))
-        button2 = tk.Button(self, text="Go to Page Two",
-                            command=lambda: controller.show_frame("RecentPlayer"))
-        button1.pack()
-        button2.pack()
-
-class PageTwo(tk.Frame):
-
-    def __init__(self, parent, controller):
-        tk.Frame.__init__(self, parent)
-        self.controller = controller
-        label = tk.Label(self, text="This is page 2", font=controller.title_font)
-        label.pack(side="top", fill="x", pady=10)
-        button = tk.Button(self, text="Go to the start page",
-                           command=lambda: controller.show_frame("StartPage"))
-        button.pack()
-
 if __name__ == "__main__":
     app = PlayerWidget()
+    app.geometry('540x240')
     # app.resizable(False, False)
     app.mainloop()
