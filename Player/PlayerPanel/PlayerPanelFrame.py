@@ -193,7 +193,7 @@ class ViewPlayer(Frame):
             image=self.button_playerEditImg,
             borderwidth=0,
             highlightthickness=0,
-            command=lambda: print("button_1 clicked"),
+            command=lambda: self.parent.navigate("recent"),
             relief="flat"
         )
 

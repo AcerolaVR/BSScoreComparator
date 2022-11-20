@@ -81,7 +81,7 @@ class RecentPlayer(Frame):
             image=self.button_image_2,
             borderwidth=0,
             highlightthickness=0,
-            command=lambda: print("button_2 clicked"),
+            command=lambda: self.parent.navigate("view"),
             relief="flat"
         )
 

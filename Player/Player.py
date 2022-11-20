@@ -1,61 +1,51 @@
 try:
-    import tkinter as tk                # python 3
+    import tkinter as tk  # python 3
     from tkinter import font as tkfont  # python 3
     from tkinter import Tk, Canvas, Listbox, Entry, Text, Button, PhotoImage, END, Frame
 
 except ImportError:
-    import Tkinter as tk     # python 2
+    import Tkinter as tk  # python 2
     import tkFont as tkfont  # python 2
 
-from EditPanel.EditPanelFrame import EditPlayer
 from PlayerPanel.PlayerPanelFrame import ViewPlayer
+# from EditPanel.EditPanelFrame import EditPlayer
 from RecentPanel.RecentPanelFrame import RecentPlayer
 
-class PlayerWidget(tk.Tk):
+class PlayerWidget(Frame):
+    def __init__(self, parent, controller=None, *args, **kwargs):
+        Frame.__init__(self, parent, *args, **kwargs)
+        self.parent = parent
 
-    def __init__(self, *args, **kwargs):
-        tk.Tk.__init__(self, *args, **kwargs)
+        self.configure(bg="#343638")
 
-        self.canvas = Canvas(
-            self,
-            bg="#343638",
-            height=240,
-            width=540,
-            bd=0,
-            highlightthickness=0,
-        )
+        # Loop through windows and place them
+        self.windows = {
+            "view": ViewPlayer(self),
+            # "edit": EditPlayer(self),
+            "recent": RecentPlayer(self),
+        }
 
-        self.title_font = tkfont.Font(family='Helvetica', size=18, weight="bold", slant="italic")
+        self.current_window = self.windows["view"]
+        self.current_window.place(x=0, y=0, width=540.0, height=240.0)
 
-        # the container is where we'll stack a bunch of frames
-        # on top of each other, then the one we want visible
-        # will be raised above the others
-        container = tk.Frame(self)
-        container.pack(side="top", fill="both", expand=True)
-        container.grid_rowconfigure(0, weight=1)
-        container.grid_columnconfigure(0, weight=1)
+        self.current_window.tkraise()
 
-        self.frames = {}
-        for F in (EditPlayer, ViewPlayer, RecentPlayer):
-        # for F in (StartPage, RecentPlayer):
-            page_name = F.__name__
-            frame = F(parent=container, controller=self)
-            self.frames[page_name] = frame
+    def navigate(self, name):
+        # Hide all screens
+        for window in self.windows.values():
+            window.place_forget()
 
-            # put all of the pages in the same location;
-            # the one on the top of the stacking order
-            # will be the one that is visible.
-            frame.grid(row=0, column=0, sticky="nsew")
-
-        self.show_frame("EditPlayer")
-
-    def show_frame(self, page_name):
-        '''Show a frame for the given page name'''
-        frame = self.frames[page_name]
-        frame.tkraise()
+        # Show the screen of the button pressed
+        self.windows[name].place(x=0, y=0, width=540.0, height=240.0)
 
 if __name__ == "__main__":
-    app = PlayerWidget()
-    app.geometry('540x240')
-    # app.resizable(False, False)
-    app.mainloop()
+    test = Tk()
+
+    test.geometry("1000x1000")
+    test.configure(bg="#343638")
+
+    PlayerFrame = PlayerWidget(test, bg="#343638", width=540, height=240)
+    PlayerFrame.place(x=0, y=0, width=540.0, height=240.0)
+
+    test.resizable(False, False)
+    test.mainloop()
