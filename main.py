@@ -108,6 +108,18 @@ def sortByUnplayed(songs1, songs2):
         return False
     return [x for x in songs1 if not check(x, songs2)]
 
+def getCorrespondingList(songs1, songs2):
+    def getSong(x1, songs):
+        for x2 in songs:
+            if x1.id == x2.id:
+                return x2
+        return None
+
+    ret = []
+    for x in songs1:
+        ret.append(getSong(x, songs2))
+    return ret
+
 def SortTest(SongList):
     import random
     random.shuffle(SongList)
