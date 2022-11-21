@@ -16,14 +16,16 @@ import cloudscraper
 ASSETS_PATH = os.path.dirname(__file__)
 ASSETS_PATH = os.path.join(ASSETS_PATH, 'assets/frame0')
 
+
 def relative_to_assets(path: str) -> Path:
     return ASSETS_PATH / Path(path)
+
 
 class EditPlayer(Frame):
     def __init__(self, parent, controller=None, *args, **kwargs):
         Frame.__init__(self, parent, *args, **kwargs)
         self.parent = parent
-        self.entryData = 76561198404774259
+        self.entryData = 0
 
         self.configure(bg="#343638")
 
@@ -95,7 +97,7 @@ class EditPlayer(Frame):
             image=self.button_view_3,
             borderwidth=0,
             highlightthickness=0,
-            command=lambda: self.parent.navigate("view"),
+            command=lambda: self.LoadPlayerView(),
             relief="flat"
         )
         self.button_view.place(
@@ -114,11 +116,12 @@ class EditPlayer(Frame):
         )
         entry_1 = Entry(
             self,
+            textvariable=self.entryData,
             bd=0,
             bg="#D9D9D9",
             fg="#000716",
             highlightthickness=0,
-            font = ("Inter", 16 * -1),
+            font=("Inter", 16 * -1),
         )
         entry_1.place(
             x=10.0,
@@ -130,5 +133,9 @@ class EditPlayer(Frame):
 
     def LoadPlayerView(self):
         print(self.entryData)
-        self.parent.player = self.parent.loadUser(self.entryData)
+        # self.parent.player = self.parent.loadUser(self.entryData)
+        self.parent.player = self.parent.loadUser(76561198333869741)
+        print(self.parent.player.name)
+        self.parent.windows["view"].destroy()
+        self.parent.windows["view"].__init__(self.parent)
         self.parent.navigate("view")

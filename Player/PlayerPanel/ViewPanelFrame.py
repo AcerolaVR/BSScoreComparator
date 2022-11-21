@@ -159,7 +159,7 @@ class ViewPlayer(Frame):
             image=self.button_playerEditImg,
             borderwidth=0,
             highlightthickness=0,
-            command=lambda: self.parent.navigate("recent"),
+            command=lambda: self.parent.navigate("edit"),
             relief="flat"
         )
 
