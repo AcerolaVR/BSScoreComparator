@@ -8,7 +8,7 @@ except ImportError:
     import tkFont as tkfont  # python 2
 
 from PlayerPanel.PlayerPanelFrame import ViewPlayer
-# from EditPanel.EditPanelFrame import EditPlayer
+from EditPanel.EditPanelFrame import EditPlayer
 from RecentPanel.RecentPanelFrame import RecentPlayer
 
 class PlayerWidget(Frame):
@@ -21,12 +21,12 @@ class PlayerWidget(Frame):
         # Loop through windows and place them
         self.windows = {
             "view": ViewPlayer(self),
-            # "edit": EditPlayer(self),
+            "edit": EditPlayer(self),
             "recent": RecentPlayer(self),
         }
 
-        self.current_window = self.windows["view"]
-        self.current_window.place(x=0, y=0, width=540.0, height=240.0)
+        self.current_window = self.windows["edit"]
+        self.navigate("edit")
 
         self.current_window.tkraise()
 
@@ -41,11 +41,14 @@ class PlayerWidget(Frame):
 if __name__ == "__main__":
     test = Tk()
 
-    test.geometry("1000x1000")
+    test.geometry("1100x300")
     test.configure(bg="#343638")
 
-    PlayerFrame = PlayerWidget(test, bg="#343638", width=540, height=240)
-    PlayerFrame.place(x=0, y=0, width=540.0, height=240.0)
+    PlayerFrame1 = PlayerWidget(test, bg="#343638", width=540, height=240)
+    PlayerFrame1.place(x=0, y=0, width=540.0, height=240.0)
+
+    PlayerFrame2 = PlayerWidget(test, bg="#343638", width=540, height=240)
+    PlayerFrame2.place(x=540, y=0, width=540.0, height=240.0)
 
     test.resizable(False, False)
     test.mainloop()
