@@ -88,8 +88,8 @@ if __name__ == "__main__":
     # Player1 = loadUser(76561198404774259) #SilentBang
     # Player2 = loadUser(76561198333869741) #Cerret
 
-    Player1 = loadUser(76561198404774259)
-    Player2 = loadUser(76561198333869741)
+    Player1 = loadUser(76561198002500746)
+    Player2 = loadUser(76561198002500746)
 
     test.geometry("1100x300")
     test.configure(bg="#343638")
