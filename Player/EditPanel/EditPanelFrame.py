@@ -55,48 +55,49 @@ class EditPlayer(Frame):
             font=("Inter", 16 * -1)
         )
 
-        self.button_image_1 = PhotoImage(
-            file=relative_to_assets("button_1.png"))
-        self.button_1 = Button(
-            image=self.button_image_1,
+        self.button_scoresaber_1 = PhotoImage(file=relative_to_assets("button_1.png"))
+        self.button_scoresaber = Button(
+            self.canvas,
+            image=self.button_scoresaber_1,
             borderwidth=0,
             highlightthickness=0,
             command=lambda: webbrowser.open('https://scoresaber.com/rankings'),
             relief="flat"
         )
-        self.button_1.place(
+        self.button_scoresaber.place(
             x=10.0,
             y=204.0,
             width=190.0,
             height=25.0
         )
 
-        self.button_image_2 = PhotoImage(
-            file=relative_to_assets("button_2.png"))
-        self.button_2 = Button(
-            image=self.button_image_2,
+        self.button_recents_2 = PhotoImage(file=relative_to_assets("button_2.png"))
+        self.recents = Button(
+            self.canvas,
+            image=self.button_recents_2,
             borderwidth=0,
             highlightthickness=0,
-            command=lambda: print("button_2 clicked"),
+            command=lambda: self.parent.navigate("recent"),
             relief="flat"
         )
-        self.button_2.place(
+        self.recents.place(
             x=260.0,
             y=200.0,
             width=115.0,
             height=29.0
         )
 
-        self.button_image_3 = PhotoImage(
+        self.button_view_3 = PhotoImage(
             file=relative_to_assets("button_3.png"))
-        self.button_3 = Button(
-            image=self.button_image_3,
+        self.button_view = Button(
+            self.canvas,
+            image=self.button_view_3,
             borderwidth=0,
             highlightthickness=0,
             command=lambda: self.parent.navigate("view"),
             relief="flat"
         )
-        self.button_3.place(
+        self.button_view.place(
             x=378.0,
             y=199.0,
             width=152.0,
@@ -111,6 +112,7 @@ class EditPlayer(Frame):
             image=self.entry_image_1
         )
         self.entry_1 = Entry(
+            self,
             bd=0,
             bg="#D9D9D9",
             fg="#000716",
