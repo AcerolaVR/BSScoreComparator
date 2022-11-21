@@ -23,33 +23,6 @@ import datetime
 ASSETS_PATH = os.path.dirname(__file__)
 ASSETS_PATH = os.path.join(ASSETS_PATH, 'assets/frame0')
 
-class User:
-    def __init__(self, name, country, pp, globalRank, localRank, rankedAcc, rankedCount, icon):
-        self.name = name
-        self.country = country
-        self.pp = pp
-        self.globalRank = globalRank
-        self.localRank = localRank
-        self.rankedAcc = rankedAcc
-        self.rankedCount = rankedCount
-        self.icon = icon
-
-
-def loadUser(userID):
-    user_response = requests.get('https://scoresaber.com/api/player/' + str(userID) + '/full')
-
-    newUser = User(user_response.json()["name"],
-                   user_response.json()["country"],
-                   user_response.json()["pp"],
-                   user_response.json()["rank"],
-                   user_response.json()["countryRank"],
-                   user_response.json()['scoreStats']["averageRankedAccuracy"],
-                   user_response.json()['scoreStats']["rankedPlayCount"],
-                   user_response.json()['profilePicture'])
-
-    return newUser
-
-
 def getIcon(img_url):
     jpg_data = (
         cloudscraper.create_scraper(
@@ -67,13 +40,6 @@ def getIcon(img_url):
 def getFlag(countryCode):
     pil_image = open('C:/Documents/GitHub/BSScoreComparator/build/assets/frame0/flags/' + countryCode + '.png')
     return ImageTk.PhotoImage(pil_image)
-
-
-User1 = loadUser(76561198002500746) #Acerola
-# User1 = loadUser(76561198404774259) #SilentBang
-# User1 = loadUser(76561198333869741) #Cerret
-
-
 
 def relative_to_assets(path: str) -> Path:
     return ASSETS_PATH / Path(path)
@@ -103,7 +69,7 @@ class ViewPlayer(Frame):
             201.0,
             64.0,
             anchor="nw",
-            text= "#" + str(User1.globalRank),
+            text= "#" + str(self.parent.player.globalRank),
             fill="#FFFFFF",
             font=("Inter", 24 * -1)
         )
@@ -112,7 +78,7 @@ class ViewPlayer(Frame):
             199.0,
             100.0,
             anchor="nw",
-            text="#" + str(User1.localRank),
+            text="#" + str(self.parent.player.localRank),
             fill="#FFFFFF",
             font=("Inter", 24 * -1)
         )
@@ -121,7 +87,7 @@ class ViewPlayer(Frame):
             150.0,
             4.0,
             anchor="nw",
-            text=User1.name,
+            text=self.parent.player.name,
             fill="#FFFFFF",
             font=("Inter", 48 * -1)
         )
@@ -139,7 +105,7 @@ class ViewPlayer(Frame):
             260.0,
             139.0,
             anchor="nw",
-            text=User1.rankedCount,
+            text=self.parent.player.rankedCount,
             fill="#FFFFFF",
             font=("Inter", 24 * -1)
         )
@@ -157,7 +123,7 @@ class ViewPlayer(Frame):
             260.0,
             173.0,
             anchor="nw",
-            text=str(User1.rankedAcc)[0:5] + "%",
+            text=str(self.parent.player.rankedAcc)[0:5] + "%",
             fill="#FFFFFF",
             font=("Inter", 24 * -1)
         )
@@ -170,13 +136,13 @@ class ViewPlayer(Frame):
             image=self.image_globe)
 
         self.image_flag = PhotoImage(
-            file=relative_to_assets("flags/" + User1.country +".png"))
+            file=relative_to_assets("flags/" + self.parent.player.country +".png"))
         self.canvas.create_image(
             170.0,
             112.0,
             image=self.image_flag)
 
-        self.image_icon = getIcon(User1.icon)
+        self.image_icon = getIcon(self.parent.player.icon)
         image_PlayerIcon = self.canvas.create_image( 74.0, 74.0, image=self.image_icon )
 
         self.canvas.create_rectangle(
