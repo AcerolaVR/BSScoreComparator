@@ -23,6 +23,7 @@ class EditPlayer(Frame):
     def __init__(self, parent, controller=None, *args, **kwargs):
         Frame.__init__(self, parent, *args, **kwargs)
         self.parent = parent
+        self.entryData = 76561198404774259
 
         self.configure(bg="#343638")
 
@@ -111,16 +112,23 @@ class EditPlayer(Frame):
             62.0,
             image=self.entry_image_1
         )
-        self.entry_1 = Entry(
+        entry_1 = Entry(
             self,
             bd=0,
             bg="#D9D9D9",
             fg="#000716",
-            highlightthickness=0
+            highlightthickness=0,
+            font = ("Inter", 16 * -1),
         )
-        self.entry_1.place(
+        entry_1.place(
             x=10.0,
             y=46.0,
             width=520.0,
             height=30.0
         )
+        self.entryData = entry_1
+
+    def LoadPlayerView(self):
+        print(self.entryData)
+        self.parent.player = self.parent.loadUser(self.entryData)
+        self.parent.navigate("view")
