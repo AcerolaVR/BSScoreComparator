@@ -114,7 +114,7 @@ class EditPlayer(Frame):
             62.0,
             image=self.entry_image_1
         )
-        entry_1 = Entry(
+        self.entry_1 = Entry(
             self,
             textvariable=self.entryData,
             bd=0,
@@ -123,18 +123,20 @@ class EditPlayer(Frame):
             highlightthickness=0,
             font=("Inter", 16 * -1),
         )
-        entry_1.place(
+        self.entry_1.place(
             x=10.0,
             y=46.0,
             width=520.0,
             height=30.0
         )
-        self.entryData = entry_1
+        self.entryData = self.entry_1
 
     def LoadPlayerView(self):
-        print(self.entryData)
+        print(self.entry_1.get())
+        # print(self.entry_1)
+
         # self.parent.player = self.parent.loadUser(self.entryData)
-        self.parent.player = self.parent.loadUser(76561198333869741)
+        self.parent.player = self.parent.loadUser(self.entry_1.get())
         print(self.parent.player.name)
         self.parent.windows["view"].destroy()
         self.parent.windows["view"].__init__(self.parent)
