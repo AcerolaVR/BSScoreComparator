@@ -22,11 +22,9 @@ class ViewSong(Frame):
         Frame.__init__(self, parent, *args, **kwargs)
         self.parent = parent
 
-        self.configure(bg="#343638")
-
         self.canvas = Canvas(
             self,
-            bg = "#191B29",
+            bg = "#343638",
             height = 140,
             width = 400,
             bd = 0,
@@ -38,17 +36,25 @@ class ViewSong(Frame):
         self.image_image_1 = PhotoImage(
             file=relative_to_assets("image_1.png"))
         image_1 = self.canvas.create_image(
-            231.0,
-            112.0,
+            200.0,
+            70.0,
             image=self.image_image_1
         )
 
         self.image_image_2 = PhotoImage(
             file=relative_to_assets("image_2.png"))
         image_2 = self.canvas.create_image(
+            231.0,
+            112.0,
+            image=self.image_image_2
+        )
+
+        self.image_image_3 = PhotoImage(
+            file=relative_to_assets("image_3.png"))
+        image_3 = self.canvas.create_image(
             383.0,
             113.0,
-            image=self.image_image_2
+            image=self.image_image_3
         )
 
         self.canvas.create_text(
@@ -60,12 +66,12 @@ class ViewSong(Frame):
             font=("Inter", 16 * -1)
         )
 
-        self.image_image_3 = PhotoImage(
-            file=relative_to_assets("image_3.png"))
-        image_3 = self.canvas.create_image(
+        self.image_image_4 = PhotoImage(
+            file=relative_to_assets("image_4.png"))
+        image_4 = self.canvas.create_image(
             48.0,
             53.0,
-            image=self.image_image_3
+            image=self.image_image_4
         )
 
         self.canvas.create_text(
@@ -86,12 +92,12 @@ class ViewSong(Frame):
             font=("Inter", 16 * -1)
         )
 
-        self.image_image_4 = PhotoImage(
-            file=relative_to_assets("image_4.png"))
-        image_4 = self.canvas.create_image(
+        self.image_image_5 = PhotoImage(
+            file=relative_to_assets("image_5.png"))
+        image_5 = self.canvas.create_image(
             321.0,
             115.0,
-            image=self.image_image_4
+            image=self.image_image_5
         )
 
         self.canvas.create_text(
@@ -112,12 +118,12 @@ class ViewSong(Frame):
             font=("Inter", 16 * -1)
         )
 
-        self.image_image_5 = PhotoImage(
-            file=relative_to_assets("image_5.png"))
-        image_5 = self.canvas.create_image(
+        self.image_image_6 = PhotoImage(
+            file=relative_to_assets("image_6.png"))
+        image_6 = self.canvas.create_image(
             166.0,
             113.0,
-            image=self.image_image_5
+            image=self.image_image_6
         )
 
         self.canvas.create_text(
@@ -148,28 +154,20 @@ if __name__ == "__main__":
     papa_frame = Frame(canvas)
 
     left_frame = Frame(papa_frame)
+    left_frame.configure(bg="#343638")
 
-    PlayerFrame1 = ViewSong(left_frame, width=400, height=140)
-    PlayerFrame1.grid(row=0)
-
-    PlayerFrame2 = ViewSong(left_frame, width=400, height=140)
-    PlayerFrame2.grid(row=1)
-
-    PlayerFrame3 = ViewSong(left_frame, width=400, height=140)
-    PlayerFrame3.grid(row=2)
+    for i in range(3):
+        PlayerFrame = ViewSong(left_frame, width=400, height=140)
+        PlayerFrame.grid(row=i, padx=10, pady=10)
 
     left_frame.grid(column=0)
 
     right_frame = Frame(papa_frame)
+    right_frame.configure(bg="#343638")
 
-    PlayerFrame1 = ViewSong(right_frame, width=400, height=140)
-    PlayerFrame1.grid(row=0)
-
-    PlayerFrame2 = ViewSong(right_frame, width=400, height=140)
-    PlayerFrame2.grid(row=1)
-
-    PlayerFrame3 = ViewSong(right_frame, width=400, height=140)
-    PlayerFrame3.grid(row=2)
+    for i in range(3):
+        PlayerFrame = ViewSong(right_frame, width=400, height=140)
+        PlayerFrame.grid(row=i, padx=10, pady=10)
 
     right_frame.grid(row=0, column=1)
 
