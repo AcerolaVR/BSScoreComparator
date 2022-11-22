@@ -142,38 +142,47 @@ if __name__ == "__main__":
     root = Tk()
 
     root.geometry("1100x300")
-    root.configure(bg="#343638")
     
-    container = Frame(root)
-    canvas = Canvas(container)
-    scrollbar = Scrollbar(container, orient="vertical", command=canvas.yview)
-    frame = Frame(canvas)
+    canvas = Canvas(root)
+    scrollbar = Scrollbar(root, orient="vertical", command=canvas.yview)
+    papa_frame = Frame(canvas)
 
-    frame.bind(
+    left_frame = Frame(papa_frame)
+
+    PlayerFrame1 = ViewSong(left_frame, width=400, height=140)
+    PlayerFrame1.grid(row=0)
+
+    PlayerFrame2 = ViewSong(left_frame, width=400, height=140)
+    PlayerFrame2.grid(row=1)
+
+    PlayerFrame3 = ViewSong(left_frame, width=400, height=140)
+    PlayerFrame3.grid(row=2)
+
+    left_frame.grid(column=0)
+
+    right_frame = Frame(papa_frame)
+
+    PlayerFrame1 = ViewSong(right_frame, width=400, height=140)
+    PlayerFrame1.grid(row=0)
+
+    PlayerFrame2 = ViewSong(right_frame, width=400, height=140)
+    PlayerFrame2.grid(row=1)
+
+    PlayerFrame3 = ViewSong(right_frame, width=400, height=140)
+    PlayerFrame3.grid(row=2)
+
+    right_frame.grid(row=0, column=1)
+
+    papa_frame.bind(
         "<Configure>",
         lambda e: canvas.configure(
             scrollregion=canvas.bbox("all")
         )
     )
 
-    canvas.create_window((0, 0), window=frame, anchor="nw")
-
+    canvas.create_window((0, 0), window=papa_frame, anchor="nw")
     canvas.configure(yscrollcommand=scrollbar.set)
-    
-    #grid or pack will work
-    PlayerFrame1 = ViewSong(frame, width=400, height=140)
-    # PlayerFrame1.pack(side=TOP)
-    PlayerFrame1.grid(row=0, column=0)
-
-    PlayerFrame2 = ViewSong(frame, width=400, height=140)
-    # PlayerFrame2.pack(side=TOP)
-    PlayerFrame2.grid(row=1, column=0)
-
-    PlayerFrame3 = ViewSong(frame, width=400, height=140)
-    # PlayerFrame2.pack(side=TOP)
-    PlayerFrame3.grid(row=2, column=0)
-
-    container.pack(expand=True)
+    canvas.configure(bg="#343638")
     canvas.pack(side="left", fill="both", expand=True)
     scrollbar.pack(side="right", fill="y")
 
