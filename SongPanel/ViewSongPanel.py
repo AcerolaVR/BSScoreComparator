@@ -144,8 +144,21 @@ if __name__ == "__main__":
     root.geometry("1100x300")
     root.configure(bg="#343638")
     
-    frame = Frame(root)
-    frame.place(x=0, y=0)
+    container = Frame(root)
+    canvas = Canvas(container)
+    scrollbar = Scrollbar(container, orient="vertical", command=canvas.yview)
+    frame = Frame(canvas)
+
+    frame.bind(
+        "<Configure>",
+        lambda e: canvas.configure(
+            scrollregion=canvas.bbox("all")
+        )
+    )
+
+    canvas.create_window((0, 0), window=frame, anchor="nw")
+
+    canvas.configure(yscrollcommand=scrollbar.set)
     
     #grid or pack will work
     PlayerFrame1 = ViewSong(frame, width=400, height=140)
@@ -159,6 +172,10 @@ if __name__ == "__main__":
     PlayerFrame3 = ViewSong(frame, width=400, height=140)
     # PlayerFrame2.pack(side=TOP)
     PlayerFrame3.grid(row=2, column=0)
+
+    container.pack(expand=True)
+    canvas.pack(side="left", fill="both", expand=True)
+    scrollbar.pack(side="right", fill="y")
 
     root.resizable(False, False)
     root.mainloop()
