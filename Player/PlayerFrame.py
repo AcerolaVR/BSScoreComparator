@@ -1,13 +1,10 @@
-try:
-    import tkinter as tk  # python 3
-    from tkinter import font as tkfont  # python 3
-    from tkinter import Tk, Canvas, Listbox, Entry, Text, Button, PhotoImage, END, Frame
-
-except ImportError:
-    import Tkinter as tk  # python 2
-    import tkFont as tkfont  # python 2
+import tkinter as tk  # python 3
+from tkinter import font as tkfont  # python 3
+from tkinter import Tk, Canvas, Listbox, Entry, Text, Button, PhotoImage, END, Frame
 
 import requests
+import re
+from urlextract import URLExtract
 
 from PlayerPanel.ViewPanelFrame import ViewPlayer
 from EditPanel.EditPanelFrame import EditPlayer
@@ -24,8 +21,17 @@ class User:
         self.rankedCount = rankedCount
         self.icon = icon
 
-def loadUser(userID):
-    user_response = requests.get('https://scoresaber.com/api/player/' + str(userID) + '/full')
+
+def loadUser(userInput):
+    # detect url
+    # scrub non-numeric text from
+    userInput = re.sub('[^0-9]', '', userInput)
+
+    user_response = requests.get('https://scoresaber.com/api/player/' + str(userInput) + '/full')
+
+    # detect that a valid user was returned with the response
+    if (user_response.status_code == 404):
+        print('http error caught')
 
     newUser = User(user_response.json()["name"],
                    user_response.json()["country"],
@@ -67,8 +73,18 @@ class PlayerWidget(Frame):
         self.windows[name].place(x=0, y=0, width=540.0, height=240.0)
 
     @staticmethod
-    def loadUser(userID):
-        user_response = requests.get('https://scoresaber.com/api/player/' + str(userID) + '/full')
+    def loadUser(userInput):
+        # detect url
+
+        #scrub non-numeric text from
+        userInput = re.sub('[^0-9]', '', userInput)
+
+        user_response = requests.get('https://scoresaber.com/api/player/' + str(userInput) + '/full')
+
+        #detect that a valid user was returned with the response
+        if(user_response.status_code == 404):
+            print('http error caught')
+
 
         newUser = User(user_response.json()["name"],
                        user_response.json()["country"],
@@ -88,8 +104,9 @@ if __name__ == "__main__":
     # Player1 = loadUser(76561198404774259) #SilentBang
     # Player2 = loadUser(76561198333869741) #Cerret
 
-    Player1 = loadUser(76561198002500746)
-    Player2 = loadUser(76561198002500746)
+    # Player1 = loadUser('https://scoresaber.com/u/761198002500746')
+    Player1 = loadUser('https://scoresaber.com/u/76561198002500746')
+    Player2 = loadUser('76561198002500746')
 
     test.geometry("1100x300")
     test.configure(bg="#343638")
