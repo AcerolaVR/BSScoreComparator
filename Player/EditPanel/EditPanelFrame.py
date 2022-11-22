@@ -5,7 +5,7 @@ from pathlib import Path
 
 # from tkinter import *
 # Explicit imports to satisfy Flake8
-from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage, Frame
+from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage, Frame, OptionMenu, StringVar
 
 import requests
 import io
@@ -56,6 +56,36 @@ class EditPlayer(Frame):
             text="Accepts Usernames, Scoresaber URLs, and Scoresaber IDs",
             fill="#A2A4A6",
             font=("Inter", 16 * -1)
+        )
+
+        self.canvas.create_text(
+            10.0,
+            80.0,
+            anchor="nw",
+            text="Accepts Usernames, Scoresaber URLs, and Scoresaber IDs",
+            fill="#A2A4A6",
+            font=("Inter", 16 * -1)
+        )
+
+        variable = StringVar(self)
+
+        self.recentListbox = OptionMenu(
+            self.canvas,
+            variable,
+            'test'
+            # x=10.0,
+            # y=100.0,
+            # height=30,
+            # width=520,
+            # relief="sunken",
+            # font=("Inter", 16 * -1)
+        )
+
+        self.recentListbox.place(
+            x=20.0,
+            y=100.0,
+            height=30,
+            width=520,
         )
 
         self.button_scoresaber_1 = PhotoImage(file=relative_to_assets("button_1.png"))
