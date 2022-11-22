@@ -7,7 +7,7 @@ from pathlib import Path
 
 # from tkinter import *
 # Explicit imports to satisfy Flake8
-from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage, Frame
+from tkinter import *
 
 
 OUTPUT_PATH = Path(__file__).parent
@@ -139,16 +139,26 @@ class ViewSong(Frame):
         )
 
 if __name__ == "__main__":
-    test = Tk()
+    root = Tk()
 
-    test.geometry("1100x300")
-    test.configure(bg="#343638")
+    root.geometry("1100x300")
+    root.configure(bg="#343638")
+    
+    frame = Frame(root)
+    frame.place(x=0, y=0)
+    
+    #grid or pack will work
+    PlayerFrame1 = ViewSong(frame, width=400, height=140)
+    # PlayerFrame1.pack(side=TOP)
+    PlayerFrame1.grid(row=0, column=0)
 
-    PlayerFrame1 = ViewSong(test)
-    PlayerFrame1.place(x=0, y=0, width=540.0, height=240.0)
+    PlayerFrame2 = ViewSong(frame, width=400, height=140)
+    # PlayerFrame2.pack(side=TOP)
+    PlayerFrame2.grid(row=1, column=0)
 
-    PlayerFrame2 = ViewSong(test)
-    PlayerFrame2.place(x=540, y=0, width=540.0, height=240.0)
+    PlayerFrame3 = ViewSong(frame, width=400, height=140)
+    # PlayerFrame2.pack(side=TOP)
+    PlayerFrame3.grid(row=2, column=0)
 
-    test.resizable(False, False)
-    test.mainloop()
+    root.resizable(False, False)
+    root.mainloop()
