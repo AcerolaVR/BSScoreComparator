@@ -11,7 +11,7 @@ from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage
 
 
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r".\assets\frame0")
+ASSETS_PATH = OUTPUT_PATH / Path(r"assets\frame0")
 
 
 def relative_to_assets(path: str) -> Path:
@@ -21,12 +21,11 @@ def relative_to_assets(path: str) -> Path:
 window = Tk()
 
 window.geometry("400x140")
-window.configure(bg = "#191B29")
+window.configure(bg = "#FFFFFF")
 
 
 canvas = Canvas(
     window,
-    bg = "#191B29",
     height = 140,
     width = 400,
     bd = 0,
@@ -38,17 +37,25 @@ canvas.place(x = 0, y = 0)
 image_image_1 = PhotoImage(
     file=relative_to_assets("image_1.png"))
 image_1 = canvas.create_image(
-    231.0,
-    112.0,
+    200.0,
+    70.0,
     image=image_image_1
 )
 
 image_image_2 = PhotoImage(
     file=relative_to_assets("image_2.png"))
 image_2 = canvas.create_image(
+    231.0,
+    112.0,
+    image=image_image_2
+)
+
+image_image_3 = PhotoImage(
+    file=relative_to_assets("image_3.png"))
+image_3 = canvas.create_image(
     383.0,
     113.0,
-    image=image_image_2
+    image=image_image_3
 )
 
 canvas.create_text(
@@ -60,12 +67,12 @@ canvas.create_text(
     font=("Inter", 16 * -1)
 )
 
-image_image_3 = PhotoImage(
-    file=relative_to_assets("image_3.png"))
-image_3 = canvas.create_image(
+image_image_4 = PhotoImage(
+    file=relative_to_assets("image_4.png"))
+image_4 = canvas.create_image(
     48.0,
     53.0,
-    image=image_image_3
+    image=image_image_4
 )
 
 canvas.create_text(
@@ -86,12 +93,12 @@ canvas.create_text(
     font=("Inter", 16 * -1)
 )
 
-image_image_4 = PhotoImage(
-    file=relative_to_assets("image_4.png"))
-image_4 = canvas.create_image(
+image_image_5 = PhotoImage(
+    file=relative_to_assets("image_5.png"))
+image_5 = canvas.create_image(
     321.0,
     115.0,
-    image=image_image_4
+    image=image_image_5
 )
 
 canvas.create_text(
@@ -112,12 +119,12 @@ canvas.create_text(
     font=("Inter", 16 * -1)
 )
 
-image_image_5 = PhotoImage(
-    file=relative_to_assets("image_5.png"))
-image_5 = canvas.create_image(
+image_image_6 = PhotoImage(
+    file=relative_to_assets("image_6.png"))
+image_6 = canvas.create_image(
     166.0,
     113.0,
-    image=image_image_5
+    image=image_image_6
 )
 
 canvas.create_text(
