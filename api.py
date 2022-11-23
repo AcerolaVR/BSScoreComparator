@@ -13,6 +13,18 @@ import datetime
 
 sg.theme('DarkAmber')
 
+def getIcon(img_url, w=128, h=128):
+    jpg_data = (
+        cloudscraper.create_scraper(
+            browser={"browser": "firefox", "platform": "windows", "mobile": False}
+        )
+            .get(img_url)
+            .content
+    )
+
+    pil_image = Image.open(io.BytesIO(jpg_data))
+    pil_image = pil_image.resize((w, h))
+    return ImageTk.PhotoImage(pil_image)
 
 class User:
     def __init__(self, name, country, pp, globalRank, localRank, rankedAcc, rankedCount, icon):
@@ -32,7 +44,7 @@ class Song:
         self.name = name
         self.artist = artist
         self.mapper = mapper
-        self.timeSet = timeSet
+        self.timeSet = datetime.datetime.strptime(timeSet, "%Y-%m-%dT%H:%M:%S.000Z")
         self.stars = stars
         self.score = score
         self.accuracy = accuracy
@@ -98,7 +110,7 @@ def sortByPP(songs):
     return sorted(songs, key=lambda x: x.pp, reverse=True) 
 
 def sortByRecent(songs):
-    return sorted(songs, key=lambda x: datetime.datetime.strptime(x.timeSet, "%Y-%m-%dT%H:%M:%S.000Z")) 
+    return sorted(songs, key=lambda x: x.timeSet, reverse=True) 
 
 def sortByUnplayed(songs1, songs2):
     def check(x1, songs):
@@ -108,6 +120,7 @@ def sortByUnplayed(songs1, songs2):
         return False
     return [x for x in songs1 if not check(x, songs2)]
 
+#sort songs2 to match songs1
 def getCorrespondingList(songs1, songs2):
     def getSong(x1, songs):
         for x2 in songs:
