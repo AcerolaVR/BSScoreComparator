@@ -47,7 +47,7 @@ class Song:
 def loadUser(userID):
     user_response = requests.get('https://scoresaber.com/api/player/' + str(userID) + '/full')
 
-    newUser = User(user_response.json()["name"],
+    newUser = User( user_response.json()["name"],
                    user_response.json()["country"],
                    user_response.json()["pp"],
                    user_response.json()["rank"],
