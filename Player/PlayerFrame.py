@@ -13,16 +13,17 @@ from .RecentPanel.RecentPanelFrame import RecentPlayer
 import user
 
 class PlayerWidget(Frame):
-    def __init__(self, player, parent, controller=None, *args, **kwargs):
+    def __init__(self, player, parent, playerHex, controller=None, *args, **kwargs):
         Frame.__init__(self, parent, *args, **kwargs)
         self.parent = parent
         self.player = player
+        self.playerHex = playerHex
 
         self.configure(bg="#343638")
 
         # Loop through windows and place them
         self.windows = {
-            "view": ViewPlayer(self),
+            "view": ViewPlayer(self, self.playerHex),
             "edit": EditPlayer(self),
             "recent": RecentPlayer(self),
         }

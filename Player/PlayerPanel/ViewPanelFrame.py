@@ -48,9 +48,10 @@ def view_player():
     ViewPlayer()
 
 class ViewPlayer(Frame):
-    def __init__(self, parent, controller=None, *args, **kwargs):
+    def __init__(self, parent, playerHex, controller=None, *args, **kwargs):
         Frame.__init__(self, parent, *args, **kwargs)
         self.parent = parent
+        self.playerHex = playerHex
 
         self.configure(bg="#343638")
 
@@ -96,13 +97,13 @@ class ViewPlayer(Frame):
             10.0,
             138.0,
             anchor="nw",
-            text="Ranked Play Count",
+            text="Play Count",
             fill="#FFFFFF",
             font=("Inter", 24 * -1)
         )
 
         self.canvas.create_text(
-            260.0,
+            148.0,
             139.0,
             anchor="nw",
             text=self.parent.player.rankedCount,
@@ -114,13 +115,13 @@ class ViewPlayer(Frame):
             10.0,
             172.0,
             anchor="nw",
-            text="Ranked Accuracy",
+            text="Accuracy",
             fill="#FFFFFF",
             font=("Inter", 24 * -1)
         )
 
         self.canvas.create_text(
-            260.0,
+            148.0,
             173.0,
             anchor="nw",
             text=str(self.parent.player.rankedAcc)[0:5] + "%",
@@ -150,7 +151,8 @@ class ViewPlayer(Frame):
             204.0,
             417.0,
             224.0,
-            fill="#B71C1C",
+            # fill="#B71C1C",
+            fill=self.playerHex,
             outline="")
 
         self.button_playerEditImg = PhotoImage(file=relative_to_assets("button_1.png"))

@@ -168,5 +168,5 @@ class EditPlayer(Frame):
         self.parent.player = user.loadUser(self.entry_1.get())
         print(self.parent.player.name)
         self.parent.windows["view"].destroy()
-        self.parent.windows["view"].__init__(self.parent)
+        self.parent.windows["view"].__init__(self.parent, self.parent.playerHex)
         self.parent.navigate("view")

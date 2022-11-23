@@ -25,8 +25,8 @@ window.configure(bg="#6F6F6F")
 Player1 = user.loadUser('https://scoresaber.com/u/76561198002500746')
 Player2 = user.loadUser('76561198002500746')
 
-PlayerFrame1 = PlayerWidget(Player1, window, bg="#343638", width=540, height=240)
-PlayerFrame2 = PlayerWidget(Player2, window, bg="#343638", width=540, height=240)
+PlayerFrame1 = PlayerWidget(Player1, window, "#B71C1C", bg="#343638", width=540, height=240)
+PlayerFrame2 = PlayerWidget(Player2, window, "#003BFF", bg="#343638", width=540, height=240)
 
 canvas = Canvas(
     window,
@@ -40,6 +40,7 @@ canvas = Canvas(
 
 canvas.place(x=0, y=0)
 
+# place and raise the player frames on the main window
 PlayerFrame1.place(x=77, y=11, width=540.0, height=240.0)
 PlayerFrame2.place(x=650, y=11, width=540.0, height=240.0)
 
