@@ -5,11 +5,12 @@ from pathlib import Path
 
 # from tkinter import *
 # Explicit imports to satisfy Flake8
-from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage, Frame, OptionMenu, StringVar
+from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage, Frame, OptionMenu, StringVar, END
 
 import requests
 import io
 import os
+import user
 from PIL import Image, ImageTk
 import cloudscraper
 
@@ -19,7 +20,6 @@ ASSETS_PATH = os.path.join(ASSETS_PATH, 'assets/frame0')
 
 def relative_to_assets(path: str) -> Path:
     return ASSETS_PATH / Path(path)
-
 
 class EditPlayer(Frame):
     def __init__(self, parent, controller=None, *args, **kwargs):
@@ -82,7 +82,7 @@ class EditPlayer(Frame):
         )
 
         self.recentListbox.place(
-            x=20.0,
+            x=10.0,
             y=100.0,
             height=30,
             width=520,
@@ -146,7 +146,7 @@ class EditPlayer(Frame):
         )
         self.entry_1 = Entry(
             self,
-            textvariable=self.entryData,
+            # textvariable=self.entryData,
             bd=0,
             bg="#D9D9D9",
             fg="#000716",
@@ -159,14 +159,13 @@ class EditPlayer(Frame):
             width=520.0,
             height=30.0
         )
-        self.entryData = self.entry_1
 
     def LoadPlayerView(self):
         print(self.entry_1.get())
         # print(self.entry_1)
 
         # self.parent.player = self.parent.loadUser(self.entryData)
-        self.parent.player = self.parent.loadUser(self.entry_1.get())
+        self.parent.player = user.loadUser(self.entry_1.get())
         print(self.parent.player.name)
         self.parent.windows["view"].destroy()
         self.parent.windows["view"].__init__(self.parent)
