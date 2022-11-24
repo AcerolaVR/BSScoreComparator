@@ -22,8 +22,10 @@ window = Tk()
 window.geometry("1220x1024")
 window.configure(bg="#6F6F6F")
 
-Player1 = user.loadUser('https://scoresaber.com/u/76561198002500746')
-Player2 = user.loadUser('76561198002500746')
+# Player1 = user.loadUser('https://scoresaber.com/u/76561198002500746')
+# Player2 = user.loadUser('76561198002500746')
+Player1 = user.loadUser('Acerola')
+Player2 = user.loadUser('Acerola')
 
 PlayerFrame1 = PlayerWidget(Player1, window, "#B71C1C", bg="#343638", width=540, height=240)
 PlayerFrame2 = PlayerWidget(Player2, window, "#003BFF", bg="#343638", width=540, height=240)

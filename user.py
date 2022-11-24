@@ -17,11 +17,15 @@ class User:
 
 @staticmethod
 def loadUser(userInput):
-    # detect url
+    username = requests.get('https://scoresaber.com/api/players?search=' + str(userInput))
+    print(username.json())
+    userInput = username.json()['players'][0]["id"]
 
-    # scrub non-numeric text from
-    userInput = re.sub('[^0-9]', '', userInput)
-
+    # # detect url
+    #
+    # # scrub non-numeric text from
+    # userInput = re.sub('[^0-9]', '', userInput)
+    #
     user_response = requests.get('https://scoresaber.com/api/player/' + str(userInput) + '/full')
 
     # detect that a valid user was returned with the response

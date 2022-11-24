@@ -112,6 +112,15 @@ class ViewPlayer(Frame):
         )
 
         self.canvas.create_text(
+            276.0,
+            157.0,
+            anchor="nw",
+            text=str(self.parent.player.pp) + "pp",
+            fill="#FFFFFF",
+            font=("Inter", 24 * -1)
+        )
+
+        self.canvas.create_text(
             10.0,
             172.0,
             anchor="nw",
@@ -173,9 +182,9 @@ class ViewPlayer(Frame):
         )
 
         self.canvas.create_rectangle(
-            9.0,
+            10.0,
             169.0,
-            375.0,
+            270.0,
             171.0,
             fill="#FFFFFF",
             outline="")
