@@ -1,4 +1,5 @@
 import requests
+import validators
 import re
 
 
@@ -17,16 +18,18 @@ class User:
 
 @staticmethod
 def loadUser(userInput):
-    username = requests.get('https://scoresaber.com/api/players?search=' + str(userInput))
-    print(username.json())
-    userInput = username.json()['players'][0]["id"]
 
-    # # detect url
-    #
-    # # scrub non-numeric text from
-    # userInput = re.sub('[^0-9]', '', userInput)
-    #
-    user_response = requests.get('https://scoresaber.com/api/player/' + str(userInput) + '/full')
+    if userInput.isdigit():
+        userID = userInput
+    elif validators.url(userInput):
+        # scrub non-numeric text from url
+        userID = re.sub('[^0-9]', '', userInput)
+    else:
+        username = requests.get('https://scoresaber.com/api/players?search=' + str(userInput))
+        print(username.json())
+        userID = username.json()['players'][0]["id"]
+
+    user_response = requests.get('https://scoresaber.com/api/player/' + str(userID) + '/full')
 
     # detect that a valid user was returned with the response
     if (user_response.status_code == 404):
