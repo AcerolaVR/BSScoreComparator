@@ -165,9 +165,18 @@ class EditPlayer(Frame):
     def LoadPlayerView(self):
         print(self.entry_1.get())
         # print(self.entry_1)
-
-        self.parent.player = user.loadUser(self.entry_1.get())
-        print(self.parent.player.name)
-        self.parent.windows["view"].destroy()
-        self.parent.windows["view"].__init__(self.parent, self.parent.playerHex)
-        self.parent.navigate("view")
+        try:
+            self.parent.player = user.loadUser(self.entry_1.get())
+            print(self.parent.player.name)
+            self.parent.windows["view"].destroy()
+            self.parent.windows["view"].__init__(self.parent, self.parent.playerHex)
+            self.parent.navigate("view")
+        except Exception as e:
+            self.canvas.create_text(
+                10.0,
+                174.0,
+                anchor="nw",
+                text=e,
+                fill="#FF0000",
+                font=("Inter", 16 * -1)
+            )

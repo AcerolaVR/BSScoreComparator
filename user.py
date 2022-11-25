@@ -2,8 +2,8 @@ import requests
 import validators
 import re
 import tkinter as tk
-from tkinter import messagebox
 import traceback
+import tkinter.messagebox
 
 
 class User:
@@ -43,6 +43,7 @@ def loadUser(userInput):
         if (username.status_code == 404):
             print('http error caught')
             print(username.json()['errorMessage'])
+            raise Exception(error)
         userID = username.json()['players'][0]["id"]
 
     user_response = requests.get('https://scoresaber.com/api/player/' + str(userID) + '/full')
@@ -64,6 +65,6 @@ def loadUser(userInput):
     return newUser
 
 
-def show_error(self, *args):
+def report_callback_exception(self, *args):
     err = traceback.format_exception(*args)
-    messagebox.showerror('Exception', err)
+    tkinter.messagebox.showerror('Exception', err)
