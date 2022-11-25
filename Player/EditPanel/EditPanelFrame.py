@@ -5,7 +5,7 @@ from pathlib import Path
 
 # from tkinter import *
 # Explicit imports to satisfy Flake8
-from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage, Frame, OptionMenu, StringVar, messagebox
+from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage, Frame, OptionMenu, StringVar, messagebox, END
 import traceback
 
 import requests
@@ -60,12 +60,11 @@ class EditPlayer(Frame):
             font=("Inter", 16 * -1)
         )
 
-        self.canvas.create_text(
+        self.exceptionText = self.canvas.create_text(
             10.0,
-            80.0,
+            174.0,
             anchor="nw",
-            text="Accepts Usernames, Scoresaber URLs, and Scoresaber IDs",
-            fill="#A2A4A6",
+            fill="#FF0000",
             font=("Inter", 16 * -1)
         )
 
@@ -162,7 +161,21 @@ class EditPlayer(Frame):
             height=30.0
         )
 
+    def displayException(self, exception):
+        self.exceptionText = self.canvas.create_text(
+            10.0,
+            174.0,
+            anchor="nw",
+            text=exception,
+            fill="#FF0000",
+            font=("Inter", 16 * -1)
+        )
+
+    def deleteException(self):
+        self.canvas.delete(self.exceptionText)
+
     def LoadPlayerView(self):
+        self.deleteException()
         print(self.entry_1.get())
         # print(self.entry_1)
         try:
@@ -172,11 +185,4 @@ class EditPlayer(Frame):
             self.parent.windows["view"].__init__(self.parent, self.parent.playerHex)
             self.parent.navigate("view")
         except Exception as e:
-            self.canvas.create_text(
-                10.0,
-                174.0,
-                anchor="nw",
-                text=e,
-                fill="#FF0000",
-                font=("Inter", 16 * -1)
-            )
+            self.displayException(e)
