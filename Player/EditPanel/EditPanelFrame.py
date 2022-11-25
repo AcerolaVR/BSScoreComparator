@@ -5,7 +5,8 @@ from pathlib import Path
 
 # from tkinter import *
 # Explicit imports to satisfy Flake8
-from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage, Frame, OptionMenu, StringVar, END
+from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage, Frame, OptionMenu, StringVar, messagebox
+import traceback
 
 import requests
 import io
@@ -20,6 +21,7 @@ ASSETS_PATH = os.path.join(ASSETS_PATH, 'assets/frame0')
 
 def relative_to_assets(path: str) -> Path:
     return ASSETS_PATH / Path(path)
+
 
 class EditPlayer(Frame):
     def __init__(self, parent, controller=None, *args, **kwargs):
@@ -164,7 +166,6 @@ class EditPlayer(Frame):
         print(self.entry_1.get())
         # print(self.entry_1)
 
-        # self.parent.player = self.parent.loadUser(self.entryData)
         self.parent.player = user.loadUser(self.entry_1.get())
         print(self.parent.player.name)
         self.parent.windows["view"].destroy()
