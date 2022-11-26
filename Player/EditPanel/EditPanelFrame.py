@@ -13,6 +13,7 @@ import io
 import os
 import user
 import re
+import json
 from PIL import Image, ImageTk
 import cloudscraper
 
@@ -70,10 +71,14 @@ class EditPlayer(Frame):
         )
 
         variable = StringVar(self)
-        lst = ['Cerret 76561198333869741',
-               'Kira 76561198027277296',
-               'Bizzy 3225556157461414',
-               'Cerebral 76561198024304712']
+        lst = []
+
+        with open('recentUsers.json', 'r+') as file:
+            # First we load existing data into a dict.
+            file_data = json.load(file)
+
+            for recentUser in file_data['recent_players']:
+                lst.append(str(recentUser['name']) + ' | ' + str(recentUser['id']))
 
         self.recentListbox = OptionMenu(
             self.canvas,
@@ -81,10 +86,6 @@ class EditPlayer(Frame):
             *lst,
             command=self.recentFunc,
         )
-
-        lst = ['Cerret',
-               'Kira',
-               'Bizzy']
 
         self.recentListbox.place(
             x=10.0,
@@ -166,8 +167,7 @@ class EditPlayer(Frame):
         )
 
     def recentFunc(self, value):
-        # scrub non-numeric text from url
-        # userID = re.sub('[^0-9]', '', str(variable.get()))
+        value = value.split(' | ', 1)[1]
         userID = re.sub('[^0-9]', '', str(value))
         self.LoadPlayerView(userID)
 
