@@ -7,11 +7,11 @@
             "bio": "",
             "country": "US",
             "pp": 10424.83,
-            "rank": 1214,
-            "countryRank": 524,
+            "rank": 1211,
+            "countryRank": 523,
             "role": "Supporter",
             "badges": [],
-            "histories": "1310,1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213",
+            "histories": "1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213,1214",
             "permissions": 64,
             "banned": false,
             "inactive": false,
@@ -31,11 +31,11 @@
             "bio": "",
             "country": "US",
             "pp": 10424.83,
-            "rank": 1214,
-            "countryRank": 524,
+            "rank": 1211,
+            "countryRank": 523,
             "role": "Supporter",
             "badges": [],
-            "histories": "1310,1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213",
+            "histories": "1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213,1214",
             "permissions": 64,
             "banned": false,
             "inactive": false,
@@ -55,11 +55,11 @@
             "bio": "",
             "country": "US",
             "pp": 10424.83,
-            "rank": 1214,
-            "countryRank": 524,
+            "rank": 1211,
+            "countryRank": 523,
             "role": "Supporter",
             "badges": [],
-            "histories": "1310,1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213",
+            "histories": "1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213,1214",
             "permissions": 64,
             "banned": false,
             "inactive": false,
@@ -70,6 +70,1581 @@
                 "totalPlayCount": 3003,
                 "rankedPlayCount": 939,
                 "replaysWatched": 4
+            }
+        },
+        {
+            "id": "76561198002500746",
+            "name": "Acerola",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198002500746.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 10424.83,
+            "rank": 1211,
+            "countryRank": 523,
+            "role": "Supporter",
+            "badges": [],
+            "histories": "1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213,1214",
+            "permissions": 64,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 2764845798,
+                "totalRankedScore": 1070123114,
+                "averageRankedAccuracy": 87.83664,
+                "totalPlayCount": 3003,
+                "rankedPlayCount": 939,
+                "replaysWatched": 4
+            }
+        },
+        {
+            "id": "76561198002500746",
+            "name": "Acerola",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198002500746.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 10424.83,
+            "rank": 1211,
+            "countryRank": 523,
+            "role": "Supporter",
+            "badges": [],
+            "histories": "1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213,1214",
+            "permissions": 64,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 2764845798,
+                "totalRankedScore": 1070123114,
+                "averageRankedAccuracy": 87.83664,
+                "totalPlayCount": 3003,
+                "rankedPlayCount": 939,
+                "replaysWatched": 4
+            }
+        },
+        {
+            "id": "76561198002500746",
+            "name": "Acerola",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198002500746.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 10424.83,
+            "rank": 1211,
+            "countryRank": 523,
+            "role": "Supporter",
+            "badges": [],
+            "histories": "1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213,1214",
+            "permissions": 64,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 2764845798,
+                "totalRankedScore": 1070123114,
+                "averageRankedAccuracy": 87.83664,
+                "totalPlayCount": 3003,
+                "rankedPlayCount": 939,
+                "replaysWatched": 4
+            }
+        },
+        {
+            "id": "76561198002500746",
+            "name": "Acerola",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198002500746.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 10424.83,
+            "rank": 1211,
+            "countryRank": 523,
+            "role": "Supporter",
+            "badges": [],
+            "histories": "1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213,1214",
+            "permissions": 64,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 2764845798,
+                "totalRankedScore": 1070123114,
+                "averageRankedAccuracy": 87.83664,
+                "totalPlayCount": 3003,
+                "rankedPlayCount": 939,
+                "replaysWatched": 4
+            }
+        },
+        {
+            "id": "76561198002500746",
+            "name": "Acerola",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198002500746.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 10424.83,
+            "rank": 1211,
+            "countryRank": 523,
+            "role": "Supporter",
+            "badges": [],
+            "histories": "1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213,1214",
+            "permissions": 64,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 2764845798,
+                "totalRankedScore": 1070123114,
+                "averageRankedAccuracy": 87.83664,
+                "totalPlayCount": 3003,
+                "rankedPlayCount": 939,
+                "replaysWatched": 4
+            }
+        },
+        {
+            "id": "76561198002500746",
+            "name": "Acerola",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198002500746.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 10424.83,
+            "rank": 1211,
+            "countryRank": 523,
+            "role": "Supporter",
+            "badges": [],
+            "histories": "1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213,1214",
+            "permissions": 64,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 2764845798,
+                "totalRankedScore": 1070123114,
+                "averageRankedAccuracy": 87.83664,
+                "totalPlayCount": 3003,
+                "rankedPlayCount": 939,
+                "replaysWatched": 4
+            }
+        },
+        {
+            "id": "76561198002500746",
+            "name": "Acerola",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198002500746.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 10424.83,
+            "rank": 1211,
+            "countryRank": 523,
+            "role": "Supporter",
+            "badges": [],
+            "histories": "1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213,1214",
+            "permissions": 64,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 2764845798,
+                "totalRankedScore": 1070123114,
+                "averageRankedAccuracy": 87.83664,
+                "totalPlayCount": 3003,
+                "rankedPlayCount": 939,
+                "replaysWatched": 4
+            }
+        },
+        {
+            "id": "76561198002500746",
+            "name": "Acerola",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198002500746.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 10424.83,
+            "rank": 1211,
+            "countryRank": 523,
+            "role": "Supporter",
+            "badges": [],
+            "histories": "1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213,1214",
+            "permissions": 64,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 2764845798,
+                "totalRankedScore": 1070123114,
+                "averageRankedAccuracy": 87.83664,
+                "totalPlayCount": 3003,
+                "rankedPlayCount": 939,
+                "replaysWatched": 4
+            }
+        },
+        {
+            "id": "76561198002500746",
+            "name": "Acerola",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198002500746.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 10424.83,
+            "rank": 1211,
+            "countryRank": 523,
+            "role": "Supporter",
+            "badges": [],
+            "histories": "1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213,1214",
+            "permissions": 64,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 2764845798,
+                "totalRankedScore": 1070123114,
+                "averageRankedAccuracy": 87.83664,
+                "totalPlayCount": 3003,
+                "rankedPlayCount": 939,
+                "replaysWatched": 4
+            }
+        },
+        {
+            "id": "76561198002500746",
+            "name": "Acerola",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198002500746.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 10424.83,
+            "rank": 1211,
+            "countryRank": 523,
+            "role": "Supporter",
+            "badges": [],
+            "histories": "1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213,1214",
+            "permissions": 64,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 2764845798,
+                "totalRankedScore": 1070123114,
+                "averageRankedAccuracy": 87.83664,
+                "totalPlayCount": 3003,
+                "rankedPlayCount": 939,
+                "replaysWatched": 4
+            }
+        },
+        {
+            "id": "76561198002500746",
+            "name": "Acerola",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198002500746.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 10424.83,
+            "rank": 1211,
+            "countryRank": 523,
+            "role": "Supporter",
+            "badges": [],
+            "histories": "1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213,1214",
+            "permissions": 64,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 2764845798,
+                "totalRankedScore": 1070123114,
+                "averageRankedAccuracy": 87.83664,
+                "totalPlayCount": 3003,
+                "rankedPlayCount": 939,
+                "replaysWatched": 4
+            }
+        },
+        {
+            "id": "76561198002500746",
+            "name": "Acerola",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198002500746.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 10424.83,
+            "rank": 1211,
+            "countryRank": 523,
+            "role": "Supporter",
+            "badges": [],
+            "histories": "1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213,1214",
+            "permissions": 64,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 2764845798,
+                "totalRankedScore": 1070123114,
+                "averageRankedAccuracy": 87.83664,
+                "totalPlayCount": 3003,
+                "rankedPlayCount": 939,
+                "replaysWatched": 4
+            }
+        },
+        {
+            "id": "3225556157461414",
+            "name": "Bizzy825",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/oculus.png",
+            "bio": "",
+            "country": "CA",
+            "pp": 17585.35,
+            "rank": 5,
+            "countryRank": 1,
+            "role": "Supporter",
+            "badges": [
+                {
+                    "description": "Given to all level 2 supporters",
+                    "image": "https://cdn.scoresaber.com/badges/supporter.png"
+                },
+                {
+                    "description": "Beat Saber World Cup 2021: 2nd Place (Canada)",
+                    "image": "https://cdn.scoresaber.com/badges/BSWC-2021-2.png"
+                },
+                {
+                    "description": "Cube Community Winter Cup 2021 3rd Place",
+                    "image": "https://cdn.scoresaber.com/badges/CCWC-2021-3.gif"
+                },
+                {
+                    "description": "Beat Saber World Cup 2022: 3rd Place (Canada)",
+                    "image": "https://cdn.scoresaber.com/badges/BSWC-2022-3.gif"
+                },
+                {
+                    "description": "Beat Saber League Season 5 Runner-Up",
+                    "image": "https://cdn.scoresaber.com/badges/BSL-S5-2.png"
+                }
+            ],
+            "histories": "5,5,5,4,5,5,5,5,5,5,5,5,4,4,4,4,4,6,6,6,7,6,7,7,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,5,5,5,5",
+            "permissions": 192,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 4361164893,
+                "totalRankedScore": 2938275918,
+                "averageRankedAccuracy": 97.95818,
+                "totalPlayCount": 5070,
+                "rankedPlayCount": 3313,
+                "replaysWatched": 6926
+            }
+        },
+        {
+            "id": "3225556157461414",
+            "name": "Bizzy825",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/oculus.png",
+            "bio": "",
+            "country": "CA",
+            "pp": 17585.35,
+            "rank": 5,
+            "countryRank": 1,
+            "role": "Supporter",
+            "badges": [
+                {
+                    "description": "Given to all level 2 supporters",
+                    "image": "https://cdn.scoresaber.com/badges/supporter.png"
+                },
+                {
+                    "description": "Beat Saber World Cup 2021: 2nd Place (Canada)",
+                    "image": "https://cdn.scoresaber.com/badges/BSWC-2021-2.png"
+                },
+                {
+                    "description": "Cube Community Winter Cup 2021 3rd Place",
+                    "image": "https://cdn.scoresaber.com/badges/CCWC-2021-3.gif"
+                },
+                {
+                    "description": "Beat Saber World Cup 2022: 3rd Place (Canada)",
+                    "image": "https://cdn.scoresaber.com/badges/BSWC-2022-3.gif"
+                },
+                {
+                    "description": "Beat Saber League Season 5 Runner-Up",
+                    "image": "https://cdn.scoresaber.com/badges/BSL-S5-2.png"
+                }
+            ],
+            "histories": "5,5,5,4,5,5,5,5,5,5,5,5,4,4,4,4,4,6,6,6,7,6,7,7,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,5,5,5,5",
+            "permissions": 192,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 4361164893,
+                "totalRankedScore": 2938275918,
+                "averageRankedAccuracy": 97.95818,
+                "totalPlayCount": 5070,
+                "rankedPlayCount": 3313,
+                "replaysWatched": 6926
+            }
+        },
+        {
+            "id": "3225556157461414",
+            "name": "Bizzy825",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/oculus.png",
+            "bio": "",
+            "country": "CA",
+            "pp": 17585.35,
+            "rank": 5,
+            "countryRank": 1,
+            "role": "Supporter",
+            "badges": [
+                {
+                    "description": "Given to all level 2 supporters",
+                    "image": "https://cdn.scoresaber.com/badges/supporter.png"
+                },
+                {
+                    "description": "Beat Saber World Cup 2021: 2nd Place (Canada)",
+                    "image": "https://cdn.scoresaber.com/badges/BSWC-2021-2.png"
+                },
+                {
+                    "description": "Cube Community Winter Cup 2021 3rd Place",
+                    "image": "https://cdn.scoresaber.com/badges/CCWC-2021-3.gif"
+                },
+                {
+                    "description": "Beat Saber World Cup 2022: 3rd Place (Canada)",
+                    "image": "https://cdn.scoresaber.com/badges/BSWC-2022-3.gif"
+                },
+                {
+                    "description": "Beat Saber League Season 5 Runner-Up",
+                    "image": "https://cdn.scoresaber.com/badges/BSL-S5-2.png"
+                }
+            ],
+            "histories": "5,5,5,4,5,5,5,5,5,5,5,5,4,4,4,4,4,6,6,6,7,6,7,7,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,5,5,5,5",
+            "permissions": 192,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 4361164893,
+                "totalRankedScore": 2938275918,
+                "averageRankedAccuracy": 97.95818,
+                "totalPlayCount": 5070,
+                "rankedPlayCount": 3313,
+                "replaysWatched": 6926
+            }
+        },
+        {
+            "id": "3225556157461414",
+            "name": "Bizzy825",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/oculus.png",
+            "bio": "",
+            "country": "CA",
+            "pp": 17585.35,
+            "rank": 5,
+            "countryRank": 1,
+            "role": "Supporter",
+            "badges": [
+                {
+                    "description": "Given to all level 2 supporters",
+                    "image": "https://cdn.scoresaber.com/badges/supporter.png"
+                },
+                {
+                    "description": "Beat Saber World Cup 2021: 2nd Place (Canada)",
+                    "image": "https://cdn.scoresaber.com/badges/BSWC-2021-2.png"
+                },
+                {
+                    "description": "Cube Community Winter Cup 2021 3rd Place",
+                    "image": "https://cdn.scoresaber.com/badges/CCWC-2021-3.gif"
+                },
+                {
+                    "description": "Beat Saber World Cup 2022: 3rd Place (Canada)",
+                    "image": "https://cdn.scoresaber.com/badges/BSWC-2022-3.gif"
+                },
+                {
+                    "description": "Beat Saber League Season 5 Runner-Up",
+                    "image": "https://cdn.scoresaber.com/badges/BSL-S5-2.png"
+                }
+            ],
+            "histories": "5,5,5,4,5,5,5,5,5,5,5,5,4,4,4,4,4,6,6,6,7,6,7,7,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,5,5,5,5",
+            "permissions": 192,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 4361164893,
+                "totalRankedScore": 2938275918,
+                "averageRankedAccuracy": 97.95818,
+                "totalPlayCount": 5070,
+                "rankedPlayCount": 3313,
+                "replaysWatched": 6926
+            }
+        },
+        {
+            "id": "76561198002500746",
+            "name": "Acerola",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198002500746.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 10424.83,
+            "rank": 1211,
+            "countryRank": 523,
+            "role": "Supporter",
+            "badges": [],
+            "histories": "1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213,1214",
+            "permissions": 64,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 2764845798,
+                "totalRankedScore": 1070123114,
+                "averageRankedAccuracy": 87.83664,
+                "totalPlayCount": 3003,
+                "rankedPlayCount": 939,
+                "replaysWatched": 4
+            }
+        },
+        {
+            "id": "76561198002500746",
+            "name": "Acerola",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198002500746.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 10424.83,
+            "rank": 1211,
+            "countryRank": 523,
+            "role": "Supporter",
+            "badges": [],
+            "histories": "1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213,1214",
+            "permissions": 64,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 2764845798,
+                "totalRankedScore": 1070123114,
+                "averageRankedAccuracy": 87.83664,
+                "totalPlayCount": 3003,
+                "rankedPlayCount": 939,
+                "replaysWatched": 4
+            }
+        },
+        {
+            "id": "76561198024304712",
+            "name": "[Real] | Cerebral",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198024304712.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 8441.844,
+            "rank": 2565,
+            "countryRank": 1094,
+            "role": null,
+            "badges": [],
+            "histories": "3751,3358,3364,3366,3366,3366,3371,3373,3375,3362,3260,3268,3274,3275,3276,3271,3271,3244,3242,3155,3151,3152,3156,3150,2970,2975,2976,2980,2984,2983,2977,2965,2956,2926,2928,2930,2918,2915,2886,2891,2745,2745,2749,2745,2742,2720,2719,2570,2570",
+            "permissions": 0,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 1077047185,
+                "totalRankedScore": 263373757,
+                "averageRankedAccuracy": 88.31245,
+                "totalPlayCount": 1818,
+                "rankedPlayCount": 326,
+                "replaysWatched": 10
+            }
+        },
+        {
+            "id": "76561198002500746",
+            "name": "Acerola",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198002500746.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 10424.83,
+            "rank": 1211,
+            "countryRank": 523,
+            "role": "Supporter",
+            "badges": [],
+            "histories": "1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213,1214",
+            "permissions": 64,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 2764845798,
+                "totalRankedScore": 1070123114,
+                "averageRankedAccuracy": 87.83664,
+                "totalPlayCount": 3003,
+                "rankedPlayCount": 939,
+                "replaysWatched": 4
+            }
+        },
+        {
+            "id": "76561198002500746",
+            "name": "Acerola",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198002500746.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 10424.83,
+            "rank": 1211,
+            "countryRank": 523,
+            "role": "Supporter",
+            "badges": [],
+            "histories": "1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213,1214",
+            "permissions": 64,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 2764845798,
+                "totalRankedScore": 1070123114,
+                "averageRankedAccuracy": 87.83664,
+                "totalPlayCount": 3003,
+                "rankedPlayCount": 939,
+                "replaysWatched": 4
+            }
+        },
+        {
+            "id": "76561198002500746",
+            "name": "Acerola",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198002500746.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 10424.83,
+            "rank": 1211,
+            "countryRank": 523,
+            "role": "Supporter",
+            "badges": [],
+            "histories": "1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213,1214",
+            "permissions": 64,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 2764845798,
+                "totalRankedScore": 1070123114,
+                "averageRankedAccuracy": 87.83664,
+                "totalPlayCount": 3003,
+                "rankedPlayCount": 939,
+                "replaysWatched": 4
+            }
+        },
+        {
+            "id": "76561198002500746",
+            "name": "Acerola",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198002500746.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 10424.83,
+            "rank": 1211,
+            "countryRank": 523,
+            "role": "Supporter",
+            "badges": [],
+            "histories": "1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213,1214",
+            "permissions": 64,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 2764845798,
+                "totalRankedScore": 1070123114,
+                "averageRankedAccuracy": 87.83664,
+                "totalPlayCount": 3003,
+                "rankedPlayCount": 939,
+                "replaysWatched": 4
+            }
+        },
+        {
+            "id": "76561198002500746",
+            "name": "Acerola",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198002500746.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 10424.83,
+            "rank": 1211,
+            "countryRank": 523,
+            "role": "Supporter",
+            "badges": [],
+            "histories": "1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213,1214",
+            "permissions": 64,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 2764845798,
+                "totalRankedScore": 1070123114,
+                "averageRankedAccuracy": 87.83664,
+                "totalPlayCount": 3003,
+                "rankedPlayCount": 939,
+                "replaysWatched": 4
+            }
+        },
+        {
+            "id": "76561198002500746",
+            "name": "Acerola",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198002500746.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 10424.83,
+            "rank": 1211,
+            "countryRank": 523,
+            "role": "Supporter",
+            "badges": [],
+            "histories": "1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213,1214",
+            "permissions": 64,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 2764845798,
+                "totalRankedScore": 1070123114,
+                "averageRankedAccuracy": 87.83664,
+                "totalPlayCount": 3003,
+                "rankedPlayCount": 939,
+                "replaysWatched": 4
+            }
+        },
+        {
+            "id": "76561198002500746",
+            "name": "Acerola",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198002500746.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 10424.83,
+            "rank": 1211,
+            "countryRank": 523,
+            "role": "Supporter",
+            "badges": [],
+            "histories": "1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213,1214",
+            "permissions": 64,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 2764845798,
+                "totalRankedScore": 1070123114,
+                "averageRankedAccuracy": 87.83664,
+                "totalPlayCount": 3003,
+                "rankedPlayCount": 939,
+                "replaysWatched": 4
+            }
+        },
+        {
+            "id": "76561198002500746",
+            "name": "Acerola",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198002500746.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 10424.83,
+            "rank": 1211,
+            "countryRank": 523,
+            "role": "Supporter",
+            "badges": [],
+            "histories": "1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213,1214",
+            "permissions": 64,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 2764845798,
+                "totalRankedScore": 1070123114,
+                "averageRankedAccuracy": 87.83664,
+                "totalPlayCount": 3003,
+                "rankedPlayCount": 939,
+                "replaysWatched": 4
+            }
+        },
+        {
+            "id": "76561198002500746",
+            "name": "Acerola",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198002500746.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 10424.83,
+            "rank": 1211,
+            "countryRank": 523,
+            "role": "Supporter",
+            "badges": [],
+            "histories": "1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213,1214",
+            "permissions": 64,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 2764845798,
+                "totalRankedScore": 1070123114,
+                "averageRankedAccuracy": 87.83664,
+                "totalPlayCount": 3003,
+                "rankedPlayCount": 939,
+                "replaysWatched": 4
+            }
+        },
+        {
+            "id": "76561198002500746",
+            "name": "Acerola",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198002500746.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 10424.83,
+            "rank": 1211,
+            "countryRank": 523,
+            "role": "Supporter",
+            "badges": [],
+            "histories": "1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213,1214",
+            "permissions": 64,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 2764845798,
+                "totalRankedScore": 1070123114,
+                "averageRankedAccuracy": 87.83664,
+                "totalPlayCount": 3003,
+                "rankedPlayCount": 939,
+                "replaysWatched": 4
+            }
+        },
+        {
+            "id": "76561198002500746",
+            "name": "Acerola",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198002500746.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 10424.83,
+            "rank": 1211,
+            "countryRank": 523,
+            "role": "Supporter",
+            "badges": [],
+            "histories": "1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213,1214",
+            "permissions": 64,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 2764845798,
+                "totalRankedScore": 1070123114,
+                "averageRankedAccuracy": 87.83664,
+                "totalPlayCount": 3003,
+                "rankedPlayCount": 939,
+                "replaysWatched": 4
+            }
+        },
+        {
+            "id": "76561198002500746",
+            "name": "Acerola",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198002500746.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 10424.83,
+            "rank": 1211,
+            "countryRank": 523,
+            "role": "Supporter",
+            "badges": [],
+            "histories": "1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213,1214",
+            "permissions": 64,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 2764845798,
+                "totalRankedScore": 1070123114,
+                "averageRankedAccuracy": 87.83664,
+                "totalPlayCount": 3003,
+                "rankedPlayCount": 939,
+                "replaysWatched": 4
+            }
+        },
+        {
+            "id": "76561198002500746",
+            "name": "Acerola",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198002500746.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 10424.83,
+            "rank": 1211,
+            "countryRank": 523,
+            "role": "Supporter",
+            "badges": [],
+            "histories": "1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213,1214",
+            "permissions": 64,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 2764845798,
+                "totalRankedScore": 1070123114,
+                "averageRankedAccuracy": 87.83664,
+                "totalPlayCount": 3003,
+                "rankedPlayCount": 939,
+                "replaysWatched": 4
+            }
+        },
+        {
+            "id": "76561198002500746",
+            "name": "Acerola",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198002500746.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 10424.83,
+            "rank": 1211,
+            "countryRank": 523,
+            "role": "Supporter",
+            "badges": [],
+            "histories": "1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213,1214",
+            "permissions": 64,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 2764845798,
+                "totalRankedScore": 1070123114,
+                "averageRankedAccuracy": 87.83664,
+                "totalPlayCount": 3003,
+                "rankedPlayCount": 939,
+                "replaysWatched": 4
+            }
+        },
+        {
+            "id": "76561198002500746",
+            "name": "Acerola",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198002500746.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 10424.83,
+            "rank": 1211,
+            "countryRank": 523,
+            "role": "Supporter",
+            "badges": [],
+            "histories": "1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213,1214",
+            "permissions": 64,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 2764845798,
+                "totalRankedScore": 1070123114,
+                "averageRankedAccuracy": 87.83664,
+                "totalPlayCount": 3003,
+                "rankedPlayCount": 939,
+                "replaysWatched": 4
+            }
+        },
+        {
+            "id": "76561198002500746",
+            "name": "Acerola",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198002500746.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 10424.83,
+            "rank": 1211,
+            "countryRank": 523,
+            "role": "Supporter",
+            "badges": [],
+            "histories": "1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213,1214",
+            "permissions": 64,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 2764845798,
+                "totalRankedScore": 1070123114,
+                "averageRankedAccuracy": 87.83664,
+                "totalPlayCount": 3003,
+                "rankedPlayCount": 939,
+                "replaysWatched": 4
+            }
+        },
+        {
+            "id": "76561198002500746",
+            "name": "Acerola",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198002500746.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 10424.83,
+            "rank": 1211,
+            "countryRank": 523,
+            "role": "Supporter",
+            "badges": [],
+            "histories": "1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213,1214",
+            "permissions": 64,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 2764845798,
+                "totalRankedScore": 1070123114,
+                "averageRankedAccuracy": 87.83664,
+                "totalPlayCount": 3003,
+                "rankedPlayCount": 939,
+                "replaysWatched": 4
+            }
+        },
+        {
+            "id": "76561198002500746",
+            "name": "Acerola",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198002500746.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 10424.83,
+            "rank": 1211,
+            "countryRank": 523,
+            "role": "Supporter",
+            "badges": [],
+            "histories": "1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213,1214",
+            "permissions": 64,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 2764845798,
+                "totalRankedScore": 1070123114,
+                "averageRankedAccuracy": 87.83664,
+                "totalPlayCount": 3003,
+                "rankedPlayCount": 939,
+                "replaysWatched": 4
+            }
+        },
+        {
+            "id": "76561198002500746",
+            "name": "Acerola",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198002500746.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 10424.83,
+            "rank": 1211,
+            "countryRank": 523,
+            "role": "Supporter",
+            "badges": [],
+            "histories": "1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213,1214",
+            "permissions": 64,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 2764845798,
+                "totalRankedScore": 1070123114,
+                "averageRankedAccuracy": 87.83664,
+                "totalPlayCount": 3003,
+                "rankedPlayCount": 939,
+                "replaysWatched": 4
+            }
+        },
+        {
+            "id": "76561198002500746",
+            "name": "Acerola",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198002500746.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 10424.83,
+            "rank": 1211,
+            "countryRank": 523,
+            "role": "Supporter",
+            "badges": [],
+            "histories": "1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213,1214",
+            "permissions": 64,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 2764845798,
+                "totalRankedScore": 1070123114,
+                "averageRankedAccuracy": 87.83664,
+                "totalPlayCount": 3003,
+                "rankedPlayCount": 939,
+                "replaysWatched": 4
+            }
+        },
+        {
+            "id": "76561198333869741",
+            "name": "cerret",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198333869741.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 17812.6,
+            "rank": 3,
+            "countryRank": 1,
+            "role": "Supporter",
+            "badges": [
+                {
+                    "description": "Given to all level 2 supporters",
+                    "image": "https://cdn.scoresaber.com/badges/supporter.png"
+                },
+                {
+                    "description": "Beat Saber World Cup 2020: 1st Place (United States)",
+                    "image": "https://cdn.scoresaber.com/badges/BSWC-2020-1.png"
+                },
+                {
+                    "description": "Simply Sabers Runner-Up",
+                    "image": "https://cdn.scoresaber.com/badges/SimplySabers-2.png"
+                },
+                {
+                    "description": "Beat Saber League Season 2 Winner",
+                    "image": "https://cdn.scoresaber.com/badges/BSL-S2-1.png"
+                },
+                {
+                    "description": "Cube Community Winter Cup 2020 Winner",
+                    "image": "https://cdn.scoresaber.com/badges/CCWC-1.png"
+                },
+                {
+                    "description": "Cube Community Spring Cup 2021 Winner",
+                    "image": "https://cdn.scoresaber.com/badges/CCSP-1.png"
+                },
+                {
+                    "description": "Beat Saber League Season 3 Winner",
+                    "image": "https://cdn.scoresaber.com/badges/BSL-S3-1.png"
+                },
+                {
+                    "description": "Beat Saber World Cup 2021: 1st Place (United States)",
+                    "image": "https://cdn.scoresaber.com/badges/BSWC-2021-1.png"
+                },
+                {
+                    "description": "Beat Saber League Season 4 Winner",
+                    "image": "https://cdn.scoresaber.com/badges/BSL-S4-1.png"
+                },
+                {
+                    "description": "Beat Saber World Cup 2022: 1st Place (United States)",
+                    "image": "https://cdn.scoresaber.com/badges/BSWC-2022-1.gif"
+                }
+            ],
+            "histories": "1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3",
+            "permissions": 192,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 4795145753,
+                "totalRankedScore": 1282394712,
+                "averageRankedAccuracy": 95.6236,
+                "totalPlayCount": 3473,
+                "rankedPlayCount": 861,
+                "replaysWatched": 25938
+            }
+        },
+        {
+            "id": "76561198002500746",
+            "name": "Acerola",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198002500746.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 10424.83,
+            "rank": 1211,
+            "countryRank": 523,
+            "role": "Supporter",
+            "badges": [],
+            "histories": "1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213,1214",
+            "permissions": 64,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 2764845798,
+                "totalRankedScore": 1070123114,
+                "averageRankedAccuracy": 87.83664,
+                "totalPlayCount": 3003,
+                "rankedPlayCount": 939,
+                "replaysWatched": 4
+            }
+        },
+        {
+            "id": "76561198002500746",
+            "name": "Acerola",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198002500746.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 10424.83,
+            "rank": 1211,
+            "countryRank": 523,
+            "role": "Supporter",
+            "badges": [],
+            "histories": "1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213,1214",
+            "permissions": 64,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 2764845798,
+                "totalRankedScore": 1070123114,
+                "averageRankedAccuracy": 87.83664,
+                "totalPlayCount": 3003,
+                "rankedPlayCount": 939,
+                "replaysWatched": 4
+            }
+        },
+        {
+            "id": "76561198002500746",
+            "name": "Acerola",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198002500746.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 10424.83,
+            "rank": 1211,
+            "countryRank": 523,
+            "role": "Supporter",
+            "badges": [],
+            "histories": "1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213,1214",
+            "permissions": 64,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 2764845798,
+                "totalRankedScore": 1070123114,
+                "averageRankedAccuracy": 87.83664,
+                "totalPlayCount": 3003,
+                "rankedPlayCount": 939,
+                "replaysWatched": 4
+            }
+        },
+        {
+            "id": "76561198002500746",
+            "name": "Acerola",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198002500746.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 10424.83,
+            "rank": 1211,
+            "countryRank": 523,
+            "role": "Supporter",
+            "badges": [],
+            "histories": "1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213,1214",
+            "permissions": 64,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 2764845798,
+                "totalRankedScore": 1070123114,
+                "averageRankedAccuracy": 87.83664,
+                "totalPlayCount": 3003,
+                "rankedPlayCount": 939,
+                "replaysWatched": 4
+            }
+        },
+        {
+            "id": "76561198002500746",
+            "name": "Acerola",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198002500746.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 10424.83,
+            "rank": 1211,
+            "countryRank": 523,
+            "role": "Supporter",
+            "badges": [],
+            "histories": "1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213,1214",
+            "permissions": 64,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 2764845798,
+                "totalRankedScore": 1070123114,
+                "averageRankedAccuracy": 87.83664,
+                "totalPlayCount": 3003,
+                "rankedPlayCount": 939,
+                "replaysWatched": 4
+            }
+        },
+        {
+            "id": "76561198002500746",
+            "name": "Acerola",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198002500746.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 10424.83,
+            "rank": 1211,
+            "countryRank": 523,
+            "role": "Supporter",
+            "badges": [],
+            "histories": "1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213,1214",
+            "permissions": 64,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 2764845798,
+                "totalRankedScore": 1070123114,
+                "averageRankedAccuracy": 87.83664,
+                "totalPlayCount": 3003,
+                "rankedPlayCount": 939,
+                "replaysWatched": 4
+            }
+        },
+        {
+            "id": "76561198002500746",
+            "name": "Acerola",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198002500746.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 10424.83,
+            "rank": 1211,
+            "countryRank": 523,
+            "role": "Supporter",
+            "badges": [],
+            "histories": "1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213,1214",
+            "permissions": 64,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 2764845798,
+                "totalRankedScore": 1070123114,
+                "averageRankedAccuracy": 87.83664,
+                "totalPlayCount": 3003,
+                "rankedPlayCount": 939,
+                "replaysWatched": 4
+            }
+        },
+        {
+            "id": "76561198002500746",
+            "name": "Acerola",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198002500746.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 10424.83,
+            "rank": 1211,
+            "countryRank": 523,
+            "role": "Supporter",
+            "badges": [],
+            "histories": "1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213,1214",
+            "permissions": 64,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 2764845798,
+                "totalRankedScore": 1070123114,
+                "averageRankedAccuracy": 87.83664,
+                "totalPlayCount": 3003,
+                "rankedPlayCount": 939,
+                "replaysWatched": 4
+            }
+        },
+        {
+            "id": "76561198002500746",
+            "name": "Acerola",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198002500746.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 10424.83,
+            "rank": 1211,
+            "countryRank": 523,
+            "role": "Supporter",
+            "badges": [],
+            "histories": "1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213,1214",
+            "permissions": 64,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 2764845798,
+                "totalRankedScore": 1070123114,
+                "averageRankedAccuracy": 87.83664,
+                "totalPlayCount": 3003,
+                "rankedPlayCount": 939,
+                "replaysWatched": 4
+            }
+        },
+        {
+            "id": "76561198002500746",
+            "name": "Acerola",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198002500746.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 10424.83,
+            "rank": 1211,
+            "countryRank": 523,
+            "role": "Supporter",
+            "badges": [],
+            "histories": "1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213,1214",
+            "permissions": 64,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 2764845798,
+                "totalRankedScore": 1070123114,
+                "averageRankedAccuracy": 87.83664,
+                "totalPlayCount": 3003,
+                "rankedPlayCount": 939,
+                "replaysWatched": 4
+            }
+        },
+        {
+            "id": "76561198002500746",
+            "name": "Acerola",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198002500746.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 10424.83,
+            "rank": 1211,
+            "countryRank": 523,
+            "role": "Supporter",
+            "badges": [],
+            "histories": "1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213,1214",
+            "permissions": 64,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 2764845798,
+                "totalRankedScore": 1070123114,
+                "averageRankedAccuracy": 87.83664,
+                "totalPlayCount": 3003,
+                "rankedPlayCount": 939,
+                "replaysWatched": 4
+            }
+        },
+        {
+            "id": "76561198002500746",
+            "name": "Acerola",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198002500746.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 10424.83,
+            "rank": 1211,
+            "countryRank": 523,
+            "role": "Supporter",
+            "badges": [],
+            "histories": "1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213,1214",
+            "permissions": 64,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 2764845798,
+                "totalRankedScore": 1070123114,
+                "averageRankedAccuracy": 87.83664,
+                "totalPlayCount": 3003,
+                "rankedPlayCount": 939,
+                "replaysWatched": 4
+            }
+        },
+        {
+            "id": "76561198002500746",
+            "name": "Acerola",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198002500746.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 10424.83,
+            "rank": 1211,
+            "countryRank": 523,
+            "role": "Supporter",
+            "badges": [],
+            "histories": "1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213,1214",
+            "permissions": 64,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 2764845798,
+                "totalRankedScore": 1070123114,
+                "averageRankedAccuracy": 87.83664,
+                "totalPlayCount": 3003,
+                "rankedPlayCount": 939,
+                "replaysWatched": 4
+            }
+        },
+        {
+            "id": "76561198002500746",
+            "name": "Acerola",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198002500746.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 10424.83,
+            "rank": 1211,
+            "countryRank": 523,
+            "role": "Supporter",
+            "badges": [],
+            "histories": "1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213,1214",
+            "permissions": 64,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 2764845798,
+                "totalRankedScore": 1070123114,
+                "averageRankedAccuracy": 87.83664,
+                "totalPlayCount": 3003,
+                "rankedPlayCount": 939,
+                "replaysWatched": 4
+            }
+        },
+        {
+            "id": "76561198002500746",
+            "name": "Acerola",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198002500746.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 10424.83,
+            "rank": 1211,
+            "countryRank": 523,
+            "role": "Supporter",
+            "badges": [],
+            "histories": "1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213,1214",
+            "permissions": 64,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 2764845798,
+                "totalRankedScore": 1070123114,
+                "averageRankedAccuracy": 87.83664,
+                "totalPlayCount": 3003,
+                "rankedPlayCount": 939,
+                "replaysWatched": 4
+            }
+        },
+        {
+            "id": "76561198002500746",
+            "name": "Acerola",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198002500746.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 10424.83,
+            "rank": 1211,
+            "countryRank": 523,
+            "role": "Supporter",
+            "badges": [],
+            "histories": "1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213,1214",
+            "permissions": 64,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 2764845798,
+                "totalRankedScore": 1070123114,
+                "averageRankedAccuracy": 87.83664,
+                "totalPlayCount": 3003,
+                "rankedPlayCount": 939,
+                "replaysWatched": 4
+            }
+        },
+        {
+            "id": "76561198333869741",
+            "name": "cerret",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198333869741.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 17812.6,
+            "rank": 3,
+            "countryRank": 1,
+            "role": "Supporter",
+            "badges": [
+                {
+                    "description": "Given to all level 2 supporters",
+                    "image": "https://cdn.scoresaber.com/badges/supporter.png"
+                },
+                {
+                    "description": "Beat Saber World Cup 2020: 1st Place (United States)",
+                    "image": "https://cdn.scoresaber.com/badges/BSWC-2020-1.png"
+                },
+                {
+                    "description": "Simply Sabers Runner-Up",
+                    "image": "https://cdn.scoresaber.com/badges/SimplySabers-2.png"
+                },
+                {
+                    "description": "Beat Saber League Season 2 Winner",
+                    "image": "https://cdn.scoresaber.com/badges/BSL-S2-1.png"
+                },
+                {
+                    "description": "Cube Community Winter Cup 2020 Winner",
+                    "image": "https://cdn.scoresaber.com/badges/CCWC-1.png"
+                },
+                {
+                    "description": "Cube Community Spring Cup 2021 Winner",
+                    "image": "https://cdn.scoresaber.com/badges/CCSP-1.png"
+                },
+                {
+                    "description": "Beat Saber League Season 3 Winner",
+                    "image": "https://cdn.scoresaber.com/badges/BSL-S3-1.png"
+                },
+                {
+                    "description": "Beat Saber World Cup 2021: 1st Place (United States)",
+                    "image": "https://cdn.scoresaber.com/badges/BSWC-2021-1.png"
+                },
+                {
+                    "description": "Beat Saber League Season 4 Winner",
+                    "image": "https://cdn.scoresaber.com/badges/BSL-S4-1.png"
+                },
+                {
+                    "description": "Beat Saber World Cup 2022: 1st Place (United States)",
+                    "image": "https://cdn.scoresaber.com/badges/BSWC-2022-1.gif"
+                }
+            ],
+            "histories": "1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3",
+            "permissions": 192,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 4795145753,
+                "totalRankedScore": 1282394712,
+                "averageRankedAccuracy": 95.6236,
+                "totalPlayCount": 3473,
+                "rankedPlayCount": 861,
+                "replaysWatched": 25938
+            }
+        },
+        {
+            "id": "76561198027277296",
+            "name": "ACC | Kira",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198027277296.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 17294.46,
+            "rank": 8,
+            "countryRank": 3,
+            "role": null,
+            "badges": [
+                {
+                    "description": "Cube Community Winter Cup 2021 Runner-Up",
+                    "image": "https://cdn.scoresaber.com/badges/CCWC-2021-2.gif"
+                },
+                {
+                    "description": "Beat Saber League Season 4 3rd Place",
+                    "image": "https://cdn.scoresaber.com/badges/BSL-S4-3.png"
+                },
+                {
+                    "description": "Beat Saber World Cup 2022: 1st Place (United States)",
+                    "image": "https://cdn.scoresaber.com/badges/BSWC-2022-1.gif"
+                },
+                {
+                    "description": "Beat Saber League Season 5 Winner",
+                    "image": "https://cdn.scoresaber.com/badges/BSL-S5-1.png"
+                }
+            ],
+            "histories": "11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,9,8,8,8,8,8,8",
+            "permissions": 0,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 2177832415,
+                "totalRankedScore": 976911078,
+                "averageRankedAccuracy": 96.8177,
+                "totalPlayCount": 2215,
+                "rankedPlayCount": 797,
+                "replaysWatched": 4571
             }
         }
     ]

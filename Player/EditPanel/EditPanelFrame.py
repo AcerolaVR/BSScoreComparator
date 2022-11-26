@@ -12,6 +12,7 @@ import requests
 import io
 import os
 import user
+import re
 from PIL import Image, ImageTk
 import cloudscraper
 
@@ -69,18 +70,21 @@ class EditPlayer(Frame):
         )
 
         variable = StringVar(self)
+        lst = ['Cerret 76561198333869741',
+               'Kira 76561198027277296',
+               'Bizzy 3225556157461414',
+               'Cerebral 76561198024304712']
 
         self.recentListbox = OptionMenu(
             self.canvas,
             variable,
-            'test'
-            # x=10.0,
-            # y=100.0,
-            # height=30,
-            # width=520,
-            # relief="sunken",
-            # font=("Inter", 16 * -1)
+            *lst,
+            command=self.recentFunc,
         )
+
+        lst = ['Cerret',
+               'Kira',
+               'Bizzy']
 
         self.recentListbox.place(
             x=10.0,
@@ -128,7 +132,7 @@ class EditPlayer(Frame):
             image=self.button_view_3,
             borderwidth=0,
             highlightthickness=0,
-            command=lambda: self.LoadPlayerView(),
+            command=lambda: self.LoadPlayerView(self.entry_1.get()),
             relief="flat"
         )
         self.button_view.place(
@@ -161,6 +165,12 @@ class EditPlayer(Frame):
             height=30.0
         )
 
+    def recentFunc(self, value):
+        # scrub non-numeric text from url
+        # userID = re.sub('[^0-9]', '', str(variable.get()))
+        userID = re.sub('[^0-9]', '', str(value))
+        self.LoadPlayerView(userID)
+
     def displayException(self, exception):
         self.exceptionText = self.canvas.create_text(
             10.0,
@@ -174,12 +184,12 @@ class EditPlayer(Frame):
     def deleteException(self):
         self.canvas.delete(self.exceptionText)
 
-    def LoadPlayerView(self):
+    def LoadPlayerView(self, entry):
         self.deleteException()
-        print(self.entry_1.get())
+        print(entry)
         # print(self.entry_1)
         try:
-            self.parent.player = user.loadUser(self.entry_1.get())
+            self.parent.player = user.loadUser(entry)
             print(self.parent.player.name)
             self.parent.windows["view"].destroy()
             self.parent.windows["view"].__init__(self.parent, self.parent.playerHex)
