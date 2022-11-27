@@ -21,9 +21,24 @@ def relative_to_assets(path: str) -> Path:
     return ASSETS_PATH / Path(path)
 
 class ViewSong(Frame):
+    image_1 = None
+    image_2 = None
+    image_4 = None
+    image_5 = None
+
+    songIcons = {}
+
     def __init__(self, parent, song, controller=None, *args, **kwargs):
         Frame.__init__(self, parent, *args, **kwargs)
         self.parent = parent
+
+        #only load these once
+        if ViewSong.image_1 == None:
+            ViewSong.image_1 = PhotoImage( file=relative_to_assets("image_1.png"))
+            ViewSong.image_2 = PhotoImage( file=relative_to_assets("image_2.png"))
+            ViewSong.image_4 = PhotoImage( file=relative_to_assets("image_4.png"))
+            ViewSong.image_5 = PhotoImage( file=relative_to_assets("image_5.png"))
+
 
         self.canvas = Canvas(
             self,
@@ -36,17 +51,15 @@ class ViewSong(Frame):
         )
 
         self.canvas.place(x = 0, y = 0)
-        self.image_image_1 = PhotoImage(
-            file=relative_to_assets("image_1.png"))
-        image_1 = self.canvas.create_image(
+        self.image_image_1 = ViewSong.image_1 
+        self.canvas.create_image(
             270.0,
             58.0,
             image=self.image_image_1
         )
 
-        self.image_image_2 = PhotoImage(
-            file=relative_to_assets("image_2.png"))
-        image_2 = self.canvas.create_image(
+        self.image_image_2 = ViewSong.image_2 
+        self.canvas.create_image(
             489.0,
             55.0,
             image=self.image_image_2
@@ -61,7 +74,10 @@ class ViewSong(Frame):
             font=("Inter", 16 * -1)
         )
 
-        self.image_image_3 = api.getIcon(song.image, w=77, h=77)
+        if song.id not in ViewSong.songIcons:
+            ViewSong.songIcons[song.id] = api.getIcon(song.image, w=77, h=77) 
+
+        self.image_image_3 = ViewSong.songIcons[song.id]
         image_3 = self.canvas.create_image(
             48.0,
             53.0,
@@ -86,9 +102,8 @@ class ViewSong(Frame):
             font=("Inter", 16 * -1)
         )
 
-        self.image_image_4 = PhotoImage(
-            file=relative_to_assets("image_4.png"))
-        image_4 = self.canvas.create_image(
+        self.image_image_4 = ViewSong.image_4 
+        self.canvas.create_image(
             485.0,
             25.0,
             image=self.image_image_4
@@ -112,9 +127,8 @@ class ViewSong(Frame):
             font=("Inter", 16 * -1)
         )
 
-        self.image_image_5 = PhotoImage(
-            file=relative_to_assets("image_5.png"))
-        image_5 = self.canvas.create_image(
+        self.image_image_5 = ViewSong.image_5 
+        self.canvas.create_image(
             507.0,
             89.0,
             image=self.image_image_5
