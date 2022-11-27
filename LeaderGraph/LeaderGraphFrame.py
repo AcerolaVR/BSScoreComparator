@@ -6,7 +6,7 @@ import requests
 import re
 from urlextract import URLExtract
 
-from .SongPanel.ViewSongPanel import ViewSong
+from .SongPanel.ViewSongPanel import ViewSongTable
 from .GraphPanel.ViewGraphPanel import ViewGraph
 
 import user
@@ -21,7 +21,7 @@ class LeaderGraphWidget(Frame):
 
         # Loop through windows and place them
         self.windows = {
-            "leaderboard": ViewSong(self),
+            "leaderboard": ViewSongTable(self),
             "graph": ViewGraph(self),
         }
 

@@ -174,44 +174,42 @@ def build_song_frame(frame, songlist):
             PlayerFrame = ViewSong(frame, song, width=540, height=117)
         else:
             PlayerFrame = Frame(frame, width=540, height=117, bg='#343638')
-        PlayerFrame.grid(row=i, padx=10, pady=10)
+        PlayerFrame.grid(row=i, padx=5, pady=5)
 
-if __name__ == "__main__":
-    root = Tk()
+class ViewSongTable(Frame):
 
-    root.geometry("1100x300")
-    
-    canvas = Canvas(root)
-    scrollbar = Scrollbar(root, orient="vertical", command=canvas.yview)
-    papa_frame = Frame(canvas)
+    def __init__(self, parent, controller=None, *args, **kwargs):
+        Frame.__init__(self, parent, *args, **kwargs)
+        self.parent = parent
 
-    length = 20
+        canvas = Canvas(parent)
+        scrollbar = Scrollbar(parent, orient="vertical", command=canvas.yview)
+        papa_frame = Frame(canvas)
 
-    left_frame = Frame(papa_frame)
-    left_frame.configure(bg="#343638")
-    left_songlist = api.LoadUserSongs(76561198404774259, length)
-    build_song_frame(left_frame, left_songlist)
-    left_frame.grid(column=0)
+        length = 20
 
-    right_frame = Frame(papa_frame)
-    right_frame.configure(bg="#343638")
-    right_songlist = api.LoadUserSongs(76561198333869741, length)
-    right_songlist = api.getCorrespondingList(left_songlist, right_songlist)
-    build_song_frame(right_frame, right_songlist)
-    right_frame.grid(row=0, column=1)
+        left_frame = Frame(papa_frame)
+        left_frame.configure(bg="#343638")
+        self.left_songlist = api.LoadUserSongs(76561198404774259, length)
+        build_song_frame(left_frame, self.left_songlist)
+        left_frame.grid(column=0)
 
-    papa_frame.bind(
-        "<Configure>",
-        lambda e: canvas.configure(
-            scrollregion=canvas.bbox("all")
+        right_frame = Frame(papa_frame)
+        right_frame.configure(bg="#343638")
+        self.right_songlist = api.LoadUserSongs(76561198333869741, length)
+        right_list = api.getCorrespondingList(self.left_songlist, self.right_songlist)
+        build_song_frame(right_frame, right_list)
+        right_frame.grid(row=0, column=1)
+
+        papa_frame.bind(
+            "<Configure>",
+            lambda e: canvas.configure(
+                scrollregion=canvas.bbox("all")
+            )
         )
-    )
 
-    canvas.create_window((0, 0), window=papa_frame, anchor="nw")
-    canvas.configure(yscrollcommand=scrollbar.set)
-    canvas.configure(bg="#343638")
-    canvas.pack(side="left", fill="both", expand=True)
-    scrollbar.pack(side="right", fill="y")
-
-    root.resizable(False, False)
-    root.mainloop()
+        canvas.create_window((0, 0), window=papa_frame, anchor="nw")
+        canvas.configure(yscrollcommand=scrollbar.set)
+        canvas.configure(bg="#343638")
+        canvas.pack(side="left", fill="both", expand=True)
+        scrollbar.pack(side="right", fill="y")
