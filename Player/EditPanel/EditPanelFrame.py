@@ -110,22 +110,6 @@ class EditPlayer(Frame):
             height=25.0
         )
 
-        self.button_recents_2 = PhotoImage(file=relative_to_assets("button_2.png"))
-        self.recents = Button(
-            self.canvas,
-            image=self.button_recents_2,
-            borderwidth=0,
-            highlightthickness=0,
-            command=lambda: self.parent.navigate("recent"),
-            relief="flat"
-        )
-        self.recents.place(
-            x=260.0,
-            y=200.0,
-            width=115.0,
-            height=29.0
-        )
-
         self.button_view_3 = PhotoImage(
             file=relative_to_assets("button_3.png"))
         self.button_view = Button(
