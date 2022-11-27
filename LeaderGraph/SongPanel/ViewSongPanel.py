@@ -167,6 +167,7 @@ class ViewSong(Frame):
             font=("Inter", 16 * -1)
         )
 
+# TODO load images upfront
 def build_song_frame(frame, songlist):
     for i in range(len(songlist)):
         song = songlist[i]
@@ -184,32 +185,71 @@ class ViewSongTable(Frame):
 
         canvas = Canvas(parent)
         scrollbar = Scrollbar(parent, orient="vertical", command=canvas.yview)
-        papa_frame = Frame(canvas)
+        self.papa_frame = Frame(canvas)
+        self.left_frame = None
+        self.right_frame = None
 
         length = 20
-
-        left_frame = Frame(papa_frame)
-        left_frame.configure(bg="#343638")
         self.left_songlist = api.LoadUserSongs(76561198404774259, length)
-        build_song_frame(left_frame, self.left_songlist)
-        left_frame.grid(column=0)
-
-        right_frame = Frame(papa_frame)
-        right_frame.configure(bg="#343638")
         self.right_songlist = api.LoadUserSongs(76561198333869741, length)
-        right_list = api.getCorrespondingList(self.left_songlist, self.right_songlist)
-        build_song_frame(right_frame, right_list)
-        right_frame.grid(row=0, column=1)
 
-        papa_frame.bind(
+        self.left_sortByPP()
+
+        self.papa_frame.bind(
             "<Configure>",
             lambda e: canvas.configure(
                 scrollregion=canvas.bbox("all")
             )
         )
 
-        canvas.create_window((0, 0), window=papa_frame, anchor="nw")
+        canvas.create_window((0, 0), window=self.papa_frame, anchor="nw")
         canvas.configure(yscrollcommand=scrollbar.set)
         canvas.configure(bg="#343638")
         canvas.pack(side="left", fill="both", expand=True)
         scrollbar.pack(side="right", fill="y")
+
+    def build_frames(self, left_list, right_list):
+        if self.left_frame != None:
+            self.left_frame.destroy()
+        if self.right_frame != None:
+            self.right_frame.destroy()
+
+        self.left_frame = Frame(self.papa_frame)
+        self.left_frame.configure(bg="#343638")
+        build_song_frame(self.left_frame, left_list)
+        self.left_frame.grid(row=0, column=0)
+
+        self.right_frame = Frame(self.papa_frame)
+        self.right_frame.configure(bg="#343638")
+        build_song_frame(self.right_frame, right_list)
+        self.right_frame.grid(row=0, column=1)
+    
+    def left_sortByPP(self):
+        left_list = api.sortByPP(self.left_songlist)
+        right_list = api.getCorrespondingList(left_list, self.right_songlist)
+        self.build_frames(left_list, right_list)
+
+    def left_sortByRecent(self):
+        left_list = api.sortByRecent(self.left_songlist)
+        right_list = api.getCorrespondingList(left_list, self.right_songlist)
+        self.build_frames(left_list, right_list)
+
+    def left_sortByUnplayed(self):
+        left_list = api.sortByUnplayed(self.left_songlist, self.right_songlist)
+        right_list = api.getCorrespondingList(left_list, self.right_songlist)
+        self.build_frames(left_list, right_list)
+
+    def right_sortByPP(self):
+        right_list = api.sortByPP(self.right_songlist)
+        left_list = api.getCorrespondingList(right_list, self.left_songlist)
+        self.build_frames(left_list, right_list)
+
+    def right_sortByRecent(self):
+        right_list = api.sortByRecent(self.right_songlist)
+        left_list = api.getCorrespondingList(right_list, self.left_songlist)
+        self.build_frames(left_list, right_list)
+
+    def right_sortByUnplayed(self):
+        right_list = api.sortByUnplayed(self.right_songlist, self.left_songlist)
+        left_list = api.getCorrespondingList(right_list, self.left_songlist)
+        self.build_frames(left_list, right_list)

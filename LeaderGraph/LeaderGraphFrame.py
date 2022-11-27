@@ -38,3 +38,16 @@ class LeaderGraphWidget(Frame):
 
         # Show the screen of the button pressed
         self.windows[name].place(x=0, y=0, width=1113.0, height=680.0)
+
+    def left_sortByPP(self):
+        self.windows["leaderboard"].left_sortByPP()
+    def left_sortByRecent(self):
+        self.windows["leaderboard"].left_sortByRecent()
+    def left_sortByUnplayed(self):
+        self.windows["leaderboard"].left_sortByUnplayed()
+    def right_sortByPP(self):
+        self.windows["leaderboard"].right_sortByPP()
+    def right_sortByRecent(self):
+        self.windows["leaderboard"].right_sortByRecent()
+    def right_sortByUnplayed(self):
+        self.windows["leaderboard"].right_sortByUnplayed()

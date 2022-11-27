@@ -107,7 +107,7 @@ button_3 = Button(
     image=button_image_3,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: print("button_3 clicked"),
+    command=lambda: LeaderGraph1.left_sortByUnplayed(),
     relief="flat"
 )
 button_3.place(
@@ -123,7 +123,7 @@ button_4 = Button(
     image=button_image_4,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: print("button_4 clicked"),
+    command=lambda: LeaderGraph1.left_sortByRecent(),
     relief="flat"
 )
 button_4.place(
@@ -139,7 +139,7 @@ button_5 = Button(
     image=button_image_5,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: print("button_5 clicked"),
+    command=lambda: LeaderGraph1.left_sortByPP(),
     relief="flat"
 )
 button_5.place(
@@ -155,7 +155,7 @@ button_6 = Button(
     image=button_image_6,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: print("button_6 clicked"),
+    command=lambda: LeaderGraph1.right_sortByUnplayed(),
     relief="flat"
 )
 button_6.place(
@@ -171,7 +171,7 @@ button_7 = Button(
     image=button_image_7,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: print("button_7 clicked"),
+    command=lambda: LeaderGraph1.right_sortByRecent(),
     relief="flat"
 )
 button_7.place(
@@ -187,7 +187,7 @@ button_8 = Button(
     image=button_image_8,
     borderwidth=0,
     highlightthickness=0,
-    command=lambda: print("button_8 clicked"),
+    command=lambda: LeaderGraph1.right_sortByPP(),
     relief="flat"
 )
 button_8.place(
