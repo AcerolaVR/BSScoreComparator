@@ -185,7 +185,7 @@ if __name__ == "__main__":
     scrollbar = Scrollbar(root, orient="vertical", command=canvas.yview)
     papa_frame = Frame(canvas)
 
-    length = 100
+    length = 20
 
     left_frame = Frame(papa_frame)
     left_frame.configure(bg="#343638")
