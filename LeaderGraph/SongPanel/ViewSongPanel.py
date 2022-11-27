@@ -8,25 +8,28 @@ from pathlib import Path
 # from tkinter import *
 # Explicit imports to satisfy Flake8
 from tkinter import *
+import api
+from datetime import datetime
+from dateutil import relativedelta
 
 
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"assets/frame0")
+ASSETS_PATH = OUTPUT_PATH / Path(r".\assets\frame0")
 
 
 def relative_to_assets(path: str) -> Path:
     return ASSETS_PATH / Path(path)
 
 class ViewSong(Frame):
-    def __init__(self, parent, controller=None, *args, **kwargs):
+    def __init__(self, parent, song, controller=None, *args, **kwargs):
         Frame.__init__(self, parent, *args, **kwargs)
         self.parent = parent
 
         self.canvas = Canvas(
             self,
             bg = "#343638",
-            height = 140,
-            width = 400,
+            height = 117,
+            width = 540,
             bd = 0,
             highlightthickness = 0,
             relief = "ridge"
@@ -36,32 +39,49 @@ class ViewSong(Frame):
         self.image_image_1 = PhotoImage(
             file=relative_to_assets("image_1.png"))
         image_1 = self.canvas.create_image(
-            200.0,
-            70.0,
+            270.0,
+            58.0,
             image=self.image_image_1
         )
 
         self.image_image_2 = PhotoImage(
             file=relative_to_assets("image_2.png"))
         image_2 = self.canvas.create_image(
-            231.0,
-            112.0,
+            489.0,
+            55.0,
             image=self.image_image_2
         )
 
-        self.image_image_3 = PhotoImage(
-            file=relative_to_assets("image_3.png"))
+        self.canvas.create_text(
+            93.0,
+            19.0,
+            anchor="nw",
+            text=f"{song.name}",
+            fill="#FFFFFF",
+            font=("Inter", 16 * -1)
+        )
+
+        self.image_image_3 = api.getIcon(song.image, w=77, h=77)
         image_3 = self.canvas.create_image(
-            383.0,
-            113.0,
+            48.0,
+            53.0,
             image=self.image_image_3
         )
 
         self.canvas.create_text(
-            96.0,
-            27.0,
+            93.0,
+            36.0,
             anchor="nw",
-            text="Song title by",
+            text=f"by {song.artist}",
+            fill="#FFFFFF",
+            font=("Inter", 16 * -1)
+        )
+
+        self.canvas.create_text(
+            93.0,
+            51.0,
+            anchor="nw",
+            text=f"Mapped by {song.mapper}",
             fill="#FFFFFF",
             font=("Inter", 16 * -1)
         )
@@ -69,25 +89,25 @@ class ViewSong(Frame):
         self.image_image_4 = PhotoImage(
             file=relative_to_assets("image_4.png"))
         image_4 = self.canvas.create_image(
-            48.0,
-            53.0,
+            485.0,
+            25.0,
             image=self.image_image_4
         )
 
         self.canvas.create_text(
-            96.0,
-            44.0,
-            anchor="nw",
-            text="Artist",
+            485.0,
+            25.0,
+            anchor="center",
+            text="%.2f pp" % song.pp,
             fill="#FFFFFF",
             font=("Inter", 16 * -1)
         )
 
         self.canvas.create_text(
-            96.0,
-            59.0,
-            anchor="nw",
-            text="Mapped by mapper",
+            490.0,
+            56.5,
+            anchor="center",
+            text="%.2f%%" % song.accuracy,
             fill="#FFFFFF",
             font=("Inter", 16 * -1)
         )
@@ -95,54 +115,66 @@ class ViewSong(Frame):
         self.image_image_5 = PhotoImage(
             file=relative_to_assets("image_5.png"))
         image_5 = self.canvas.create_image(
-            321.0,
-            115.0,
+            507.0,
+            89.0,
             image=self.image_image_5
         )
 
         self.canvas.create_text(
-            276.0,
-            100.0,
-            anchor="nw",
-            text="395.90 pp",
-            fill="#FFFFFF",
-            font=("Inter", 16 * -1)
-        )
-
-        self.canvas.create_text(
-            192.0,
-            100.0,
-            anchor="nw",
-            text="93.46%",
-            fill="#FFFFFF",
-            font=("Inter", 16 * -1)
-        )
-
-        self.image_image_6 = PhotoImage(
-            file=relative_to_assets("image_6.png"))
-        image_6 = self.canvas.create_image(
-            166.0,
-            113.0,
-            image=self.image_image_6
-        )
-
-        self.canvas.create_text(
-            144.0,
-            100.0,
-            anchor="nw",
-            text="X 3",
+            507.0,
+            89.5,
+            anchor="center",
+            text=f"X {song.misses}",
             fill="#FF0000",
             font=("Inter Bold", 16 * -1)
         )
 
+        delta = relativedelta.relativedelta(datetime.now(), song.timeSet)
+        if delta.years > 0:
+            time_str = f'{delta.years}'
+            if delta.years == 1:
+                time_str += ' year'
+            else:
+                time_str += ' years'
+        elif delta.months > 0:
+            time_str = f'{delta.months}'
+            if delta.months == 1:
+                time_str += ' month'
+            else:
+                time_str += ' months'
+        else:
+            time_str = f'{delta.days}'
+            if delta.days == 1:
+                time_str += ' day'
+            else:
+                time_str += ' days'
+        time_str += ' ago'
         self.canvas.create_text(
             15.0,
-            103.0,
+            94.0,
             anchor="nw",
-            text="3mo ago",
+            text=time_str,
             fill="#FFFFFF",
             font=("Inter", 16 * -1)
         )
+
+        self.canvas.create_text(
+            93.0,
+            70.0,
+            anchor="nw",
+            text=f"{song.stars} stars",
+            fill="#DB00FF",
+            font=("Inter", 16 * -1)
+        )
+
+def build_song_frame(frame, songlist):
+    for i in range(len(songlist)):
+        song = songlist[i]
+        if song != None:
+            PlayerFrame = ViewSong(frame, song, width=540, height=117)
+        else:
+            PlayerFrame = Frame(frame, width=540, height=117, bg='#343638')
+        PlayerFrame.grid(row=i, padx=10, pady=10)
 
 if __name__ == "__main__":
     root = Tk()
@@ -153,22 +185,19 @@ if __name__ == "__main__":
     scrollbar = Scrollbar(root, orient="vertical", command=canvas.yview)
     papa_frame = Frame(canvas)
 
+    length = 100
+
     left_frame = Frame(papa_frame)
     left_frame.configure(bg="#343638")
-
-    for i in range(3):
-        PlayerFrame = ViewSong(left_frame, width=400, height=140)
-        PlayerFrame.grid(row=i, padx=10, pady=10)
-
+    left_songlist = api.LoadUserSongs(76561198404774259, length)
+    build_song_frame(left_frame, left_songlist)
     left_frame.grid(column=0)
 
     right_frame = Frame(papa_frame)
     right_frame.configure(bg="#343638")
-
-    for i in range(3):
-        PlayerFrame = ViewSong(right_frame, width=400, height=140)
-        PlayerFrame.grid(row=i, padx=10, pady=10)
-
+    right_songlist = api.LoadUserSongs(76561198333869741, length)
+    right_songlist = api.getCorrespondingList(left_songlist, right_songlist)
+    build_song_frame(right_frame, right_songlist)
     right_frame.grid(row=0, column=1)
 
     papa_frame.bind(
