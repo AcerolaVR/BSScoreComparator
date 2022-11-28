@@ -19,7 +19,7 @@ ASSETS_PATH = OUTPUT_PATH / Path(r".\assets\frame0")
 def relative_to_assets(path: str) -> Path:
     return ASSETS_PATH / Path(path)
 
-class ViewSong(Frame):
+class LeftCard(Frame):
     image_1 = None
     image_2 = None
     image_4 = None
@@ -32,11 +32,11 @@ class ViewSong(Frame):
         self.parent = parent
 
         #only load these once
-        if ViewSong.image_1 == None:
-            ViewSong.image_1 = PhotoImage( file=relative_to_assets("image_1.png"))
-            ViewSong.image_2 = PhotoImage( file=relative_to_assets("image_2.png"))
-            ViewSong.image_4 = PhotoImage( file=relative_to_assets("image_4.png"))
-            ViewSong.image_5 = PhotoImage( file=relative_to_assets("image_5.png"))
+        if LeftCard.image_1 == None:
+            LeftCard.image_1 = PhotoImage( file=relative_to_assets("image_1.png"))
+            LeftCard.image_2 = PhotoImage( file=relative_to_assets("image_2.png"))
+            LeftCard.image_4 = PhotoImage( file=relative_to_assets("image_4.png"))
+            LeftCard.image_5 = PhotoImage( file=relative_to_assets("image_5.png"))
 
 
         self.canvas = Canvas(
@@ -50,14 +50,14 @@ class ViewSong(Frame):
         )
 
         self.canvas.place(x = 0, y = 0)
-        self.image_image_1 = ViewSong.image_1 
+        self.image_image_1 = LeftCard.image_1 
         self.canvas.create_image(
             270.0,
             58.0,
             image=self.image_image_1
         )
 
-        self.image_image_2 = ViewSong.image_2 
+        self.image_image_2 = LeftCard.image_2 
         self.canvas.create_image(
             489.0,
             55.0,
@@ -73,10 +73,10 @@ class ViewSong(Frame):
             font=("Inter", 16 * -1)
         )
 
-        if song.id not in ViewSong.songIcons:
-            ViewSong.songIcons[song.id] = api.getIcon(song.image, w=77, h=77) 
+        if song.id not in LeftCard.songIcons:
+            LeftCard.songIcons[song.id] = api.getIcon(song.image, w=77, h=77) 
 
-        self.image_image_3 = ViewSong.songIcons[song.id]
+        self.image_image_3 = LeftCard.songIcons[song.id]
         image_3 = self.canvas.create_image(
             48.0,
             53.0,
@@ -101,7 +101,7 @@ class ViewSong(Frame):
             font=("Inter", 16 * -1)
         )
 
-        self.image_image_4 = ViewSong.image_4 
+        self.image_image_4 = LeftCard.image_4 
         self.canvas.create_image(
             485.0,
             25.0,
@@ -126,7 +126,7 @@ class ViewSong(Frame):
             font=("Inter", 16 * -1)
         )
 
-        self.image_image_5 = ViewSong.image_5 
+        self.image_image_5 = LeftCard.image_5 
         self.canvas.create_image(
             507.0,
             89.0,
@@ -180,12 +180,176 @@ class ViewSong(Frame):
             font=("Inter", 16 * -1)
         )
 
+class RightCard(Frame):
+    image_1 = None
+    image_2 = None
+    image_4 = None
+    image_5 = None
+
+    songIcons = {}
+
+    def __init__(self, parent, song, controller=None, *args, **kwargs):
+        Frame.__init__(self, parent, *args, **kwargs)
+        self.parent = parent
+
+        #only load these once
+        if RightCard.image_1 == None:
+            RightCard.image_1 = PhotoImage( file=relative_to_assets("image_1.png"))
+            RightCard.image_2 = PhotoImage( file=relative_to_assets("image_2.png"))
+            RightCard.image_4 = PhotoImage( file=relative_to_assets("image_4.png"))
+            RightCard.image_5 = PhotoImage( file=relative_to_assets("image_5.png"))
+
+
+        self.canvas = Canvas(
+            self,
+            bg = "#343638",
+            height = 117,
+            width = 540,
+            bd = 0,
+            highlightthickness = 0,
+            relief = "ridge"
+        )
+
+        self.canvas.place(x = 0, y = 0)
+        self.image_image_1 = RightCard.image_1 
+        self.canvas.create_image(
+            270.0,
+            58.0,
+            image=self.image_image_1
+        )
+
+        self.image_image_2 = RightCard.image_2 
+        self.canvas.create_image(
+            540-489.0,
+            55.0,
+            image=self.image_image_2
+        )
+
+        self.canvas.create_text(
+            540-93.0,
+            19.0,
+            anchor="ne",
+            text=f"{song.name}",
+            fill="#FFFFFF",
+            font=("Inter", 16 * -1)
+        )
+
+        if song.id not in RightCard.songIcons:
+            RightCard.songIcons[song.id] = api.getIcon(song.image, w=77, h=77) 
+
+        self.image_image_3 = RightCard.songIcons[song.id]
+        image_3 = self.canvas.create_image(
+            540-48.0,
+            53.0,
+            image=self.image_image_3
+        )
+
+        self.canvas.create_text(
+            540-93.0,
+            36.0,
+            anchor="ne",
+            text=f"by {song.artist}",
+            fill="#FFFFFF",
+            font=("Inter", 16 * -1)
+        )
+
+        self.canvas.create_text(
+            540-93.0,
+            51.0,
+            anchor="ne",
+            text=f"Mapped by {song.mapper}",
+            fill="#FFFFFF",
+            font=("Inter", 16 * -1)
+        )
+
+        self.image_image_4 = RightCard.image_4 
+        self.canvas.create_image(
+            540-485.0,
+            25.0,
+            image=self.image_image_4
+        )
+
+        self.canvas.create_text(
+            540-485.0,
+            25.0,
+            anchor="center",
+            text="%.2f pp" % song.pp,
+            fill="#FFFFFF",
+            font=("Inter", 16 * -1)
+        )
+
+        self.canvas.create_text(
+            540-490.0,
+            56.5,
+            anchor="center",
+            text="%.2f%%" % song.accuracy,
+            fill="#FFFFFF",
+            font=("Inter", 16 * -1)
+        )
+
+        self.image_image_5 = RightCard.image_5 
+        self.canvas.create_image(
+            540-507.0,
+            89.0,
+            image=self.image_image_5
+        )
+
+        self.canvas.create_text(
+            540-507.0,
+            89.5,
+            anchor="center",
+            text=f"X {song.misses}",
+            fill="#FF0000",
+            font=("Inter Bold", 16 * -1)
+        )
+
+        delta = relativedelta.relativedelta(datetime.now(), song.timeSet)
+        if delta.years > 0:
+            time_str = f'{delta.years}'
+            if delta.years == 1:
+                time_str += ' year'
+            else:
+                time_str += ' years'
+        elif delta.months > 0:
+            time_str = f'{delta.months}'
+            if delta.months == 1:
+                time_str += ' month'
+            else:
+                time_str += ' months'
+        else:
+            time_str = f'{delta.days}'
+            if delta.days == 1:
+                time_str += ' day'
+            else:
+                time_str += ' days'
+        time_str += ' ago'
+        self.canvas.create_text(
+            540-15.0,
+            94.0,
+            anchor="ne",
+            text=time_str,
+            fill="#FFFFFF",
+            font=("Inter", 16 * -1)
+        )
+
+        self.canvas.create_text(
+            540-93.0,
+            70.0,
+            anchor="ne",
+            text=f"{song.stars} stars",
+            fill="#DB00FF",
+            font=("Inter", 16 * -1)
+        )
+
 # TODO load images upfront
-def build_song_frame(frame, songlist):
+def build_song_frame(frame, songlist, side='left'):
     for i in range(len(songlist)):
         song = songlist[i]
         if song != None:
-            PlayerFrame = ViewSong(frame, song, width=540, height=117)
+            if side == 'left':
+                PlayerFrame = LeftCard(frame, song, width=540, height=117)
+            if side == 'right':
+                PlayerFrame = RightCard(frame, song, width=540, height=117)
         else:
             PlayerFrame = Frame(frame, width=540, height=117, bg='#343638')
         PlayerFrame.grid(row=i, padx=5, pady=5)
@@ -229,12 +393,12 @@ class ViewSongTable(Frame):
 
         self.left_frame = Frame(self.papa_frame)
         self.left_frame.configure(bg="#343638")
-        build_song_frame(self.left_frame, left_list)
+        build_song_frame(self.left_frame, left_list, side='left')
         self.left_frame.grid(row=0, column=0)
 
         self.right_frame = Frame(self.papa_frame)
         self.right_frame.configure(bg="#343638")
-        build_song_frame(self.right_frame, right_list)
+        build_song_frame(self.right_frame, right_list, side='right')
         self.right_frame.grid(row=0, column=1)
     
     def left_sortByPP(self):
