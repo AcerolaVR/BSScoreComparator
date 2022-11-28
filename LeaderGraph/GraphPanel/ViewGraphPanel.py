@@ -42,3 +42,4 @@ class ViewGraph(Frame):
             fill="#FFFFFF",
             font=("Inter", 16 * -1)
         )
+

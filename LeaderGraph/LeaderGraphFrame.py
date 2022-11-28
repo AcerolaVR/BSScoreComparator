@@ -11,6 +11,7 @@ from .GraphPanel.ViewGraphPanel import ViewGraph
 
 import api
 
+
 class LeaderGraphWidget(Frame):
     def __init__(self, parent, controller=None, *args, **kwargs):
         Frame.__init__(self, parent, *args, **kwargs)
@@ -31,7 +32,6 @@ class LeaderGraphWidget(Frame):
 
         self.current_window.tkraise()
 
-
     def navigate(self, name):
         # Hide all screens
         for window in self.windows.values():
@@ -42,13 +42,18 @@ class LeaderGraphWidget(Frame):
 
     def left_sortByPP(self):
         self.windows["leaderboard"].left_sortByPP()
+
     def left_sortByRecent(self):
         self.windows["leaderboard"].left_sortByRecent()
+
     def left_sortByUnplayed(self):
         self.windows["leaderboard"].left_sortByUnplayed()
+
     def right_sortByPP(self):
         self.windows["leaderboard"].right_sortByPP()
+
     def right_sortByRecent(self):
         self.windows["leaderboard"].right_sortByRecent()
+
     def right_sortByUnplayed(self):
         self.windows["leaderboard"].right_sortByUnplayed()

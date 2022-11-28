@@ -397,6 +397,310 @@
                 "rankedPlayCount": 1487,
                 "replaysWatched": 408
             }
+        },
+        {
+            "id": "2085408448198355",
+            "name": "Smallfox",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/oculus.png",
+            "bio": "",
+            "country": "SE",
+            "pp": 17715.51,
+            "rank": 4,
+            "countryRank": 1,
+            "role": "",
+            "badges": [
+                {
+                    "description": "Beat Saber League Season 3 3rd Place",
+                    "image": "https://cdn.scoresaber.com/badges/BSL-S3-3.png"
+                },
+                {
+                    "description": "Beat Saber World Cup 2021: 3rd Place (Sweden)",
+                    "image": "https://cdn.scoresaber.com/badges/BSWC-2021-3.png"
+                }
+            ],
+            "histories": "9,10,10,10,10,10,10,10,10,10,10,7,7,6,6,7,7,7,6,7,6,5,5,4,4,4,5,5,5,5,5,5,5,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+            "permissions": 0,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 2910580470,
+                "totalRankedScore": 1607145868,
+                "averageRankedAccuracy": 93.20564,
+                "totalPlayCount": 2676,
+                "rankedPlayCount": 1315,
+                "replaysWatched": 3602
+            }
+        },
+        {
+            "id": "76561198960449289",
+            "name": "Aquaflee",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198960449289.jpg",
+            "bio": "",
+            "country": "GB",
+            "pp": 17308.94,
+            "rank": 7,
+            "countryRank": 2,
+            "role": null,
+            "badges": [
+                {
+                    "description": "Beat Saber World Cup 2022: 2nd Place (United Kingdom)",
+                    "image": "https://cdn.scoresaber.com/badges/BSWC-2022-2.gif"
+                }
+            ],
+            "histories": "4,5,4,4,4,4,4,4,4,4,5,5,5,5,5,5,4,5,5,5,5,6,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7",
+            "permissions": 0,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 928331647,
+                "totalRankedScore": 526897585,
+                "averageRankedAccuracy": 96.41463,
+                "totalPlayCount": 681,
+                "rankedPlayCount": 329,
+                "replaysWatched": 812
+            }
+        },
+        {
+            "id": "76561198153101808",
+            "name": "Reddek",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198153101808.jpg",
+            "bio": "<p style=\"text-align:center\">\n</p>",
+            "country": "US",
+            "pp": 16829.5,
+            "rank": 13,
+            "countryRank": 6,
+            "role": "",
+            "badges": [
+                {
+                    "description": "Supported ScoreSaber through the 2021 Holiday Season",
+                    "image": "https://cdn.scoresaber.com/badges/Holiday-Supporter.gif"
+                }
+            ],
+            "histories": "12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13",
+            "permissions": 0,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 5055972371,
+                "totalRankedScore": 1460118103,
+                "averageRankedAccuracy": 95.74551,
+                "totalPlayCount": 5825,
+                "rankedPlayCount": 1220,
+                "replaysWatched": 1936
+            }
+        },
+        {
+            "id": "76561199003505371",
+            "name": "Creeper",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561199003505371.jpg",
+            "bio": "",
+            "country": "AU",
+            "pp": 16611.65,
+            "rank": 14,
+            "countryRank": 2,
+            "role": null,
+            "badges": [],
+            "histories": "13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,13,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14",
+            "permissions": 0,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 4016181400,
+                "totalRankedScore": 2048579270,
+                "averageRankedAccuracy": 97.11246,
+                "totalPlayCount": 3695,
+                "rankedPlayCount": 1933,
+                "replaysWatched": 1796
+            }
+        },
+        {
+            "id": "76561198835772160",
+            "name": "TornadoEF6",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198835772160.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 16203.92,
+            "rank": 20,
+            "countryRank": 8,
+            "role": "",
+            "badges": [
+                {
+                    "description": "Beat Saber World Cup 2021: 1st Place (United States)",
+                    "image": "https://cdn.scoresaber.com/badges/BSWC-2021-1.png"
+                },
+                {
+                    "description": "Beat Saber World Cup 2022: 1st Place (United States)",
+                    "image": "https://cdn.scoresaber.com/badges/BSWC-2022-1.gif"
+                }
+            ],
+            "histories": "18,18,18,19,19,19,19,19,19,19,19,19,19,19,19,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20",
+            "permissions": 0,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 4113062231,
+                "totalRankedScore": 1052755267,
+                "averageRankedAccuracy": 95.01794,
+                "totalPlayCount": 3887,
+                "rankedPlayCount": 716,
+                "replaysWatched": 989
+            }
+        },
+        {
+            "id": "76561198171842815",
+            "name": "Coolpick",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198171842815.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 15670.25,
+            "rank": 26,
+            "countryRank": 11,
+            "role": "",
+            "badges": [
+                {
+                    "description": "Captain's Banquet Tournament 3rd Place (Team monke)",
+                    "image": "https://cdn.scoresaber.com/badges/CBT-Badge-3.png"
+                },
+                {
+                    "description": "Beat Saber World Cup 2021: 1st Place (United States)",
+                    "image": "https://cdn.scoresaber.com/badges/BSWC-2021-1.png"
+                },
+                {
+                    "description": "Beat Saber World Cup 2022: 1st Place (United States)",
+                    "image": "https://cdn.scoresaber.com/badges/BSWC-2022-1.gif"
+                }
+            ],
+            "histories": "27,27,27,27,27,27,27,27,27,27,28,28,28,28,28,27,27,27,27,28,27,27,27,27,27,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26",
+            "permissions": 0,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 2792726500,
+                "totalRankedScore": 995894619,
+                "averageRankedAccuracy": 94.83779,
+                "totalPlayCount": 3564,
+                "rankedPlayCount": 936,
+                "replaysWatched": 1123
+            }
+        },
+        {
+            "id": "2169974796454690",
+            "name": "Bytesy",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/oculus.png",
+            "bio": "",
+            "country": "US",
+            "pp": 15840.89,
+            "rank": 24,
+            "countryRank": 9,
+            "role": null,
+            "badges": [],
+            "histories": "28,28,28,28,28,28,28,28,28,28,27,27,27,27,27,28,28,28,28,27,26,25,25,25,25,25,25,25,25,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24,24",
+            "permissions": 0,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 4262383193,
+                "totalRankedScore": 967820666,
+                "averageRankedAccuracy": 95.66809,
+                "totalPlayCount": 3771,
+                "rankedPlayCount": 750,
+                "replaysWatched": 177
+            }
+        },
+        {
+            "id": "76561198308438667",
+            "name": "WolfVR",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198308438667.jpg",
+            "bio": "<p>pushin p</p>",
+            "country": "US",
+            "pp": 15653.28,
+            "rank": 27,
+            "countryRank": 12,
+            "role": "",
+            "badges": [
+                {
+                    "description": "Supported ScoreSaber through the 2021 Holiday Season",
+                    "image": "https://cdn.scoresaber.com/badges/Holiday-Supporter.gif"
+                }
+            ],
+            "histories": "26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,25,26,26,26,26,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27,27",
+            "permissions": 0,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 2581881001,
+                "totalRankedScore": 1027423923,
+                "averageRankedAccuracy": 96.44608,
+                "totalPlayCount": 2616,
+                "rankedPlayCount": 901,
+                "replaysWatched": 529
+            }
+        },
+        {
+            "id": "76561198427751585",
+            "name": "KipOsu",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198427751585.jpg",
+            "bio": "<p>Kip#3352<br /><br /></p>",
+            "country": "RU",
+            "pp": 15376,
+            "rank": 33,
+            "countryRank": 1,
+            "role": "",
+            "badges": [
+                {
+                    "description": "Supported ScoreSaber through the 2021 Holiday Season",
+                    "image": "https://cdn.scoresaber.com/badges/Holiday-Supporter.gif"
+                }
+            ],
+            "histories": "30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,29,29,29,29,29,29,29,29,29,29,29,30,30,30,30,31,31,31,31,31,31,31,31,31,31,31,31,32,33",
+            "permissions": 0,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 2088411360,
+                "totalRankedScore": 1312981421,
+                "averageRankedAccuracy": 96.44273,
+                "totalPlayCount": 2095,
+                "rankedPlayCount": 1260,
+                "replaysWatched": 204
+            }
+        },
+        {
+            "id": "76561198988695829",
+            "name": "OlbmaPhlee",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198988695829.jpg",
+            "bio": "",
+            "country": "GB",
+            "pp": 17906.35,
+            "rank": 2,
+            "countryRank": 1,
+            "role": "",
+            "badges": [
+                {
+                    "description": "Captain's Banquet Tournament Winners (Team Reflex)",
+                    "image": "https://cdn.scoresaber.com/badges/CBT-Badge-1.png"
+                },
+                {
+                    "description": "Held one or more of the final pixels on /r/place 2022 for ScoreSaber",
+                    "image": "https://cdn.scoresaber.com/badges/rplace.gif"
+                },
+                {
+                    "description": "Beat Saber World Cup 2022: 2nd Place (United Kingdom)",
+                    "image": "https://cdn.scoresaber.com/badges/BSWC-2022-2.gif"
+                }
+            ],
+            "histories": "6,6,6,6,6,6,6,6,6,6,6,6,6,7,7,4,5,4,4,4,4,4,4,5,5,5,3,3,3,3,3,3,3,3,3,3,3,3,1,1,1,1,2,2,2,1,1,1,2",
+            "permissions": 0,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 3486000005,
+                "totalRankedScore": 1511508652,
+                "averageRankedAccuracy": 96.94178,
+                "totalPlayCount": 3459,
+                "rankedPlayCount": 1252,
+                "replaysWatched": 4790
+            }
         }
     ]
 }

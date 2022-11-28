@@ -24,8 +24,8 @@ window.configure(bg="#6F6F6F")
 # Player1 = api.loadUser('https://scoresaber.com/u/76561198002500746')
 # Player2 = api.loadUser('76561198002500746')
 
-api.Player1 = api.loadUser('76561198002500746')
-api.Player2 = api.loadUser('76561198002500746')
+api.Player1 = api.loadUser('76561198988695829')
+api.Player2 = api.loadUser('76561198333869741')
 
 PlayerFrame1 = PlayerWidget(api.Player1, window, "#B71C1C", bg="#343638", width=540, height=240)
 PlayerFrame2 = PlayerWidget(api.Player2, window, "#003BFF", bg="#343638", width=540, height=240)
