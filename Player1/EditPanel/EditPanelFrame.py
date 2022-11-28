@@ -101,6 +101,7 @@ class EditPlayer(Frame):
             borderwidth=0,
             highlightthickness=0,
             command=lambda: webbrowser.open('https://scoresaber.com/rankings'),
+            cursor='hand2', activebackground="#343638",
             relief="flat"
         )
         self.button_scoresaber.place(
@@ -118,6 +119,7 @@ class EditPlayer(Frame):
             borderwidth=0,
             highlightthickness=0,
             command=lambda: self.LoadPlayerView(self.entry_1.get()),
+            cursor='hand2', activebackground="#343638",
             relief="flat"
         )
         self.button_view.place(

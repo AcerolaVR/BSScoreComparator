@@ -8,7 +8,7 @@ from pathlib import Path
 # from tkinter import *
 # Explicit imports to satisfy Flake8
 from tkinter import *
-
+import api
 
 OUTPUT_PATH = Path(__file__).parent
 ASSETS_PATH = OUTPUT_PATH / Path(r"assets/frame0")
@@ -42,4 +42,13 @@ class ViewGraph(Frame):
             fill="#FFFFFF",
             font=("Inter", 16 * -1)
         )
+
+    #     draw graph here on canvas, width 1113, height 580
+
+    def plotGraph(self):
+        # plot graph
+
+        # get songlist from current users
+        self.left_songlist = api.Player1.songList
+        self.right_songlist = api.Player2.songList
 

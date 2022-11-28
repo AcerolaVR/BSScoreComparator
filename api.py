@@ -118,8 +118,6 @@ def write_json(new_data, filename='recentUsers.json'):
         # First we load existing data into a dict.
         file_data = json.load(file)
         # if new_data['id'] in file_data.values():
-        print(new_data['id'])
-        print(str(file_data['recent_players']))
 
         # if new_data['id'] in file_data['recent_players']:
         if str(file_data['recent_players']).__contains__(str(new_data['id'])):

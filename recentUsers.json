@@ -701,6 +701,35 @@
                 "rankedPlayCount": 1252,
                 "replaysWatched": 4790
             }
+        },
+        {
+            "id": "76561198404774259",
+            "name": "GOLF NATION | silentgolf",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198404774259.jpg",
+            "bio": "<p>https://www.youtube.com/channel/UCsgtsCrfFn7judg1f1qZvyQ</p>\n<p>#1 Albo\u00a0</p>\n<p>\u00a0</p>",
+            "country": "AU",
+            "pp": 17912.44,
+            "rank": 1,
+            "countryRank": 1,
+            "role": "Supporter",
+            "badges": [
+                {
+                    "description": "Given to all level 2 supporters",
+                    "image": "https://cdn.scoresaber.com/badges/supporter.png"
+                }
+            ],
+            "histories": "3,3,3,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,1,1,1,2,2,2,1",
+            "permissions": 192,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 1581757189,
+                "totalRankedScore": 856786704,
+                "averageRankedAccuracy": 96.27052,
+                "totalPlayCount": 1434,
+                "rankedPlayCount": 656,
+                "replaysWatched": 1648
+            }
         }
     ]
 }

@@ -172,6 +172,7 @@ class ViewPlayer(Frame):
             borderwidth=0,
             highlightthickness=0,
             command=lambda: self.parent.navigate("edit"),
+            cursor='hand2', activebackground="#343638",
             relief="flat"
         )
 
