@@ -12,7 +12,6 @@ import api
 from datetime import datetime
 from dateutil import relativedelta
 
-
 OUTPUT_PATH = Path(__file__).parent
 ASSETS_PATH = OUTPUT_PATH / Path(r".\assets\frame0")
 
@@ -204,8 +203,8 @@ class ViewSongTable(Frame):
         self.right_frame = None
 
         length = 20
-        self.left_songlist = api.LoadUserSongs(76561198404774259, length)
-        self.right_songlist = api.LoadUserSongs(76561198333869741, length)
+        self.left_songlist = api.Player1.songList
+        self.right_songlist = api.Player2.songList
 
         self.left_sortByPP()
 

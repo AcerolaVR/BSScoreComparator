@@ -23,7 +23,7 @@ class LeaderGraphWidget(Frame):
         # Loop through windows and place them
         self.windows = {
             "leaderboard": ViewSongTable(self),
-            "graph": ViewGraph(self),
+            # "graph": ViewGraph(self),
         }
 
         self.current_window = self.windows["leaderboard"]

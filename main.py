@@ -16,8 +16,6 @@ ASSETS_PATH = os.path.join(ASSETS_PATH, 'assets/frame0')
 
 def relative_to_assets(path: str) -> Path:
     return ASSETS_PATH / Path(path)
-
-
 window = Tk()
 
 window.geometry("1220x1024")
@@ -26,11 +24,11 @@ window.configure(bg="#6F6F6F")
 # Player1 = api.loadUser('https://scoresaber.com/u/76561198002500746')
 # Player2 = api.loadUser('76561198002500746')
 
-Player1 = api.loadUser('76561198002500746')
-Player2 = api.loadUser('76561198002500746')
+api.Player1 = api.loadUser('76561198002500746')
+api.Player2 = api.loadUser('76561198002500746')
 
-PlayerFrame1 = PlayerWidget(Player1, window, "#B71C1C", bg="#343638", width=540, height=240)
-PlayerFrame2 = PlayerWidget(Player2, window, "#003BFF", bg="#343638", width=540, height=240)
+PlayerFrame1 = PlayerWidget(api.Player1, window, "#B71C1C", bg="#343638", width=540, height=240)
+PlayerFrame2 = PlayerWidget(api.Player2, window, "#003BFF", bg="#343638", width=540, height=240)
 LeaderGraph1 = LeaderGraphWidget(window, bg="#343638", width=1113, height=680)
 
 canvas = Canvas(
