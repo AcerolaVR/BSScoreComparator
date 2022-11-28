@@ -19,7 +19,7 @@ def relative_to_assets(path: str) -> Path:
     return ASSETS_PATH / Path(path)
 window = Tk()
 
-window.geometry("1220x1024")
+window.geometry("1220x924")
 window.configure(bg="#6F6F6F")
 
 # Player1 = api.loadUser('https://scoresaber.com/u/76561198002500746')
@@ -30,7 +30,7 @@ api.Player2 = api.loadUser('76561198333869741')
 
 PlayerFrame1 = PlayerWidget1(api.Player1, window, "#B71C1C", bg="#343638", width=540, height=240)
 PlayerFrame2 = PlayerWidget2(api.Player2, window, "#003BFF", bg="#343638", width=540, height=240)
-LeaderGraph1 = LeaderGraphWidget(window, bg="#343638", width=1113, height=680)
+LeaderGraph1 = LeaderGraphWidget(window, bg="#343638", width=1113, height=580)
 
 canvas = Canvas(
     window,
@@ -43,22 +43,6 @@ canvas = Canvas(
 )
 
 canvas.place(x=0, y=0)
-
-canvas.create_rectangle(
-    650.0,
-    11.0,
-    1190.0,
-    251.0,
-    fill="#343638",
-    outline="")
-
-canvas.create_rectangle(
-    77.0,
-    309.0,
-    1190.0,
-    989.0,
-    fill="#343638",
-    outline="")
 
 button_image_1 = PhotoImage(
     file=relative_to_assets("button_1.png"))
@@ -188,18 +172,10 @@ button_8.place(
     height=32.0
 )
 
-canvas.create_rectangle(
-    77.0,
-    11.0,
-    617.0,
-    251.0,
-    fill="#000000",
-    outline="")
-
 # place and raise the player frames on the main window
 PlayerFrame1.place(x=77, y=11, width=540.0, height=240.0)
 PlayerFrame2.place(x=650, y=11, width=540.0, height=240.0)
-LeaderGraph1.place(x=77, y=309, width=1113.0, height=680.0)
+LeaderGraph1.place(x=77, y=309, width=1113.0, height=580.0)
 
 PlayerFrame1.tkraise()
 PlayerFrame2.tkraise()
