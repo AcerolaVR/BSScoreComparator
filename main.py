@@ -30,7 +30,7 @@ api.Player2 = api.loadUser('76561198333869741')
 
 PlayerFrame1 = PlayerWidget1(api.Player1, window, "#B71C1C", bg="#343638", width=540, height=240)
 PlayerFrame2 = PlayerWidget2(api.Player2, window, "#003BFF", bg="#343638", width=540, height=240)
-LeaderGraph1 = LeaderGraphWidget(window, bg="#343638", width=1113, height=580)
+LeaderGraph1 = LeaderGraphWidget(window, bg="#343638", width=1120, height=580)
 
 canvas = Canvas(
     window,
@@ -175,7 +175,7 @@ button_8.place(
 # place and raise the player frames on the main window
 PlayerFrame1.place(x=77, y=11, width=540.0, height=240.0)
 PlayerFrame2.place(x=650, y=11, width=540.0, height=240.0)
-LeaderGraph1.place(x=77, y=309, width=1113.0, height=580.0)
+LeaderGraph1.place(x=83.5, y=309, width=1120.0, height=580.0)
 
 PlayerFrame1.tkraise()
 PlayerFrame2.tkraise()
