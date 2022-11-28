@@ -7,7 +7,7 @@ from pathlib import Path
 from tkinter import Tk, Canvas, Button, PhotoImage
 
 import api
-from Player.PlayerFrame import PlayerWidget
+from Player1.PlayerFrame import PlayerWidget
 
 ASSETS_PATH = os.path.dirname(__file__)
 ASSETS_PATH = os.path.join(ASSETS_PATH, '../assets/frame0')

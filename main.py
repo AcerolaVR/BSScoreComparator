@@ -7,7 +7,8 @@ from pathlib import Path
 from tkinter import Tk, Canvas, Button, PhotoImage
 
 import api
-from Player.PlayerFrame import PlayerWidget
+from Player1.PlayerFrame import PlayerWidget1
+from Player2.PlayerFrame import PlayerWidget2
 from LeaderGraph.LeaderGraphFrame import LeaderGraphWidget
 
 ASSETS_PATH = os.path.dirname(__file__)
@@ -27,8 +28,8 @@ window.configure(bg="#6F6F6F")
 api.Player1 = api.loadUser('76561198988695829')
 api.Player2 = api.loadUser('76561198333869741')
 
-PlayerFrame1 = PlayerWidget(api.Player1, window, "#B71C1C", bg="#343638", width=540, height=240)
-PlayerFrame2 = PlayerWidget(api.Player2, window, "#003BFF", bg="#343638", width=540, height=240)
+PlayerFrame1 = PlayerWidget1(api.Player1, window, "#B71C1C", bg="#343638", width=540, height=240)
+PlayerFrame2 = PlayerWidget2(api.Player2, window, "#003BFF", bg="#343638", width=540, height=240)
 LeaderGraph1 = LeaderGraphWidget(window, bg="#343638", width=1113, height=680)
 
 canvas = Canvas(
