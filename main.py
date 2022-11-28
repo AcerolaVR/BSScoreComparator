@@ -6,7 +6,7 @@ from pathlib import Path
 # Explicit imports to satisfy Flake8
 from tkinter import Tk, Canvas, Button, PhotoImage
 
-import user
+import api
 from Player.PlayerFrame import PlayerWidget
 from LeaderGraph.LeaderGraphFrame import LeaderGraphWidget
 
@@ -23,10 +23,11 @@ window = Tk()
 window.geometry("1220x1024")
 window.configure(bg="#6F6F6F")
 
-# Player1 = user.loadUser('https://scoresaber.com/u/76561198002500746')
-# Player2 = user.loadUser('76561198002500746')
-Player1 = user.loadUser('76561198002500746')
-Player2 = user.loadUser('76561198002500746')
+# Player1 = api.loadUser('https://scoresaber.com/u/76561198002500746')
+# Player2 = api.loadUser('76561198002500746')
+
+Player1 = api.loadUser('76561198002500746')
+Player2 = api.loadUser('76561198002500746')
 
 PlayerFrame1 = PlayerWidget(Player1, window, "#B71C1C", bg="#343638", width=540, height=240)
 PlayerFrame2 = PlayerWidget(Player2, window, "#003BFF", bg="#343638", width=540, height=240)
@@ -52,6 +53,7 @@ LeaderGraph1.place(x=77, y=309, width=1113.0, height=680.0)
 PlayerFrame1.tkraise()
 PlayerFrame2.tkraise()
 LeaderGraph1.tkraise()
+LeaderGraph1.left_sortByPP()
 
 canvas.create_rectangle(
     650.0,

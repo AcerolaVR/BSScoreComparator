@@ -1,32 +1,15 @@
-import tkinter
+import datetime
+import io
+import json
+import re
+import tkinter.messagebox
+import traceback
 from urllib.request import urlopen
 
 import requests
-import json
-import io
-import os
-from PIL import Image, ImageTk
-import PySimpleGUI as sg
-import cloudscraper
-import urllib
-import datetime
 import validators
-import re
+from PIL import Image, ImageTk
 
-sg.theme('DarkAmber')
-
-def getIcon(img_url, w=128, h=128):
-    jpg_data = (
-        cloudscraper.create_scraper(
-            browser={"browser": "firefox", "platform": "windows", "mobile": False}
-        )
-            .get(img_url)
-            .content
-    )
-
-    pil_image = Image.open(io.BytesIO(jpg_data))
-    pil_image = pil_image.resize((w, h))
-    return ImageTk.PhotoImage(pil_image)
 
 class User:
     def __init__(self, id, name, country, pp, globalRank, localRank, rankedAcc, rankedCount, icon, songList):
@@ -43,7 +26,8 @@ class User:
 
 
 class Song:
-    def __init__(self, id, name, artist, mapper, timeSet, stars, score, accuracy, pp, img, fullCombo, maxCombo, badCuts, misses):
+    def __init__(self, id, name, artist, mapper, timeSet, stars, score, accuracy, pp, img, fullCombo, maxCombo, badCuts,
+                 misses):
         self.id = id
         self.name = name
         self.artist = artist
@@ -108,6 +92,7 @@ def loadUser(userInput):
 
     return newUser
 
+
 # function to add to JSON
 def write_json(new_data, filename='recentUsers.json'):
     with open(filename, 'r+') as file:
@@ -134,6 +119,7 @@ def report_callback_exception(self, *args):
     err = traceback.format_exception(*args)
     tkinter.messagebox.showerror('Exception', err)
 
+
 def LoadUserSongs(userID, len):
     # play_response = requests.get('https://scoresaber.com/api/player/' + str(userID) + '/scores?limit=' + str(99) + 'sort=top&withMetadata=true')
     play_response = requests.get(
@@ -148,7 +134,8 @@ def LoadUserSongs(userID, len):
                              play_response.json()['playerScores'][x]['score']['timeSet'],
                              play_response.json()['playerScores'][x]['leaderboard']['stars'],
                              play_response.json()['playerScores'][x]['score']['baseScore'],
-                             100 * (play_response.json()['playerScores'][x]['score']['baseScore'] / play_response.json()['playerScores'][x]['leaderboard']['maxScore']),
+                             100 * (play_response.json()['playerScores'][x]['score']['baseScore'] /
+                                    play_response.json()['playerScores'][x]['leaderboard']['maxScore']),
                              play_response.json()['playerScores'][x]['score']['pp'],
                              play_response.json()['playerScores'][x]['leaderboard']['coverImage'],
                              play_response.json()['playerScores'][x]['score']['fullCombo'],
@@ -169,11 +156,14 @@ def getImage(img_url):
     im = Image.open(io.BytesIO(raw_data))
     return ImageTk.PhotoImage(im)
 
+
 def sortByPP(songs):
-    return sorted(songs, key=lambda x: x.pp, reverse=True) 
+    return sorted(songs, key=lambda x: x.pp, reverse=True)
+
 
 def sortByRecent(songs):
-    return sorted(songs, key=lambda x: x.timeSet, reverse=True) 
+    return sorted(songs, key=lambda x: x.timeSet, reverse=True)
+
 
 def sortByUnplayed(songs1, songs2):
     def check(x1, songs):
@@ -181,7 +171,9 @@ def sortByUnplayed(songs1, songs2):
             if x1.id == x2.id:
                 return True
         return False
+
     return [x for x in songs1 if not check(x, songs2)]
+
 
 def getCorrespondingList(songs1, songs2):
     def getSong(x1, songs):
@@ -195,6 +187,7 @@ def getCorrespondingList(songs1, songs2):
         ret.append(getSong(x, songs2))
     return ret
 
+
 def SortTest(SongList):
     import random
     random.shuffle(SongList)
@@ -204,11 +197,3 @@ def SortTest(SongList):
     print(SongList[10])
     del SongList2[10]
     print(sortByUnplayed(SongList, SongList2))
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    User1 = loadUser(76561198002500746)
-    SongList = LoadUserSongs(76561198002500746, 100)
-    print(SongList)
-    SortTest(SongList.copy())
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/

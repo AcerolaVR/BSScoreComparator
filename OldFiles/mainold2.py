@@ -6,11 +6,11 @@ from pathlib import Path
 # Explicit imports to satisfy Flake8
 from tkinter import Tk, Canvas, Button, PhotoImage
 
-import user
+import api
 from Player.PlayerFrame import PlayerWidget
 
 ASSETS_PATH = os.path.dirname(__file__)
-ASSETS_PATH = os.path.join(ASSETS_PATH, 'assets/frame0')
+ASSETS_PATH = os.path.join(ASSETS_PATH, '../assets/frame0')
 
 
 def relative_to_assets(path: str) -> Path:
@@ -22,10 +22,10 @@ window = Tk()
 window.geometry("1220x1024")
 window.configure(bg="#6F6F6F")
 
-# Player1 = user.loadUser('https://scoresaber.com/u/76561198002500746')
-# Player2 = user.loadUser('76561198002500746')
-Player1 = user.loadUser('Acerola')
-Player2 = user.loadUser('Acerola')
+# Player1 = api.loadUser('https://scoresaber.com/u/76561198002500746')
+# Player2 = api.loadUser('76561198002500746')
+Player1 = api.loadUser('Acerola')
+Player2 = api.loadUser('Acerola')
 
 PlayerFrame1 = PlayerWidget(Player1, window, "#B71C1C", bg="#343638", width=540, height=240)
 PlayerFrame2 = PlayerWidget(Player2, window, "#003BFF", bg="#343638", width=540, height=240)

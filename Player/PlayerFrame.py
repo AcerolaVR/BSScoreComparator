@@ -9,7 +9,7 @@ from urlextract import URLExtract
 from .PlayerPanel.ViewPanelFrame import ViewPlayer
 from .EditPanel.EditPanelFrame import EditPlayer
 
-import user
+import api
 
 class PlayerWidget(Frame):
     def __init__(self, player, parent, playerHex, controller=None, *args, **kwargs):

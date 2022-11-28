@@ -9,11 +9,12 @@ from urlextract import URLExtract
 from .SongPanel.ViewSongPanel import ViewSongTable
 from .GraphPanel.ViewGraphPanel import ViewGraph
 
-import user
+import api
 
 class LeaderGraphWidget(Frame):
     def __init__(self, parent, controller=None, *args, **kwargs):
         Frame.__init__(self, parent, *args, **kwargs)
+        print('initializing LeaderGraphFrame')
         self.parent = parent
         # self.player = player
 

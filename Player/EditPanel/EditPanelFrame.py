@@ -11,7 +11,7 @@ import traceback
 import requests
 import io
 import os
-import user
+import api
 import re
 import json
 from PIL import Image, ImageTk
@@ -173,7 +173,7 @@ class EditPlayer(Frame):
         print(entry)
         # print(self.entry_1)
         try:
-            self.parent.player = user.loadUser(entry)
+            self.parent.player = api.loadUser(entry)
             print(self.parent.player.name)
             self.parent.windows["view"].destroy()
             self.parent.windows["view"].__init__(self.parent, self.parent.playerHex)
