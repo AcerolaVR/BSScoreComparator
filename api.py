@@ -1,17 +1,16 @@
+import datetime
+import io
+import json
+import re
 import tkinter
+import traceback
 from urllib.request import urlopen
 
-import requests
-import json
-import io
-import os
-from PIL import Image, ImageTk
 import PySimpleGUI as sg
 import cloudscraper
-import urllib
-import datetime
+import requests
 import validators
-import re
+from PIL import Image, ImageTk
 
 sg.theme('DarkAmber')
 
@@ -65,24 +64,28 @@ class Song:
 
 @staticmethod
 def loadUser(userInput):
-    errorValues = ["We couldn't find a user with the id",
+    errorValues = ["No player was entered, please submit an ID, URL, or player name",
+                   "We couldn't find a user with the id",
                    "We couldn't find a user with the given url",
                    "We couldn't find a user with the given username"]
 
     # handle ID inputs
-    if userInput.isdigit():
-        userID = userInput
+    if not userInput:
         error = errorValues[0]
+        raise Exception(error)
+    elif userInput.isdigit():
+        userID = userInput
+        error = errorValues[1]
     # handle URL inputs
     elif validators.url(userInput):
         # scrub non-numeric text from url
         userID = re.sub('[^0-9]', '', userInput)
-        error = errorValues[1]
+        error = errorValues[2]
     # handle string inputs, which would probably be a username
     else:
         username = requests.get('https://scoresaber.com/api/players?search=' + str(userInput))
         print(username.json())
-        error = errorValues[2]
+        error = errorValues[3]
         # detect that a valid user was returned with the response
         if (username.status_code == 404):
             print('http error caught')

@@ -11,6 +11,7 @@ from .EditPanel.EditPanelFrame import EditPlayer
 
 import api
 
+
 class PlayerWidget2(Frame):
     def __init__(self, player, parent, playerHex, controller=None, *args, **kwargs):
         Frame.__init__(self, parent, *args, **kwargs)
@@ -31,8 +32,9 @@ class PlayerWidget2(Frame):
 
         self.current_window.tkraise()
 
-
     def navigate(self, name):
+        self.parent.refreshRight()
+
         # Hide all screens
         for window in self.windows.values():
             window.place_forget()

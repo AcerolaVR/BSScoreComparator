@@ -14,31 +14,32 @@ from Player2.PlayerFrame import PlayerWidget2
 ASSETS_PATH = os.path.dirname(__file__)
 ASSETS_PATH = os.path.join(ASSETS_PATH, 'assets/frame0')
 
+global LeaderGraph1
 
 def relative_to_assets(path: str) -> Path:
     return ASSETS_PATH / Path(path)
 
-
 def mainWindow():
     MainWindow()
 
-
 class MainWindow(Toplevel):
+
     def __init__(self, *args, **kwargs):
         Toplevel.__init__(self, *args, **kwargs)
+        global LeaderGraph1
 
         self.geometry("1220x924")
         self.configure(bg="#6F6F6F")
 
-        # Player1 = api.loadUser('https://scoresaber.com/u/76561198002500746')
-        # Player2 = api.loadUser('76561198002500746')
+        emptyList = []
+        plUser = api.User( 0000, 'temp', 'us', 0000, 10000, 10000, 87, 87, 'https://i.imgur.com/x11FQnw.png', emptyList)
 
-        api.Player1 = api.loadUser('76561198988695829')
-        api.Player2 = api.loadUser('76561198333869741')
+        api.Player1 = plUser
+        api.Player2 = plUser
 
+        LeaderGraph1 = LeaderGraphWidget(self, bg="#343638", width=1113, height=580)
         PlayerFrame1 = PlayerWidget1(api.Player1, self, "#B71C1C", bg="#343638", width=540, height=240)
         PlayerFrame2 = PlayerWidget2(api.Player2, self, "#003BFF", bg="#343638", width=540, height=240)
-        LeaderGraph1 = LeaderGraphWidget(self, bg="#343638", width=1113, height=580)
 
         self.canvas = Canvas(
             self,
@@ -204,8 +205,16 @@ class MainWindow(Toplevel):
 
         PlayerFrame1.tkraise()
         PlayerFrame2.tkraise()
-        LeaderGraph1.tkraise()
-        LeaderGraph1.left_sortByPP()
 
         self.resizable(False, False)
         self.mainloop()
+
+    def refreshLeft(self):
+        print('refreshLeft')
+        LeaderGraph1.tkraise()
+        LeaderGraph1.left_sortByPP()
+
+    def refreshRight(self):
+        print('refreshRight')
+        LeaderGraph1.tkraise()
+        LeaderGraph1.right_sortByPP()
