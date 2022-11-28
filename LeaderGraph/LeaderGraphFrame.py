@@ -24,13 +24,13 @@ class LeaderGraphWidget(Frame):
         # Loop through windows and place them
         self.windows = {
             "leaderboard": ViewSongTable(self),
-            # "graph": ViewGraph(self),
+            "graph": ViewGraph(self),
         }
 
         self.current_window = self.windows["leaderboard"]
         self.navigate("leaderboard")
 
-        self.current_window.tkraise()
+        # self.current_window.tkraise()
 
     def navigate(self, name):
         # Hide all screens

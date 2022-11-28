@@ -44,16 +44,6 @@ canvas = Canvas(
 
 canvas.place(x=0, y=0)
 
-# place and raise the player frames on the main window
-PlayerFrame1.place(x=77, y=11, width=540.0, height=240.0)
-PlayerFrame2.place(x=650, y=11, width=540.0, height=240.0)
-LeaderGraph1.place(x=77, y=309, width=1113.0, height=680.0)
-
-PlayerFrame1.tkraise()
-PlayerFrame2.tkraise()
-LeaderGraph1.tkraise()
-LeaderGraph1.left_sortByPP()
-
 canvas.create_rectangle(
     650.0,
     11.0,
@@ -205,6 +195,16 @@ canvas.create_rectangle(
     251.0,
     fill="#000000",
     outline="")
+
+# place and raise the player frames on the main window
+PlayerFrame1.place(x=77, y=11, width=540.0, height=240.0)
+PlayerFrame2.place(x=650, y=11, width=540.0, height=240.0)
+LeaderGraph1.place(x=77, y=309, width=1113.0, height=680.0)
+
+PlayerFrame1.tkraise()
+PlayerFrame2.tkraise()
+LeaderGraph1.tkraise()
+LeaderGraph1.left_sortByPP()
 
 window.resizable(False, False)
 window.mainloop()
