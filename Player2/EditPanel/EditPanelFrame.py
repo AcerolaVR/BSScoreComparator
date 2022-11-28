@@ -48,7 +48,7 @@ class EditPlayer(Frame):
             10.0,
             0.0,
             anchor="nw",
-            text="Enter Player1 Here",
+            text="Enter Player Here",
             fill="#FFFFFF",
             font=("Inter", 36 * -1)
         )
