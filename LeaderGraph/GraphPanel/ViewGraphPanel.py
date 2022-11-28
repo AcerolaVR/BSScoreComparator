@@ -25,7 +25,7 @@ class ViewGraph(Frame):
         self.canvas = Canvas(
             self,
             bg = "#343638",
-            height = 680,
+            height = 580,
             width = 1113,
             bd = 0,
             highlightthickness = 0,
