@@ -238,31 +238,41 @@ class ViewSongTable(Frame):
         self.right_frame.grid(row=0, column=1)
     
     def left_sortByPP(self):
+        self.updateLists()
         left_list = api.sortByPP(self.left_songlist)
         right_list = api.getCorrespondingList(left_list, self.right_songlist)
         self.build_frames(left_list, right_list)
 
     def left_sortByRecent(self):
+        self.updateLists()
         left_list = api.sortByRecent(self.left_songlist)
         right_list = api.getCorrespondingList(left_list, self.right_songlist)
         self.build_frames(left_list, right_list)
 
     def left_sortByUnplayed(self):
+        self.updateLists()
         left_list = api.sortByUnplayed(self.left_songlist, self.right_songlist)
         right_list = api.getCorrespondingList(left_list, self.right_songlist)
         self.build_frames(left_list, right_list)
 
     def right_sortByPP(self):
+        self.updateLists()
         right_list = api.sortByPP(self.right_songlist)
         left_list = api.getCorrespondingList(right_list, self.left_songlist)
         self.build_frames(left_list, right_list)
 
     def right_sortByRecent(self):
+        self.updateLists()
         right_list = api.sortByRecent(self.right_songlist)
         left_list = api.getCorrespondingList(right_list, self.left_songlist)
         self.build_frames(left_list, right_list)
 
     def right_sortByUnplayed(self):
+        self.updateLists()
         right_list = api.sortByUnplayed(self.right_songlist, self.left_songlist)
         left_list = api.getCorrespondingList(right_list, self.left_songlist)
         self.build_frames(left_list, right_list)
+
+    def updateLists(self):
+        self.left_songlist = api.Player1.songList
+        self.right_songlist = api.Player2.songList
