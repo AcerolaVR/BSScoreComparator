@@ -53,6 +53,10 @@ class MainWindow(Toplevel):
 
         self.canvas.place(x=0, y=0)
 
+        self.canvas.create_rectangle(
+            83.5, 309.0, 83.5 + 1113.0, 309.0 + 580.0, fill="#343638", outline=""
+        )
+
         button_image_1 = PhotoImage(
             file=relative_to_assets("button_1.png"))
         self.button_1 = Button(
@@ -217,4 +221,5 @@ class MainWindow(Toplevel):
     def refreshRight(self):
         print('refreshRight')
         LeaderGraph1.tkraise()
-        LeaderGraph1.right_sortByPP()
+        LeaderGraph1.left_sortByPP()
+        # LeaderGraph1.right_sortByPP()
