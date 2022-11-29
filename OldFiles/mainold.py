@@ -126,14 +126,14 @@ def SortTest(SongList):
     SongList = sortByPP(SongList)
     SongList = sortByRecent(SongList)
     SongList2 = SongList.copy()
-    print(SongList[10])
+    # print(SongList[10])
     del SongList2[10]
-    print(sortByUnplayed(SongList, SongList2))
+    # print(sortByUnplayed(SongList, SongList2))
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     User1 = loadUser(76561198002500746)
     SongList = LoadUserSongs(76561198002500746, 100)
-    print(SongList)
+    # print(SongList)
     SortTest(SongList.copy())
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/

@@ -66,7 +66,7 @@ def loadUser(userInput):
         error = errorValues[2]
         # detect that a valid user was returned with the response
         if (username.status_code == 404):
-            print('http error caught')
+            # print('http error caught')
             print(username.json()['errorMessage'])
             raise Exception(error)
         userID = username.json()['players'][0]["id"]
@@ -100,7 +100,7 @@ def write_json(new_data, filename='recentUsers.json'):
         file_data = json.load(file)
         # if new_data['id'] in file_data.values():
         print(new_data['id'])
-        print(str(file_data['recent_players']))
+        # print(str(file_data['recent_players']))
 
         # if new_data['id'] in file_data['recent_players']:
         if str(file_data['recent_players']).__contains__(str(new_data['id'])):

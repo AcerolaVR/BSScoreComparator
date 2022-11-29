@@ -177,8 +177,8 @@ class EditPlayer(Frame):
         try:
             api.Player1 = api.loadUser(entry)
             print(self.parent.player.name)
-            print(api.Player1.name)
-            print(api.Player2.name)
+            # print(api.Player1.name)
+            # print(api.Player2.name)
             self.parent.windows["view"].destroy()
             self.parent.windows["view"].__init__(self.parent, self.parent.playerHex)
             self.parent.navigate("view")
