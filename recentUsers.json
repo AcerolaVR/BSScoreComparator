@@ -1,30 +1,6 @@
 {
     "recent_players": [
         {
-            "id": "76561198002500746",
-            "name": "Acerola",
-            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198002500746.jpg",
-            "bio": "",
-            "country": "US",
-            "pp": 10424.83,
-            "rank": 1211,
-            "countryRank": 523,
-            "role": "Supporter",
-            "badges": [],
-            "histories": "1311,1226,1228,1228,1225,1207,1212,1213,1213,1214,1214,1214,1213,1215,1214,1214,1211,1214,1211,1212,1215,1216,1218,1217,1216,1216,1217,1217,1219,1222,1223,1219,1218,1217,1218,1220,1224,1221,1219,1219,1219,1216,1215,1215,1215,1214,1210,1213,1214",
-            "permissions": 64,
-            "banned": false,
-            "inactive": false,
-            "scoreStats": {
-                "totalScore": 2764845798,
-                "totalRankedScore": 1070123114,
-                "averageRankedAccuracy": 87.83664,
-                "totalPlayCount": 3003,
-                "rankedPlayCount": 939,
-                "replaysWatched": 4
-            }
-        },
-        {
             "id": "3225556157461414",
             "name": "Bizzy825",
             "profilePicture": "https://cdn.scoresaber.com/avatars/oculus.png",
@@ -729,6 +705,230 @@
                 "totalPlayCount": 1434,
                 "rankedPlayCount": 656,
                 "replaysWatched": 1648
+            }
+        },
+        {
+            "id": "2429129807113296",
+            "name": "Taichidesu",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/oculus.png",
+            "bio": "",
+            "country": "JP",
+            "pp": 16571.54,
+            "rank": 15,
+            "countryRank": 1,
+            "role": "Supporter",
+            "badges": [
+                {
+                    "description": "Cube Community 1-150 Tournament Winner",
+                    "image": "https://cdn.scoresaber.com/badges/CC-Tourney-1.png"
+                },
+                {
+                    "description": "Summer Saber Stars Winner",
+                    "image": "https://cdn.scoresaber.com/badges/SSS-Tourney-1.png"
+                },
+                {
+                    "description": "Given to all level 2 supporters",
+                    "image": "https://cdn.scoresaber.com/badges/supporter.png"
+                },
+                {
+                    "description": "Beat Saber League Season 1 Winner",
+                    "image": "https://cdn.scoresaber.com/badges/BSL-1.png"
+                }
+            ],
+            "histories": "21,21,21,21,21,21,21,21,21,21,21,21,21,20,20,19,19,19,19,19,18,18,18,17,17,16,16,16,15,15,15,16,16,16,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15",
+            "permissions": 192,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 3335416770,
+                "totalRankedScore": 1002876541,
+                "averageRankedAccuracy": 94.96822,
+                "totalPlayCount": 3021,
+                "rankedPlayCount": 661,
+                "replaysWatched": 39255
+            }
+        },
+        {
+            "id": "76561198316367811",
+            "name": "ducky",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198316367811.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 15279.44,
+            "rank": 35,
+            "countryRank": 14,
+            "role": null,
+            "badges": [],
+            "histories": "35,35,35,35,35,35,35,35,35,35,35,36,36,36,36,35,35,35,35,35,34,34,34,34,35,35,35,35,35,35,35,35,36,36,36,36,36,36,36,36,36,36,36,36,36,36,36,35,35",
+            "permissions": 0,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 1187934919,
+                "totalRankedScore": 506789423,
+                "averageRankedAccuracy": 95.88019,
+                "totalPlayCount": 740,
+                "rankedPlayCount": 278,
+                "replaysWatched": 407
+            }
+        },
+        {
+            "id": "76561198180044686",
+            "name": "CoolingCloset",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198180044686.jpg",
+            "bio": "<p><img src=\"https://cdn.discordapp.com/attachments/832722078104813568/942203518197055578/brotherrrrr_2.png\" alt width=\"1198\" height=\"405\" /></p>",
+            "country": "NL",
+            "pp": 15022.17,
+            "rank": 46,
+            "countryRank": 1,
+            "role": "Ranking Team, Quality Assurance ",
+            "badges": [
+                {
+                    "description": "Cube Community 1-150 Tournament Runner-Up",
+                    "image": "https://cdn.scoresaber.com/badges/CC-Tourney-2.png"
+                },
+                {
+                    "description": "Member of the ScoreSaber ranking team",
+                    "image": "https://cdn.scoresaber.com/badges/ranker.png"
+                },
+                {
+                    "description": "Contributed to Cubes for Charity Tournament",
+                    "image": "https://cdn.scoresaber.com/badges/cubes-for-charity.png"
+                },
+                {
+                    "description": "Shitmiss City 2020 Runners-Up (Team VOC)",
+                    "image": "https://cdn.scoresaber.com/badges/SMC-2.png"
+                },
+                {
+                    "description": "Beat Saber World Cup 2020: 3rd Place (Netherlands)",
+                    "image": "https://cdn.scoresaber.com/badges/BSWC-2020-3.png"
+                },
+                {
+                    "description": "Supported ScoreSaber through the 2021 Holiday Season",
+                    "image": "https://cdn.scoresaber.com/badges/Holiday-Supporter.gif"
+                },
+                {
+                    "description": "Held one or more of the final pixels on /r/place 2022 for ScoreSaber",
+                    "image": "https://cdn.scoresaber.com/badges/rplace.gif"
+                }
+            ],
+            "histories": "47,47,47,48,48,48,49,49,49,49,49,49,49,49,50,49,49,49,49,48,46,46,46,46,46,46,46,46,46,46,46,45,45,45,45,45,45,45,45,45,45,45,46,46,46,46,46,46,46",
+            "permissions": 3,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 4029000359,
+                "totalRankedScore": 1039395174,
+                "averageRankedAccuracy": 95.39709,
+                "totalPlayCount": 4209,
+                "rankedPlayCount": 815,
+                "replaysWatched": 4707
+            }
+        },
+        {
+            "id": "76561198108275916",
+            "name": "Floatyoats",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198108275916.jpg",
+            "bio": "<h2 style=\"text-align:center\">skill capped ?</h2>\n<h2 style=\"text-align:center\"><a href=\"https://www.youtube.com/channel/UCKwtQvUk_x_-DFWWYWguiYg\" target=\"_blank\" rel=\"noopener\">youtube</a> \u00b7 <a href=\"https://www.twitch.tv/floatyoat\" target=\"_blank\" rel=\"noopener\">twitch</a> \u00b7 <a href=\"https://twitter.com/floatyoat\" target=\"_blank\" rel=\"noopener\">twitter</a> \u00b7 <a href=\"https://www.tiktok.com/@floatyoats\" target=\"_blank\" rel=\"noopener\">tiktok</a> \u00b7 <a href=\"https://osu.ppy.sh/users/15832008\" target=\"_blank\" rel=\"noopener\">osu!</a></h2>\n<hr />\n<h2 style=\"text-align:left\">Tournaments:</h2>\n<p>#1 in BSL Season 4.5</p>\n<p><a href=\"https://beatsaberleague.com\" target=\"_blank\" rel=\"noopener\"><img src=\"https://cdn.discordapp.com/attachments/942814408143413328/952953277119598652/1_1.png\" alt width=\"80\" height=\"30\" /></a></p>\n<p>top 5 in BSL Season 5</p>\n<p><a href=\"https://beatsaberleague.com/bracket\"><img src=\"https://cdn.discordapp.com/attachments/886636890244120656/988863518889639956/Capture.PNG\" alt width=\"167\" height=\"87\" /></a></p>\n<p>#1 in UBSL Season 1</p>\n<p><a href=\"https://discord.gg/ZrfhU6YcDZ\"><img src=\"https://cdn.discordapp.com/attachments/942814408143413328/1012045624448913408/unknown.png\" alt width=\"1293\" height=\"70\" /></a></p>\n<hr />\n<h2 style=\"text-align:left\">Previous PFP Collabs:</h2>\n<p><span style=\"text-align:center\">breaking bad PFP collab:</span></p>\n<p><a style=\"text-align:center\" href=\"76561198108275916\"><img src=\"https://cdn.discordapp.com/attachments/942814408143413328/993767100751552522/breaking_bad_floatyoats.png\" alt width=\"104\" height=\"139\" /></a><a href=\"76561199076013082\"><img src=\"https://cdn.discordapp.com/attachments/942814408143413328/993767101007396864/breaking_bad_chaos.png\" alt width=\"104\" height=\"139\" /></a><a href=\"76561198160636106\"><img src=\"https://cdn.discordapp.com/attachments/942814408143413328/1004505368271016026/breaking_bad_rosietysue.png\" alt width=\"104\" height=\"139\" /></a><a href=\"76561198303307533\"><img src=\"https://cdn.discordapp.com/attachments/942814408143413328/993767101632368680/breaking_bad_crypticnugget.png\" alt width=\"104\" height=\"139\" /></a><a href=\"76561198247959516\"><img src=\"https://cdn.discordapp.com/attachments/942814408143413328/993767102135664730/breaking_bad_zachakaquack.png\" alt width=\"104\" height=\"139\" /></a><a href=\"76561198272028078\"><img src=\"https://cdn.discordapp.com/attachments/942814408143413328/1004505349002371132/breaking_bad_zana.png\" alt width=\"104\" height=\"139\" /></a><a href=\"76561199091846615\"><img src=\"https://cdn.discordapp.com/attachments/942814408143413328/993912241432834109/breaking_bad_cynocz.png\" alt width=\"104\" height=\"139\" /></a><a href=\"76561198297766543\"><img src=\"https://cdn.discordapp.com/attachments/942814408143413328/993912257157275709/breaking_bad_siamesederp.png\" alt width=\"104\" height=\"139\" /></a><a href=\"76561198305935873\"><img src=\"https://cdn.discordapp.com/attachments/942814408143413328/993923052893110323/breaking_bad_gordon_feetman.png\" alt width=\"104\" height=\"139\" /></a></p>",
+            "country": "GB",
+            "pp": 15125.5,
+            "rank": 43,
+            "countryRank": 5,
+            "role": null,
+            "badges": [
+                {
+                    "description": "Supported ScoreSaber through the 2021 Holiday Season",
+                    "image": "https://cdn.scoresaber.com/badges/Holiday-Supporter.gif"
+                },
+                {
+                    "description": "Held one or more of the final pixels on /r/place 2022 for ScoreSaber",
+                    "image": "https://cdn.scoresaber.com/badges/rplace.gif"
+                }
+            ],
+            "histories": "39,39,39,39,39,39,39,39,39,39,39,39,39,39,39,42,42,42,42,42,41,41,42,42,43,43,43,43,43,43,43,43,43,43,43,43,43,43,43,43,43,43,43,43,43,43,43,43,43",
+            "permissions": 0,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 3012977362,
+                "totalRankedScore": 838215071,
+                "averageRankedAccuracy": 95.39428,
+                "totalPlayCount": 3038,
+                "rankedPlayCount": 604,
+                "replaysWatched": 230
+            }
+        },
+        {
+            "id": "76561198452477486",
+            "name": "Skinnyjeens64",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198452477486.jpg",
+            "bio": "",
+            "country": "US",
+            "pp": 14428.88,
+            "rank": 89,
+            "countryRank": 41,
+            "role": "",
+            "badges": [],
+            "histories": "89,89,89,90,91,92,92,92,92,92,91,92,92,92,92,93,93,93,93,93,92,91,91,91,91,91,90,90,90,89,89,88,88,88,88,90,90,90,90,90,89,89,89,89,88,89,89,88,88",
+            "permissions": 0,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 3259330972,
+                "totalRankedScore": 1426792019,
+                "averageRankedAccuracy": 95.15345,
+                "totalPlayCount": 3616,
+                "rankedPlayCount": 1227,
+                "replaysWatched": 184
+            }
+        },
+        {
+            "id": "76561198166289091",
+            "name": "Rocker",
+            "profilePicture": "https://cdn.scoresaber.com/avatars/76561198166289091.jpg",
+            "bio": "",
+            "country": "GB",
+            "pp": 14850.08,
+            "rank": 54,
+            "countryRank": 6,
+            "role": "Quality Assurance Team",
+            "badges": [
+                {
+                    "description": "Given to all level 2 supporters",
+                    "image": "https://cdn.scoresaber.com/badges/supporter.png"
+                },
+                {
+                    "description": "Captain's Banquet Tournament Runners-Up (Team craig)",
+                    "image": "https://cdn.scoresaber.com/badges/CBT-Badge-2.png"
+                },
+                {
+                    "description": "Shitmiss City 2021 Winners (Team craig)",
+                    "image": "https://cdn.scoresaber.com/badges/SMC-2021-1.png"
+                },
+                {
+                    "description": "Supported ScoreSaber through the 2021 Holiday Season",
+                    "image": "https://cdn.scoresaber.com/badges/Holiday-Supporter.gif"
+                },
+                {
+                    "description": "Held one or more of the final pixels on /r/place 2022 for ScoreSaber",
+                    "image": "https://cdn.scoresaber.com/badges/rplace.gif"
+                },
+                {
+                    "description": "Beat Saber World Cup 2022: 2nd Place (United Kingdom)",
+                    "image": "https://cdn.scoresaber.com/badges/BSWC-2022-2.gif"
+                }
+            ],
+            "histories": "52,52,52,52,52,52,52,52,52,52,52,52,52,53,53,53,53,53,53,53,52,51,51,52,52,53,53,53,54,55,55,54,54,54,54,54,54,54,54,54,54,54,55,55,54,54,54,54,54",
+            "permissions": 194,
+            "banned": false,
+            "inactive": false,
+            "scoreStats": {
+                "totalScore": 4995688835,
+                "totalRankedScore": 1619169242,
+                "averageRankedAccuracy": 96.90704,
+                "totalPlayCount": 6027,
+                "rankedPlayCount": 1933,
+                "replaysWatched": 2365
             }
         }
     ]

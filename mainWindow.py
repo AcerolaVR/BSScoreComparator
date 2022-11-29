@@ -28,8 +28,10 @@ class MainWindow(Toplevel):
         Toplevel.__init__(self, *args, **kwargs)
         global LeaderGraph1
 
-        self.geometry("1220x924")
+        self.geometry("1220x820")
         self.configure(bg="#6F6F6F")
+        self.title('Beat Saber Score Comparator')
+        self.iconbitmap(relative_to_assets('BSSC.ico'))
 
         emptyList = []
         plUser = api.User( 0000, 'temp', 'us', 0000, 10000, 10000, 87, 87, 'https://i.imgur.com/x11FQnw.png', emptyList)
@@ -37,7 +39,7 @@ class MainWindow(Toplevel):
         api.Player1 = plUser
         api.Player2 = plUser
 
-        LeaderGraph1 = LeaderGraphWidget(self, bg="#343638", width=1113, height=580)
+        LeaderGraph1 = LeaderGraphWidget(self, bg="#343638", width=1113, height=500)
         PlayerFrame1 = PlayerWidget1(api.Player1, self, "#B71C1C", bg="#343638", width=540, height=240)
         PlayerFrame2 = PlayerWidget2(api.Player2, self, "#003BFF", bg="#343638", width=540, height=240)
 
@@ -54,7 +56,7 @@ class MainWindow(Toplevel):
         self.canvas.place(x=0, y=0)
 
         self.canvas.create_rectangle(
-            83.5, 309.0, 83.5 + 1113.0, 309.0 + 580.0, fill="#343638", outline=""
+            83.5, 309.0, 83.5 + 1113.0, 309.0 + 500.0, fill="#343638", outline=""
         )
 
         button_image_1 = PhotoImage(
@@ -205,7 +207,7 @@ class MainWindow(Toplevel):
         # place and raise the player frames on the main window
         PlayerFrame1.place(x=77, y=11, width=540.0, height=240.0)
         PlayerFrame2.place(x=650, y=11, width=540.0, height=240.0)
-        LeaderGraph1.place(x=83.5, y=309, width=1120.0, height=580.0)
+        LeaderGraph1.place(x=83.5, y=309, width=1120.0, height=500.0)
 
         PlayerFrame1.tkraise()
         PlayerFrame2.tkraise()
@@ -214,12 +216,12 @@ class MainWindow(Toplevel):
         self.mainloop()
 
     def refreshLeft(self):
-        print('refreshLeft')
+        # print('refreshLeft')
         LeaderGraph1.tkraise()
         LeaderGraph1.left_sortByPP()
 
     def refreshRight(self):
-        print('refreshRight')
+        # print('refreshRight')
         LeaderGraph1.tkraise()
         LeaderGraph1.left_sortByPP()
         # LeaderGraph1.right_sortByPP()

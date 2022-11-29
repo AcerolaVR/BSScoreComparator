@@ -64,10 +64,10 @@ class EditPlayer(Frame):
 
         self.exceptionText = self.canvas.create_text(
             10.0,
-            174.0,
+            166.0,
             anchor="nw",
             fill="#FF0000",
-            font=("Inter", 16 * -1)
+            font=("Inter", 14 * -1)
         )
 
         variable = StringVar(self)
@@ -160,11 +160,11 @@ class EditPlayer(Frame):
     def displayException(self, exception):
         self.exceptionText = self.canvas.create_text(
             10.0,
-            174.0,
+            166.0,
             anchor="nw",
             text=exception,
             fill="#FF0000",
-            font=("Inter", 16 * -1)
+            font=("Inter", 14 * -1)
         )
 
     def deleteException(self):
@@ -177,8 +177,8 @@ class EditPlayer(Frame):
         try:
             api.Player2 = api.loadUser(entry)
             print(self.parent.player.name)
-            print(api.Player1.name)
-            print(api.Player2.name)
+            # print(api.Player1.name)
+            # print(api.Player2.name)
             self.parent.windows["view"].destroy()
             self.parent.windows["view"].__init__(self.parent, self.parent.playerHex)
             self.parent.navigate("view")

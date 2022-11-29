@@ -64,10 +64,10 @@ class Song:
 
 @staticmethod
 def loadUser(userInput):
-    errorValues = ["No player was entered, please submit an ID, URL, or player name",
-                   "We couldn't find a user with the id",
-                   "We couldn't find a user with the given url",
-                   "We couldn't find a user with the given username"]
+    errorValues = ["We didn't find anything entered,\nplease make sure you enter an ID, URL, or player name",
+                   "We couldn't find a user with the id entered,\nPlease make sure the ID is a valid 17 digit ID",
+                   "We couldn't find a user with the given url entered,\nPlease make sure the url follow the scoresaber.com/u/<id> format",
+                   "We couldn't find a user with the given username entered,\nPlease make sure the name is correct and the player still exists"]
 
     # handle ID inputs
     if not userInput:
@@ -88,7 +88,7 @@ def loadUser(userInput):
         error = errorValues[3]
         # detect that a valid user was returned with the response
         if (username.status_code == 404):
-            print('http error caught')
+            # print('http error caught')
             print(username.json()['errorMessage'])
             raise Exception(error)
         userID = username.json()['players'][0]["id"]
@@ -214,18 +214,10 @@ def SortTest(SongList):
     SongList = sortByPP(SongList)
     SongList = sortByRecent(SongList)
     SongList2 = SongList.copy()
-    print(SongList[10])
+    # print(SongList[10])
     del SongList2[10]
-    print(sortByUnplayed(SongList, SongList2))
+    # print(sortByUnplayed(SongList, SongList2))
 
 
 global Player1
 global Player2
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    User1 = loadUser(76561198002500746)
-    SongList = LoadUserSongs(76561198002500746, 100)
-    print(SongList)
-    SortTest(SongList.copy())
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/

@@ -38,7 +38,7 @@ class LeaderGraphWidget(Frame):
             window.place_forget()
 
         # Show the screen of the button pressed
-        self.windows[name].place(x=0, y=0, width=1113.0, height=580.0)
+        self.windows[name].place(x=0, y=0, width=1113.0, height=500.0)
 
     def left_sortByPP(self):
         self.windows["leaderboard"].left_sortByPP()

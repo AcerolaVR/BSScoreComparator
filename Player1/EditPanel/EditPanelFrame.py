@@ -64,10 +64,10 @@ class EditPlayer(Frame):
 
         self.exceptionText = self.canvas.create_text(
             10.0,
-            174.0,
+            166.0,
             anchor="nw",
             fill="#FF0000",
-            font=("Inter", 16 * -1)
+            font=("Inter", 14 * -1)
         )
 
         variable = StringVar(self)
@@ -160,11 +160,11 @@ class EditPlayer(Frame):
     def displayException(self, exception):
         self.exceptionText = self.canvas.create_text(
             10.0,
-            174.0,
+            166.0,
             anchor="nw",
             text=exception,
             fill="#FF0000",
-            font=("Inter", 16 * -1)
+            font=("Inter", 14 * -1)
         )
 
     def deleteException(self):
