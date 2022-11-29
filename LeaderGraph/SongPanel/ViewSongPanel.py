@@ -341,7 +341,6 @@ class RightCard(Frame):
             font=("Inter", 16 * -1)
         )
 
-# TODO load images upfront
 def build_song_frame(frame, songlist, side='left'):
     for i in range(len(songlist)):
         song = songlist[i]
