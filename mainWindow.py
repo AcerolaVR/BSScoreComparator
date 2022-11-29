@@ -85,7 +85,7 @@ class MainWindow(Toplevel):
             image=button_image_2,
             borderwidth=0,
             highlightthickness=0,
-            command=lambda: LeaderGraph1.navigate('graph'),
+            command=lambda: drawGraph(),
             cursor='hand2', activebackground="#6F6F6F",
             relief="flat"
         )
@@ -211,6 +211,11 @@ class MainWindow(Toplevel):
 
         PlayerFrame1.tkraise()
         PlayerFrame2.tkraise()
+
+        def drawGraph():
+            LeaderGraph1.windows['graph'].destroy()
+            LeaderGraph1.windows['graph'].__init__(LeaderGraph1)
+            LeaderGraph1.navigate('graph')
 
         self.resizable(False, False)
         self.mainloop()
